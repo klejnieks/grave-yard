@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title>Bloomberg Demo</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    </head>
+
+    <body>
+
+        <div id="side-menu">
+            <h3>View:</h3>
+            <nav>
+                <ul>
+                    <li><button class="sidebar-button" data-type="list-type">List</button></li>
+                    <li><button class="sidebar-button" data-type="grid-type">Grid</button></li>
+                    <li><button class="sidebar-button" data-type="metro-type">Metro</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="side-menu-spotter"></div>
+
+        <main id="app" class="list-type">
+            <div id="content-display" class="list-type"></div>
+        </main>
+
+        <script src="bundle.js"></script>
+
+    </body>
+
+</html>

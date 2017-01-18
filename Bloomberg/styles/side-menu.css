@@ -1,0 +1,70 @@
+#side-menu {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100px;
+    width: 100px;
+    background: #000;
+    color: #FFF;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.25s;
+    transition-timing-function: ease-in-out;
+}
+
+#side-menu.open {
+    transform: translate(100px, 0);
+}
+
+#side-menu > h3 {
+    padding: 0;
+    margin: 20px 4px 4px;
+}
+
+#side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#side-menu ul > li {
+    padding: 8px;
+}
+
+#side-menu ul > li a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#side-menu ul button {
+    width: 60px;
+    font-size: 14px;
+    background: #FFF;
+    border: none;
+    border-radius: 4px;
+}
+
+#side-menu ul button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#side-menu ul button:focus {
+    outline: 0;
+}
+
+#side-menu ul button.selected {
+    background-color: #008CBA;
+    color: white;
+}
+
+#side-menu-spotter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    z-index: 999;
+}
