@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "name": "nl.x-services.plugins.touchid",
+    "cordova_name": "Touch ID",
+    "description": "\n    Scan the fingerprint of your user with the TouchID sensor (iPhone 5S, iPhone 6, ..)\n  ",
+    "license": "MIT",
+    "repo": "https://github.com/EddyVerbruggen/cordova-plugin-touchid.git",
+    "issue": "https://github.com/EddyVerbruggen/cordova-plugin-touchid/issues",
+    "keywords": [
+        "TouchID",
+        " Touch ID",
+        " Fingerprint",
+        " Biometric"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.0.0"
+        }
+    ]
+}

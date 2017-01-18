@@ -1,0 +1,567 @@
+2015-09-01 09:35:07.026 MultiContainerPOC[29246:6882902] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/CD3E6796-9F9A-461A-833B-18C0A2758833/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:35:07.115 MultiContainerPOC[29246:6882902] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:35:07.116 MultiContainerPOC[29246:6882902] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:35:07.118 MultiContainerPOC[29246:6882902] Unlimited access to network resources
+2015-09-01 09:35:07.121 MultiContainerPOC[29246:6882902] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:35:07.293 MultiContainerPOC[29246:6882902] Resetting plugins due to page load.
+2015-09-01 09:35:07.379 MultiContainerPOC[29246:6882902] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/391378A8-BEBE-4B78-8376-939141F1BDE5/MultiContainerPOC.app/www/index.html
+2015-09-01 09:35:10.671 MultiContainerPOC[29246:6882902] showwebViewView page2.html
+2015-09-01 09:35:10.671 MultiContainerPOC[29246:6882902] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:35:10.671 MultiContainerPOC[29246:6882902] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:35:10.673 MultiContainerPOC[29246:6882902] Unlimited access to network resources
+2015-09-01 09:35:10.674 MultiContainerPOC[29246:6882902] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:35:10.753 MultiContainerPOC[29246:6882902] Resetting plugins due to page load.
+2015-09-01 09:35:10.770 MultiContainerPOC[29246:6882902] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/391378A8-BEBE-4B78-8376-939141F1BDE5/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:35:13.003 MultiContainerPOC[29246:6882902] hidewebViewView
+2015-09-01 09:35:13.510 MultiContainerPOC[29246:6882902] viewDidDisappear
+2015-09-01 09:35:13.510 MultiContainerPOC[29246:6882902] webViewFinished
+2015-09-01 09:35:13.511 MultiContainerPOC[29246:6882902] Invalid callback id received by sendPluginResult
+2015-09-01 09:42:41.778 MultiContainerPOC[29379:6885402] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/FC0003D1-F709-4A0F-B276-E010AF0D7B8B/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:42:41.866 MultiContainerPOC[29379:6885402] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:42:41.867 MultiContainerPOC[29379:6885402] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:42:41.868 MultiContainerPOC[29379:6885402] Unlimited access to network resources
+2015-09-01 09:42:41.872 MultiContainerPOC[29379:6885402] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:42:42.018 MultiContainerPOC[29379:6885402] Resetting plugins due to page load.
+2015-09-01 09:42:42.080 MultiContainerPOC[29379:6885402] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/AA4F4181-0003-46A8-BB9E-D27107067900/MultiContainerPOC.app/www/index.html
+2015-09-01 09:42:49.687 MultiContainerPOC[29379:6885402] showwebViewView page2.html
+2015-09-01 09:42:49.687 MultiContainerPOC[29379:6885402] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:42:49.687 MultiContainerPOC[29379:6885402] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:42:49.689 MultiContainerPOC[29379:6885402] Unlimited access to network resources
+2015-09-01 09:42:49.690 MultiContainerPOC[29379:6885402] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:42:49.778 MultiContainerPOC[29379:6885402] Resetting plugins due to page load.
+2015-09-01 09:42:49.797 MultiContainerPOC[29379:6885402] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/AA4F4181-0003-46A8-BB9E-D27107067900/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:42:52.291 MultiContainerPOC[29379:6885402] hidewebViewView
+2015-09-01 09:42:52.798 MultiContainerPOC[29379:6885402] viewDidDisappear
+2015-09-01 09:42:52.798 MultiContainerPOC[29379:6885402] webViewFinished
+2015-09-01 09:42:52.798 MultiContainerPOC[29379:6885402] Invalid callback id received by sendPluginResult
+2015-09-01 09:44:24.344 MultiContainerPOC[29512:6886684] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/DE98FF49-ED2F-4CB4-BB24-22FBE5D871A2/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:44:24.430 MultiContainerPOC[29512:6886684] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:44:24.430 MultiContainerPOC[29512:6886684] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:44:24.432 MultiContainerPOC[29512:6886684] Unlimited access to network resources
+2015-09-01 09:44:24.436 MultiContainerPOC[29512:6886684] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:44:24.580 MultiContainerPOC[29512:6886684] Resetting plugins due to page load.
+2015-09-01 09:44:24.637 MultiContainerPOC[29512:6886684] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/047C2D54-3425-44D6-9DE5-28C6463C269A/MultiContainerPOC.app/www/index.html
+2015-09-01 09:46:17.338 MultiContainerPOC[29606:6887654] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/D4474EB6-0AFA-480F-AD5A-3AFC1B3D0E3C/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:46:17.401 MultiContainerPOC[29606:6887654] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:46:17.401 MultiContainerPOC[29606:6887654] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:46:17.404 MultiContainerPOC[29606:6887654] Unlimited access to network resources
+2015-09-01 09:46:17.407 MultiContainerPOC[29606:6887654] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:46:17.547 MultiContainerPOC[29606:6887654] Resetting plugins due to page load.
+2015-09-01 09:46:17.603 MultiContainerPOC[29606:6887654] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/26735A69-B592-4179-8E79-A410705BD530/MultiContainerPOC.app/www/index.html
+2015-09-01 09:46:23.619 MultiContainerPOC[29606:6887816] Terminating since there is no system app.
+2015-09-01 09:47:11.358 MultiContainerPOC[29733:6888773] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/533AAA9C-F476-4F2E-B77B-F1615A2E6095/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:47:11.484 MultiContainerPOC[29733:6888773] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:47:11.484 MultiContainerPOC[29733:6888773] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:47:11.489 MultiContainerPOC[29733:6888773] Unlimited access to network resources
+2015-09-01 09:47:11.492 MultiContainerPOC[29733:6888773] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:47:11.647 MultiContainerPOC[29733:6888773] Resetting plugins due to page load.
+2015-09-01 09:47:11.744 MultiContainerPOC[29733:6888773] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/6005204F-E468-4335-9E0B-EB14BCF9E15D/MultiContainerPOC.app/www/index.html
+2015-09-01 09:47:42.950 MultiContainerPOC[29733:6888773] Resetting plugins due to page load.
+2015-09-01 09:47:43.063 MultiContainerPOC[29733:6888773] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/6005204F-E468-4335-9E0B-EB14BCF9E15D/MultiContainerPOC.app/www/index.html
+2015-09-01 09:49:29.261 MultiContainerPOC[29873:6891224] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/EE0164F0-833C-4860-8F13-A223FE23E829/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:49:29.348 MultiContainerPOC[29873:6891224] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:49:29.349 MultiContainerPOC[29873:6891224] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:49:29.350 MultiContainerPOC[29873:6891224] Unlimited access to network resources
+2015-09-01 09:49:29.353 MultiContainerPOC[29873:6891224] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:49:29.496 MultiContainerPOC[29873:6891224] Resetting plugins due to page load.
+2015-09-01 09:49:29.556 MultiContainerPOC[29873:6891224] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/86446744-4450-4812-B7BE-C9A96B245D44/MultiContainerPOC.app/www/index.html
+2015-09-01 09:49:48.922 MultiContainerPOC[29873:6891224] Resetting plugins due to page load.
+2015-09-01 09:49:49.015 MultiContainerPOC[29873:6891224] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/86446744-4450-4812-B7BE-C9A96B245D44/MultiContainerPOC.app/www/index.html
+2015-09-01 09:49:53.996 MultiContainerPOC[29873:6891224] showwebViewView page2.html
+2015-09-01 09:49:53.997 MultiContainerPOC[29873:6891224] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:49:53.997 MultiContainerPOC[29873:6891224] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:49:54.000 MultiContainerPOC[29873:6891224] Unlimited access to network resources
+2015-09-01 09:49:54.002 MultiContainerPOC[29873:6891224] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:49:54.062 MultiContainerPOC[29873:6891224] Resetting plugins due to page load.
+2015-09-01 09:49:54.092 MultiContainerPOC[29873:6891224] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/86446744-4450-4812-B7BE-C9A96B245D44/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:49:56.706 MultiContainerPOC[29873:6891224] hidewebViewView
+2015-09-01 09:49:57.223 MultiContainerPOC[29873:6891224] viewDidDisappear
+2015-09-01 09:49:57.224 MultiContainerPOC[29873:6891224] webViewFinished
+2015-09-01 09:49:57.224 MultiContainerPOC[29873:6891224] Invalid callback id received by sendPluginResult
+2015-09-01 09:50:55.009 MultiContainerPOC[30009:6892991] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/91E6F013-1D24-43A2-A20A-5DA93E2752A9/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:50:55.091 MultiContainerPOC[30009:6892991] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:50:55.091 MultiContainerPOC[30009:6892991] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:50:55.093 MultiContainerPOC[30009:6892991] Unlimited access to network resources
+2015-09-01 09:50:55.097 MultiContainerPOC[30009:6892991] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:50:55.224 MultiContainerPOC[30009:6892991] Resetting plugins due to page load.
+2015-09-01 09:50:55.307 MultiContainerPOC[30009:6892991] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/5CA8386E-55C7-4D64-A85E-511EBF2BFC98/MultiContainerPOC.app/www/index.html
+2015-09-01 09:52:00.912 MultiContainerPOC[30145:6894304] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/83F07D58-10CD-4F14-A1FB-492CC4F94F60/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:52:00.998 MultiContainerPOC[30145:6894304] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:52:00.999 MultiContainerPOC[30145:6894304] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:52:01.001 MultiContainerPOC[30145:6894304] Unlimited access to network resources
+2015-09-01 09:52:01.004 MultiContainerPOC[30145:6894304] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:52:01.137 MultiContainerPOC[30145:6894304] Resetting plugins due to page load.
+2015-09-01 09:52:01.197 MultiContainerPOC[30145:6894304] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/1C45EA10-3AF1-49CF-9D73-0494B4A1840B/MultiContainerPOC.app/www/index.html
+2015-09-01 09:52:32.279 MultiContainerPOC[30145:6894304] showwebViewView page2.html
+2015-09-01 09:52:32.281 MultiContainerPOC[30145:6894304] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:52:32.281 MultiContainerPOC[30145:6894304] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:52:32.283 MultiContainerPOC[30145:6894304] Unlimited access to network resources
+2015-09-01 09:52:32.284 MultiContainerPOC[30145:6894304] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:52:32.347 MultiContainerPOC[30145:6894304] Resetting plugins due to page load.
+2015-09-01 09:52:32.362 MultiContainerPOC[30145:6894304] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/1C45EA10-3AF1-49CF-9D73-0494B4A1840B/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:52:35.689 MultiContainerPOC[30145:6894304] hidewebViewView
+2015-09-01 09:52:36.195 MultiContainerPOC[30145:6894304] viewDidDisappear
+2015-09-01 09:52:36.196 MultiContainerPOC[30145:6894304] webViewFinished
+2015-09-01 09:52:36.196 MultiContainerPOC[30145:6894304] Invalid callback id received by sendPluginResult
+2015-09-01 09:53:28.958 MultiContainerPOC[30286:6895968] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/F4A155E5-398D-429B-B540-925F33FD29CD/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:53:29.041 MultiContainerPOC[30286:6895968] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:53:29.041 MultiContainerPOC[30286:6895968] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:53:29.044 MultiContainerPOC[30286:6895968] Unlimited access to network resources
+2015-09-01 09:53:29.047 MultiContainerPOC[30286:6895968] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:53:29.174 MultiContainerPOC[30286:6895968] Resetting plugins due to page load.
+2015-09-01 09:53:29.229 MultiContainerPOC[30286:6895968] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/DBB38BAC-624F-4CB1-8923-0A0C1B2BC8EB/MultiContainerPOC.app/www/index.html
+2015-09-01 09:54:02.452 MultiContainerPOC[30286:6895968] Resetting plugins due to page load.
+2015-09-01 09:54:02.543 MultiContainerPOC[30286:6895968] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/DBB38BAC-624F-4CB1-8923-0A0C1B2BC8EB/MultiContainerPOC.app/www/index.html
+2015-09-01 09:55:06.374 MultiContainerPOC[30423:6897687] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/EECD5EAB-9317-4E9E-BE45-2C07D3208F5A/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:55:06.455 MultiContainerPOC[30423:6897687] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:55:06.456 MultiContainerPOC[30423:6897687] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:55:06.457 MultiContainerPOC[30423:6897687] Unlimited access to network resources
+2015-09-01 09:55:06.460 MultiContainerPOC[30423:6897687] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:55:06.591 MultiContainerPOC[30423:6897687] Resetting plugins due to page load.
+2015-09-01 09:55:06.653 MultiContainerPOC[30423:6897687] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/777197C4-FAD1-4413-AC9A-4A27C58D54A7/MultiContainerPOC.app/www/index.html
+2015-09-01 09:55:10.204 MultiContainerPOC[30423:6897687] showwebViewView page2.html
+2015-09-01 09:55:10.204 MultiContainerPOC[30423:6897687] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:55:10.204 MultiContainerPOC[30423:6897687] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:55:10.205 MultiContainerPOC[30423:6897687] Unlimited access to network resources
+2015-09-01 09:55:10.206 MultiContainerPOC[30423:6897687] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:55:10.284 MultiContainerPOC[30423:6897687] Resetting plugins due to page load.
+2015-09-01 09:55:10.299 MultiContainerPOC[30423:6897687] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/777197C4-FAD1-4413-AC9A-4A27C58D54A7/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:55:13.680 MultiContainerPOC[30423:6897687] hidewebViewView
+2015-09-01 09:55:14.182 MultiContainerPOC[30423:6897687] viewDidDisappear
+2015-09-01 09:55:14.182 MultiContainerPOC[30423:6897687] webViewFinished
+2015-09-01 09:55:14.183 MultiContainerPOC[30423:6897687] Invalid callback id received by sendPluginResult
+2015-09-01 09:55:16.451 MultiContainerPOC[30423:6897687] showwebViewView page2.html
+2015-09-01 09:55:16.451 MultiContainerPOC[30423:6897687] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:55:16.451 MultiContainerPOC[30423:6897687] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:55:16.452 MultiContainerPOC[30423:6897687] Unlimited access to network resources
+2015-09-01 09:55:16.453 MultiContainerPOC[30423:6897687] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:55:16.512 MultiContainerPOC[30423:6897687] Resetting plugins due to page load.
+2015-09-01 09:55:16.528 MultiContainerPOC[30423:6897687] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/777197C4-FAD1-4413-AC9A-4A27C58D54A7/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:55:22.126 MultiContainerPOC[30423:6897687] hidewebViewView
+2015-09-01 09:55:22.628 MultiContainerPOC[30423:6897687] viewDidDisappear
+2015-09-01 09:55:22.628 MultiContainerPOC[30423:6897687] webViewFinished
+2015-09-01 09:55:22.628 MultiContainerPOC[30423:6897687] Invalid callback id received by sendPluginResult
+2015-09-01 09:55:30.290 MultiContainerPOC[30423:6897687] showwebViewView page2.html
+2015-09-01 09:55:30.291 MultiContainerPOC[30423:6897687] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:55:30.291 MultiContainerPOC[30423:6897687] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:55:30.292 MultiContainerPOC[30423:6897687] Unlimited access to network resources
+2015-09-01 09:55:30.292 MultiContainerPOC[30423:6897687] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:55:30.348 MultiContainerPOC[30423:6897687] Resetting plugins due to page load.
+2015-09-01 09:55:30.360 MultiContainerPOC[30423:6897687] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/777197C4-FAD1-4413-AC9A-4A27C58D54A7/MultiContainerPOC.app/www/page2.html
+2015-09-01 09:55:36.961 MultiContainerPOC[30423:6897687] hidewebViewView
+2015-09-01 09:55:37.463 MultiContainerPOC[30423:6897687] viewDidDisappear
+2015-09-01 09:55:37.463 MultiContainerPOC[30423:6897687] webViewFinished
+2015-09-01 09:55:37.463 MultiContainerPOC[30423:6897687] Invalid callback id received by sendPluginResult
+2015-09-01 09:56:36.708 MultiContainerPOC[30523:6899325] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/F779FF18-770F-4937-8F60-F4CF8B4EB65C/Library/Cookies/Cookies.binarycookies
+2015-09-01 09:56:36.798 MultiContainerPOC[30523:6899325] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 09:56:36.798 MultiContainerPOC[30523:6899325] Multi-tasking -> Device: YES, App: YES
+2015-09-01 09:56:36.800 MultiContainerPOC[30523:6899325] Unlimited access to network resources
+2015-09-01 09:56:36.804 MultiContainerPOC[30523:6899325] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 09:56:36.939 MultiContainerPOC[30523:6899325] Resetting plugins due to page load.
+2015-09-01 09:56:36.999 MultiContainerPOC[30523:6899325] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/1505FCEC-03F3-4380-94E2-4E788D0DDB13/MultiContainerPOC.app/www/index.html
+2015-09-01 09:56:39.930 MultiContainerPOC[30523:6899336] Terminating since there is no system app.
+2015-09-01 10:24:53.355 MultiContainerPOC[30910:6910313] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/E30E66AB-5D7C-4F05-858C-4E96F8AF02BC/Library/Cookies/Cookies.binarycookies
+2015-09-01 10:24:53.639 MultiContainerPOC[30910:6910313] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:24:53.639 MultiContainerPOC[30910:6910313] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:24:53.655 MultiContainerPOC[30910:6910313] Unlimited access to network resources
+2015-09-01 10:24:53.667 MultiContainerPOC[30910:6910313] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:24:54.205 MultiContainerPOC[30910:6910313] Resetting plugins due to page load.
+2015-09-01 10:24:54.369 MultiContainerPOC[30910:6910313] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/8735EE46-720D-44A5-AE03-FCE482005796/MultiContainerPOC.app/www/index.html
+2015-09-01 10:24:58.039 MultiContainerPOC[30910:6910313] showwebViewView page2.html
+2015-09-01 10:24:58.040 MultiContainerPOC[30910:6910313] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:24:58.040 MultiContainerPOC[30910:6910313] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:24:58.041 MultiContainerPOC[30910:6910313] Unlimited access to network resources
+2015-09-01 10:24:58.043 MultiContainerPOC[30910:6910313] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:24:58.118 MultiContainerPOC[30910:6910313] Resetting plugins due to page load.
+2015-09-01 10:24:58.133 MultiContainerPOC[30910:6910313] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/8735EE46-720D-44A5-AE03-FCE482005796/MultiContainerPOC.app/www/page2.html
+2015-09-01 10:25:07.773 MultiContainerPOC[30910:6910357] Terminating since there is no system app.
+2015-09-01 10:26:20.636 MultiContainerPOC[31043:6911730] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/48ED3459-2C8F-4552-B5BB-4432A45CE14A/Library/Cookies/Cookies.binarycookies
+2015-09-01 10:26:20.764 MultiContainerPOC[31043:6911730] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:26:20.764 MultiContainerPOC[31043:6911730] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:26:20.767 MultiContainerPOC[31043:6911730] Unlimited access to network resources
+2015-09-01 10:26:20.771 MultiContainerPOC[31043:6911730] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:26:20.957 MultiContainerPOC[31043:6911730] Resetting plugins due to page load.
+2015-09-01 10:26:21.014 MultiContainerPOC[31043:6911730] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/787B819F-F926-4C3B-A3D6-681E4E9B0207/MultiContainerPOC.app/www/index.html
+2015-09-01 10:26:33.278 MultiContainerPOC[31043:6911730] showwebViewView page2.html
+2015-09-01 10:26:33.278 MultiContainerPOC[31043:6911730] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:26:33.278 MultiContainerPOC[31043:6911730] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:26:33.280 MultiContainerPOC[31043:6911730] Unlimited access to network resources
+2015-09-01 10:26:33.281 MultiContainerPOC[31043:6911730] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:26:33.368 MultiContainerPOC[31043:6911730] Resetting plugins due to page load.
+2015-09-01 10:26:33.385 MultiContainerPOC[31043:6911730] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/787B819F-F926-4C3B-A3D6-681E4E9B0207/MultiContainerPOC.app/www/page2.html
+2015-09-01 10:26:37.293 MultiContainerPOC[31043:6911892] Terminating since there is no system app.
+2015-09-01 10:27:32.540 MultiContainerPOC[31176:6912989] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/A5598415-1788-4587-9583-26A3302A43AC/Library/Cookies/Cookies.binarycookies
+2015-09-01 10:27:32.638 MultiContainerPOC[31176:6912989] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:27:32.638 MultiContainerPOC[31176:6912989] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:27:32.640 MultiContainerPOC[31176:6912989] Unlimited access to network resources
+2015-09-01 10:27:32.643 MultiContainerPOC[31176:6912989] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:27:32.793 MultiContainerPOC[31176:6912989] Resetting plugins due to page load.
+2015-09-01 10:27:32.853 MultiContainerPOC[31176:6912989] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/6687C9A2-AB61-4C5A-8B4E-AB9065A96C88/MultiContainerPOC.app/www/index.html
+2015-09-01 10:27:35.746 MultiContainerPOC[31176:6912989] showwebViewView page2.html
+2015-09-01 10:27:35.746 MultiContainerPOC[31176:6912989] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:27:35.746 MultiContainerPOC[31176:6912989] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:27:35.747 MultiContainerPOC[31176:6912989] Unlimited access to network resources
+2015-09-01 10:27:35.748 MultiContainerPOC[31176:6912989] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:27:35.833 MultiContainerPOC[31176:6912989] Resetting plugins due to page load.
+2015-09-01 10:27:35.849 MultiContainerPOC[31176:6912989] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/6687C9A2-AB61-4C5A-8B4E-AB9065A96C88/MultiContainerPOC.app/www/page2.html
+2015-09-01 10:28:22.003 MultiContainerPOC[31307:6914138] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/5F1DBCFB-BAEA-44E4-96E4-5B21C697B86E/Library/Cookies/Cookies.binarycookies
+2015-09-01 10:28:22.095 MultiContainerPOC[31307:6914138] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:28:22.096 MultiContainerPOC[31307:6914138] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:28:22.097 MultiContainerPOC[31307:6914138] Unlimited access to network resources
+2015-09-01 10:28:22.099 MultiContainerPOC[31307:6914138] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:28:22.243 MultiContainerPOC[31307:6914138] Resetting plugins due to page load.
+2015-09-01 10:28:22.299 MultiContainerPOC[31307:6914138] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/FBFCFBFF-8847-4CE9-919E-1D38DBAC2530/MultiContainerPOC.app/www/index.html
+2015-09-01 10:28:25.002 MultiContainerPOC[31307:6914138] showwebViewView page2.html
+2015-09-01 10:28:25.003 MultiContainerPOC[31307:6914138] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-01 10:28:25.003 MultiContainerPOC[31307:6914138] Multi-tasking -> Device: YES, App: YES
+2015-09-01 10:28:25.003 MultiContainerPOC[31307:6914138] Unlimited access to network resources
+2015-09-01 10:28:25.004 MultiContainerPOC[31307:6914138] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-01 10:28:25.088 MultiContainerPOC[31307:6914138] Resetting plugins due to page load.
+2015-09-01 10:28:25.104 MultiContainerPOC[31307:6914138] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/FBFCFBFF-8847-4CE9-919E-1D38DBAC2530/MultiContainerPOC.app/www/page2.html
+2015-09-01 10:28:29.092 MultiContainerPOC[31307:6914138] hidewebViewView
+2015-09-01 10:28:29.598 MultiContainerPOC[31307:6914138] viewDidDisappear
+2015-09-01 10:28:29.598 MultiContainerPOC[31307:6914138] webViewFinished
+2015-09-01 10:28:29.598 MultiContainerPOC[31307:6914138] Invalid callback id received by sendPluginResult
+2015-09-03 10:42:16.019 MultiContainerPOC[78313:7605510] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/60ABFC28-5786-45A6-8425-960B4D667E07/Library/Cookies/Cookies.binarycookies
+2015-09-03 10:42:16.502 MultiContainerPOC[78313:7605510] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:42:16.503 MultiContainerPOC[78313:7605510] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:42:16.531 MultiContainerPOC[78313:7605510] Unlimited access to network resources
+2015-09-03 10:42:16.556 MultiContainerPOC[78313:7605510] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:42:17.611 MultiContainerPOC[78313:7605510] Resetting plugins due to page load.
+2015-09-03 10:42:17.838 MultiContainerPOC[78313:7605510] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/490C25DD-7CE7-4FE2-9F7D-8621733517FE/MultiContainerPOC.app/www/index.html
+2015-09-03 10:42:23.853 MultiContainerPOC[78313:7605510] showwebViewView page2.html
+2015-09-03 10:42:23.854 MultiContainerPOC[78313:7605510] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:42:23.854 MultiContainerPOC[78313:7605510] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:42:23.855 MultiContainerPOC[78313:7605510] Unlimited access to network resources
+2015-09-03 10:42:23.857 MultiContainerPOC[78313:7605510] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:42:23.942 MultiContainerPOC[78313:7605510] Resetting plugins due to page load.
+2015-09-03 10:42:23.960 MultiContainerPOC[78313:7605510] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/490C25DD-7CE7-4FE2-9F7D-8621733517FE/MultiContainerPOC.app/www/page2.html
+2015-09-03 10:42:25.780 MultiContainerPOC[78313:7605510] hidewebViewView
+2015-09-03 10:42:26.284 MultiContainerPOC[78313:7605510] viewDidDisappear
+2015-09-03 10:42:26.285 MultiContainerPOC[78313:7605510] webViewFinished
+2015-09-03 10:42:26.285 MultiContainerPOC[78313:7605510] Invalid callback id received by sendPluginResult
+2015-09-03 10:52:02.120 MultiContainerPOC[78466:7608582] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/36665003-68BD-451A-A737-3A5FA3102E2F/Library/Cookies/Cookies.binarycookies
+2015-09-03 10:52:02.262 MultiContainerPOC[78466:7608582] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:52:02.263 MultiContainerPOC[78466:7608582] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:52:02.266 MultiContainerPOC[78466:7608582] Unlimited access to network resources
+2015-09-03 10:52:02.270 MultiContainerPOC[78466:7608582] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:52:02.512 MultiContainerPOC[78466:7608582] Resetting plugins due to page load.
+2015-09-03 10:52:02.636 MultiContainerPOC[78466:7608582] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/4A2E69C8-35F0-4CB9-B1AF-96E3C1A38651/MultiContainerPOC.app/www/index.html
+2015-09-03 10:52:06.292 MultiContainerPOC[78466:7608582] showwebViewView page2.html
+2015-09-03 10:52:06.293 MultiContainerPOC[78466:7608582] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:52:06.293 MultiContainerPOC[78466:7608582] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:52:06.294 MultiContainerPOC[78466:7608582] Unlimited access to network resources
+2015-09-03 10:52:06.296 MultiContainerPOC[78466:7608582] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:52:06.393 MultiContainerPOC[78466:7608582] Resetting plugins due to page load.
+2015-09-03 10:52:06.415 MultiContainerPOC[78466:7608582] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/4A2E69C8-35F0-4CB9-B1AF-96E3C1A38651/MultiContainerPOC.app/www/page2.html
+2015-09-03 10:52:09.624 MultiContainerPOC[78466:7608582] hidewebViewView
+2015-09-03 10:52:10.126 MultiContainerPOC[78466:7608582] viewDidDisappear
+2015-09-03 10:52:10.126 MultiContainerPOC[78466:7608582] webViewFinished
+2015-09-03 10:52:10.127 MultiContainerPOC[78466:7608582] Invalid callback id received by sendPluginResult
+2015-09-03 10:54:49.208 MultiContainerPOC[78604:7610322] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/F3BA6A10-AE61-4126-A8F0-A0865BC26A6E/Library/Cookies/Cookies.binarycookies
+2015-09-03 10:54:49.334 MultiContainerPOC[78604:7610322] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:54:49.334 MultiContainerPOC[78604:7610322] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:54:49.337 MultiContainerPOC[78604:7610322] Unlimited access to network resources
+2015-09-03 10:54:49.343 MultiContainerPOC[78604:7610322] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:54:49.586 MultiContainerPOC[78604:7610322] Resetting plugins due to page load.
+2015-09-03 10:54:49.701 MultiContainerPOC[78604:7610322] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/3C7D7790-080C-4814-BACB-4636F9FA16AE/MultiContainerPOC.app/www/index.html
+2015-09-03 10:54:52.447 MultiContainerPOC[78604:7610322] showwebViewView page2.html
+2015-09-03 10:54:52.448 MultiContainerPOC[78604:7610322] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 10:54:52.449 MultiContainerPOC[78604:7610322] Multi-tasking -> Device: YES, App: YES
+2015-09-03 10:54:52.450 MultiContainerPOC[78604:7610322] Unlimited access to network resources
+2015-09-03 10:54:52.452 MultiContainerPOC[78604:7610322] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 10:54:52.544 MultiContainerPOC[78604:7610322] Resetting plugins due to page load.
+2015-09-03 10:54:52.567 MultiContainerPOC[78604:7610322] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/3C7D7790-080C-4814-BACB-4636F9FA16AE/MultiContainerPOC.app/www/page2.html
+2015-09-03 10:54:54.475 MultiContainerPOC[78604:7610322] hidewebViewView
+2015-09-03 10:54:54.980 MultiContainerPOC[78604:7610322] viewDidDisappear
+2015-09-03 10:54:54.980 MultiContainerPOC[78604:7610322] webViewFinished
+2015-09-03 10:54:54.980 MultiContainerPOC[78604:7610322] Invalid callback id received by sendPluginResult
+2015-09-03 10:54:56.044 MultiContainerPOC[78604:7610361] Terminating since there is no system app.
+2015-09-03 11:37:01.542 MultiContainerPOC[79226:7641861] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/73067416-4D09-4AF1-8A6F-03C9142431C6/Library/Cookies/Cookies.binarycookies
+2015-09-03 11:37:01.680 MultiContainerPOC[79226:7641861] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 11:37:01.681 MultiContainerPOC[79226:7641861] Multi-tasking -> Device: YES, App: YES
+2015-09-03 11:37:01.689 MultiContainerPOC[79226:7641861] Unlimited access to network resources
+2015-09-03 11:37:01.696 MultiContainerPOC[79226:7641861] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 11:37:02.051 MultiContainerPOC[79226:7641861] Using a WKWebView
+2015-09-03 11:37:02.274 MultiContainerPOC[79226:7641861] Started http daemon: http://localhost:12344/ 
+2015-09-03 11:37:07.119 MultiContainerPOC[79226:7641861] showwebViewView page2.html
+2015-09-03 11:37:07.123 MultiContainerPOC[79226:7641861] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 11:37:07.123 MultiContainerPOC[79226:7641861] Multi-tasking -> Device: YES, App: YES
+2015-09-03 11:37:07.124 MultiContainerPOC[79226:7641861] Unlimited access to network resources
+2015-09-03 11:37:07.125 MultiContainerPOC[79226:7641861] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 11:37:07.255 MultiContainerPOC[79226:7641861] Resetting plugins due to page load.
+2015-09-03 11:37:07.339 MultiContainerPOC[79226:7641861] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/260B5829-A13B-417E-BEFA-F1BCF60A96F2/MultiContainerPOC.app/www/page2.html
+2015-09-03 11:37:09.511 MultiContainerPOC[79226:7641861] hidewebViewView
+2015-09-03 11:37:10.032 MultiContainerPOC[79226:7641861] viewDidDisappear
+2015-09-03 11:37:10.032 MultiContainerPOC[79226:7641861] webViewFinished
+2015-09-03 11:37:10.033 MultiContainerPOC[79226:7641861] Invalid callback id received by sendPluginResult
+2015-09-03 11:40:43.430 MultiContainerPOC[79394:7644275] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Data/Application/811A03E5-ED3F-4AB1-B246-8DD67B85FBA6/Library/Cookies/Cookies.binarycookies
+2015-09-03 11:40:43.551 MultiContainerPOC[79394:7644275] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 11:40:43.552 MultiContainerPOC[79394:7644275] Multi-tasking -> Device: YES, App: YES
+2015-09-03 11:40:43.555 MultiContainerPOC[79394:7644275] Unlimited access to network resources
+2015-09-03 11:40:43.561 MultiContainerPOC[79394:7644275] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 11:40:43.701 MultiContainerPOC[79394:7644275] Using a WKWebView
+2015-09-03 11:40:43.829 MultiContainerPOC[79394:7644275] Started http daemon: http://localhost:12344/ 
+2015-09-03 11:40:46.444 MultiContainerPOC[79394:7644275] showwebViewView page2.html
+2015-09-03 11:40:46.447 MultiContainerPOC[79394:7644275] Apache Cordova native platform version 3.8.0 is starting.
+2015-09-03 11:40:46.448 MultiContainerPOC[79394:7644275] Multi-tasking -> Device: YES, App: YES
+2015-09-03 11:40:46.449 MultiContainerPOC[79394:7644275] Unlimited access to network resources
+2015-09-03 11:40:46.450 MultiContainerPOC[79394:7644275] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-09-03 11:40:46.594 MultiContainerPOC[79394:7644275] Resetting plugins due to page load.
+2015-09-03 11:40:46.963 MultiContainerPOC[79394:7644275] Finished load of: file:///Users/klejnieks/Library/Developer/CoreSimulator/Devices/3D5AB034-2C4E-4ED6-8880-22E16743C3C8/data/Containers/Bundle/Application/FC1A9B74-39DE-4CB5-9312-BFA736DADB91/MultiContainerPOC.app/www/page2.html
+2015-09-03 11:40:59.251 MultiContainerPOC[79394:7644275] CDVWebViewDelegate: Navigation started when state=1
+2015-09-03 11:40:59.251 MultiContainerPOC[79394:7644275] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2015-09-03 11:40:59.251 MultiContainerPOC[79394:7644275] Resetting plugins due to page load.
+2015-09-03 11:41:01.065 MultiContainerPOC[79394:7644275] Finished load of: https://github.com/eddyverbruggen

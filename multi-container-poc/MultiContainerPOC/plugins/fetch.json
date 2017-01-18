@@ -1,0 +1,59 @@
+{
+    "cl.kunder.webview": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/arturokunder/cl.kunder.webview.git",
+            "subdir": "."
+        }
+    },
+    "com.telerik.plugins.wkwebview": {
+        "source": {
+            "type": "registry",
+            "id": "com.telerik.plugins.wkwebview"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-webserver": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-webserver"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "com.telerik.plugins.nativepagetransitions": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Telerik-Verified-Plugins/NativePageTransitions",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "nl.x-services.plugins.touchid": {
+        "source": {
+            "type": "registry",
+            "id": "nl.x-services.plugins.touchid"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.feedhenry.plugins.webview": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/feedhenry/fh-cordova-plugin-webview.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.drivewealth.webcontainer": {
+        "source": {
+            "type": "local",
+            "path": "../WebContainerPlugin/com.drivewealth.webcontainer"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

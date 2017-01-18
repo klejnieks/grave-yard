@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.feedhenry.plugins.webview"
+        version="0.0.1">
+
+        <name>Webview</name>
+
+                <description>
+                        This plugin allows you to open another page inside the app
+                </description>
+
+                <license>MIT</license>
+
+        <engines>
+                <engine name="cordova" version=">=2.8.0" />
+        </engines>
+
+
+        
+
+        <!-- ios -->
+        <platform name="ios">
+                <config-file target="config.xml" parent="/*">
+                        <feature name="Webview">
+                                <param name="ios-package" value="Webview" />
+                        </feature>
+                </config-file>
+
+                <js-module src="www/ios/Webview.js" name="Webview">
+                        <clobbers target="Webview" />
+                </js-module>
+
+                <header-file src="src/ios/Webview.h" />
+                <source-file src="src/ios/Webview.m" />
+
+                <header-file src="src/ios/UIColor+i7HexColor.h" />
+                <source-file src="src/ios/UIColor+i7HexColor.m" />
+
+                <header-file src="src/ios/WebviewController.h" />
+                <source-file src="src/ios/WebviewController.m" />
+
+                <resource-file src="resources/ios/house_icon.png" />
+                <resource-file src="resources/ios/left_arrow.png" />
+                <resource-file src="resources/ios/right_arrow.png" />
+
+                <framework src="UIKit.framework" />
+                <framework src="Foundation.framework" weak="true" />
+        </platform>
+
+        <!-- android -->
+        <platform name="android">
+                <js-module src="www/android/Webview.js" name="Webview">
+                        <clobbers target="navigator.webview" />
+                </js-module>
+
+                <config-file target="config.xml" parent="/*">
+                        <feature name="ViewCtrl">
+                                <param name="android-package" value="com.feedhenry.phonegap.webview.ViewController" />
+                        </feature>
+                </config-file>
+
+                <source-file src="src/android/ViewController.java" target-dir="src/com/feedhenry/phonegap/webview" />
+                <source-file src="src/android/WebViewContainer.java" target-dir="src/com/feedhenry/phonegap/webview" />
+
+                <source-file src="resources/android/close.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/close_off.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/house_icon.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/left_arrow.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/left_arrow_white.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/right_arrow.png" target-dir="res/drawable/" />
+                <source-file src="resources/android/right_arrow_white.png" target-dir="res/drawable/" />
+        </platform>
+
+</plugin>

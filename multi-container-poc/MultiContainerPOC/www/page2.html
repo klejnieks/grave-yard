@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html style="background: #66cccc !important; margin: 0; padding: 0;">
+	
+	<head>
+		
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<title>Hello World</title>
+
+	</head>
+
+	<body style="background: #66cccc !important; margin: 0; padding: 0;">
+	
+		<section id="portfolio-container">
+
+			<div class="portfolio-header-container">
+				<h1 id="portfolio-close-btn">X</h1>
+			</div>
+			<div class="portfolio-header-container">
+				<h1 id="portfolio-pl">$5,612.32</h1>
+				<h3 id="portolfio-pl-trend">+$96.12</h3>
+			</div>
+			
+		</section>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/fastclick.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+	</body>
+	
+	<script>
+		
+		$(function() {
+			FastClick.attach(document.body);
+		});
+		
+		(function(){
+			var _isOpen = false;
+			
+			$("#portfolio-container").click(function(evt) {
+				if(_isOpen === false) {
+					evt.preventDefault();
+					webcontainer.ShowPortfolio();
+					_isOpen = true;
+					return false;
+				}
+			});
+			
+			$("#portfolio-close-btn").click(function(evt) {
+				if(_isOpen === true) {
+					evt.preventDefault();
+					webcontainer.HidePortfolio();
+					_isOpen = false;
+					return false;
+				}
+			});
+			
+		})()
+		
+	</script>
+
+</html>

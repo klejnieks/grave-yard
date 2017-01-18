@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.drivewealth.webcontainer"
+  version="1.0.3">
+  <name>Cordova Second Webview</name>
+  <author href="http://drivewealth.com">DriveWealth</author>
+  <description>
+    This cordova plugin enables you to open a second webview in your app.
+    This webview is totally independent from the main webview, but allows you tu access plugins and other Cordova resources.
+
+    It's possible to modify this plugin to allow multiple webviews.
+  </description>
+  
+  <repo>https://github.com/drivewealth/com.drivewealth.webview.git</repo>
+  <issue>https://github.com/drivewealth/com.drivewealth.webview/issues</issue>
+  <license>Apache 2.0</license>
+  <keywords>cordova, webview</keywords>
+
+  <engines>
+    <engine name="cordova" version=">=3.0.0" />
+  </engines>
+
+  <!-- Web View -->
+  <js-module src="www/webContainerPlugin.js" name="webContainer">
+    <merges target="webcontainer" />
+  </js-module>
+
+
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="WebViewPlugin" >
+        <param name="android-package" value="cl.kunder.webview.WebViewPlugin"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/cl/kunder/webview/WebViewPlugin.java" target-dir="src/cl/kunder/webview" />
+
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="WebContainerPlugin">
+        <param name="ios-package" value="WebContainerPlugin"/>
+      </feature>
+    </config-file>
+
+    <!-- WebView -->
+    <header-file src="src/ios/webview/WebContainerPlugin.h" />
+    <source-file src="src/ios/webview/WebContainerPlugin.m" />
+  </platform>
+
+
+</plugin>
