@@ -1,0 +1,28 @@
+{
+	"name": "drive-wealth-mobile-wlp-builder",
+	"version": "0.1.1",
+	"author": "DriveWealth Technologies",
+	"private": true,
+	"description": "Builds the white label partners mobile applications",
+	"dependencies": {
+		"wlp-web-builder": "git@github.com:DriveWealth/html5-trader"
+	},
+	"devDependencies": {
+		"bower": "^1.3.7",
+		"grunt": "~0.4.5",
+		"grunt-cli": "^0.1.13",
+		"grunt-contrib-clean": "^0.5.0",
+		"grunt-contrib-copy": "latest",
+		"grunt-shell": "latest",
+		"grunt-text-replace": "latest",
+		"grunt-replace": "latest",
+		"grunt-run": "0.3.0",
+		"shelljs": "0.5.1",
+		"async": "~0.9.0",
+		"load-grunt-tasks": "^3.1.0",
+		"load-grunt-config": "0.17.1",
+		"time-grunt": "^1.1.0"
+		
+	},
+	"scripts": {}
+}

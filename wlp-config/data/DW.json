@@ -1,0 +1,33 @@
+{
+	"version": "1.0.0",
+	"companyName": "DriveWealth, LLC",
+	"displayName": "DriveWealth",
+	"colors": {
+		"brand": {
+			"BRAND_primary_color": "FEC109",
+			"BRAND_primary_links": "37BB9A",
+			"BRAND_secondary_color": "e7e7e7",
+			"BRAND_alert_color": "f04124",
+			"BRAND_success_color": "37BB9A",
+			"BRAND_warning_color": "fcf8e3",
+			"BRAND_info_color": "a0d3e8",
+			"BRAND_help_color": "37B0BB",
+			"BRAND_brand_altdark": "272833",
+			"BRAND_body_bg": "EEE",
+			"SPLASH_BG": "000",
+			"ICON_BG": "FFF"
+		}
+	},
+	"paths": {
+		"WLPID_KEY": "DW",
+		"WLP_COMPANY_NAME": "DriveWealth",
+		"WLP_LOGO_PATH_KEY": "logo-dark.svg",
+		"WLP_LOGO_INAPP_PATH_KEY": "logo.svg",
+		"WLP_LOGO_FAVICON_KEY": "icon.svg"
+	},
+	"builds": {
+		"html5": true,
+		"ios": true,
+		"android": true
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"version": "1.0.0",
+	"companyName": "Global Index Group",
+	"displayName": "Global Index Group",
+	"colors": {
+		"brand": {
+			"BRAND_primary_color": "346889",
+			"BRAND_primary_links": "1E5478",
+			"BRAND_secondary_color": "e7e7e7",
+			"BRAND_alert_color": "f04124",
+			"BRAND_success_color": "37BB9A",
+			"BRAND_warning_color": "fcf8e3",
+			"BRAND_info_color": "a0d3e8",
+			"BRAND_help_color": "37B0BB",
+			"BRAND_brand_altdark": "272833",
+			"BRAND_body_bg": "EEE"
+		}
+	},
+	"paths": {
+		"WLPID_KEY": "GIG",
+		"WLP_COMPANY_NAME": "Global Index Group",
+		"WLP_LOGO_PATH_KEY": "gig-dark.png",
+		"WLP_LOGO_INAPP_PATH_KEY": "gig-light.png",
+		"WLP_LOGO_FAVICON_KEY": "avatar-icon.png"
+	},
+	"builds": {
+		"html5": true,
+		"ios": true,
+		"android": true
+	}
+}

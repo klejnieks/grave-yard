@@ -1,0 +1,10 @@
+{
+	"name": "drive-wealth-wlp-config",
+	"version": "0.1.1",
+	"author": "DriveWealth Technologies",
+	"private": true,
+	"description": "White Label Partner Configuration Data",
+	"dependencies": {},
+	"devDependencies": {},
+	"scripts": {}
+}

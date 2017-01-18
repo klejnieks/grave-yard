@@ -1,0 +1,31 @@
+{
+	"version": "1.0.0",
+	"companyName": "Taj Mahal Securities, LLC",
+	"displayName": "Taj Mahal Securities",
+	"colors": {
+		"brand": {
+			"BRAND_primary_color": "865BAC",
+			"BRAND_primary_links": "865BAC",
+			"BRAND_secondary_color": "e7e7e7",
+			"BRAND_alert_color": "f04124",
+			"BRAND_success_color": "37BB9A",
+			"BRAND_warning_color": "fcf8e3",
+			"BRAND_info_color": "a0d3e8",
+			"BRAND_help_color": "37B0BB",
+			"BRAND_brand_altdark": "272833",
+			"BRAND_body_bg": "EEE"
+		}
+	},
+	"paths": {
+		"WLPID_KEY": "TAJS",
+		"WLP_COMPANY_NAME": "Taj Mahal Securities",
+		"WLP_LOGO_PATH_KEY": "tajmahal-logo-dark.svg",
+		"WLP_LOGO_INAPP_PATH_KEY": "tajmahal-logo-light.svg",
+		"WLP_LOGO_FAVICON_KEY": "icon.png"
+	},
+	"builds": {
+		"html5": true,
+		"ios": true,
+		"android": true
+	}
+}
