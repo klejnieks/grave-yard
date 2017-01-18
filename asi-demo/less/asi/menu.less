@@ -1,0 +1,204 @@
+.asi-menu ul {
+	position: absolute;
+	visibility: hidden
+}
+
+.asi-menu.asi-menu-open {
+	visibility: visible;
+	z-index: 2;
+	width: 100%
+}
+
+.asi-menu ul {
+	left: -10000px;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	top: -10000px;
+	z-index: 1
+}
+
+.asi-menu > ul {
+	position: relative
+}
+
+.asi-menu-open > ul {
+	left: 0;
+	top: 0;
+	visibility: visible
+}
+
+.asi-menu-open > ul:focus {
+	outline: 0
+}
+
+.asi-menu li {
+	position: relative
+}
+
+.asi-menu a, .asi-menu .asi-menu-heading {
+	display: block;
+	color: inherit;
+	line-height: 1.5em;
+	padding: 5px 20px;
+	text-decoration: none;
+	white-space: nowrap
+}
+
+.asi-menu.asi-menu-horizontal > .asi-menu-heading {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	margin: 0;
+	vertical-align: middle
+}
+
+.asi-menu.asi-menu-horizontal > ul {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle
+}
+
+.asi-menu li a {
+	padding: 5px 20px
+}
+
+.asi-menu-can-have-children > .asi-menu-label:after {
+	content: '\25B8';
+	float: right;
+	margin-right: -20px;
+	margin-top: -1px
+}
+
+.asi-menu-can-have-children > .asi-menu-label {
+	padding-right: 30px
+}
+
+.asi-menu-separator {
+	background-color: #dfdfdf;
+	display: block;
+	height: 1px;
+	font-size: 0;
+	margin: 7px 2px;
+	overflow: hidden
+}
+
+.asi-menu-hidden {
+	display: none
+}
+
+.asi-menu-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%
+}
+
+.asi-menu-horizontal li {
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+	vertical-align: middle
+}
+
+.asi-menu-horizontal li li {
+	display: block
+}
+
+.asi-menu-horizontal > .asi-menu-children > .asi-menu-can-have-children > .asi-menu-label:after {
+	content: "\25BE"
+}
+
+.asi-menu-horizontal > .asi-menu-children > .asi-menu-can-have-children > .asi-menu-label {
+	padding-right: 30px
+}
+
+.asi-menu-horizontal li.asi-menu-separator {
+	height: 50%;
+	width: 1px;
+	margin: 0 7px
+}
+
+.asi-menu-horizontal li li.asi-menu-separator {
+	height: 1px;
+	width: auto;
+	margin: 7px 2px
+}
+
+.asi-menu.asi-menu-open, .asi-menu.asi-menu-horizontal li .asi-menu-children {
+	background: #fff;
+	border: 1px solid #b7b7b7
+}
+
+.asi-menu.asi-menu-horizontal, .asi-menu.asi-menu-horizontal .asi-menu-heading {
+	border: 0
+}
+
+.asi-menu a {
+	border: 1px solid transparent;
+	border-left: 0;
+	border-right: 0
+}
+
+.asi-menu a, .asi-menu .asi-menu-can-have-children > li:after {
+	color: #777
+}
+
+.asi-menu .asi-menu-can-have-children > li:hover:after {
+	color: #fff
+}
+
+.asi-menu .asi-menu-open {
+	background: #dedede
+}
+
+.asi-menu li a:hover, .asi-menu li a:focus {
+	background: #eee
+}
+
+.asi-menu li.asi-menu-disabled a:hover, .asi-menu li.asi-menu-disabled a:focus {
+	background: #fff;
+	color: #bfbfbf
+}
+
+.asi-menu .asi-menu-disabled > a {
+	background-image: none;
+	border-color: transparent;
+	cursor: default
+}
+
+.asi-menu .asi-menu-disabled > a, .asi-menu .asi-menu-can-have-children.asi-menu-disabled > a:after {
+	color: #bfbfbf
+}
+
+.asi-menu .asi-menu-heading {
+	color: #565d64;
+	text-transform: uppercase;
+	font-size: 90%;
+	margin-top: .5em;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #dfdfdf
+}
+
+.asi-menu .asi-menu-selected a {
+	color: #000
+}
+
+.asi-menu.asi-menu-open.asi-menu-fixed {
+	border: 0;
+	border-bottom: 1px solid #b7b7b7
+}
+
+
+@media (max-width: 480px) {
+	.asi-menu-horizontal {
+		width: 100%
+	}
+
+	.asi-menu-children li {
+		display: block;
+		border-bottom: 1px solid #000
+	}
+}

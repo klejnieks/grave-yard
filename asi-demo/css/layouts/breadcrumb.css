@@ -1,0 +1,101 @@
+.breadcrumb-container {
+	float: left;
+	display: block;
+	font-size: 90%;
+}
+
+.breadcrumb-container ul {
+	list-style: none;
+}
+
+.crumbs {
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+}
+
+.crumbs.boxed {
+	border: 1px solid #d9d9d9;
+}
+
+.crumbs li {
+	display: inline-block;
+	height: 40px;
+}
+
+.crumbs li span, 
+.crumbs li a, 
+.crumbs li a:link, 
+.crumbs li a:visited {
+	display: block;
+	position: relative;
+	float: left;
+	text-decoration: underline;
+	color: #666;
+	padding: 0 5px;
+	height: 40px;
+}
+
+.crumbs li span {
+	text-decoration: none;
+} 
+
+.crumbs:not(.boxed) li a:after {
+	content: " / ";
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 2px 0 10px;
+}
+
+.crumbs.boxed li a, 
+.crumbs.boxed li a:link, 
+.crumbs.boxed li a:visited {
+	border-left: 1px solid #d9d9d9;
+	text-decoration: none;
+	padding: 7px 12px 3px;
+	height: 30px;
+}
+
+.crumbs li a {
+	background: #FEFEFE;
+}
+
+.crumbs.boxed li:first-child a {
+	border: 0;
+}
+
+.crumbs.boxed li:last-child a {
+}
+
+.crumbs li a:hover {
+	background: #fffde5;
+}
+
+.crumbs li a:active {
+	background: #FFFFFF;
+	color: #333;
+}
+
+@media only screen and (max-width: 620px) {
+	.crumbs.boxed li a, 
+	.crumbs.boxed li a:link, 
+	.crumbs.boxed li a:visited {
+		padding: 5px;
+		font-size: 0.8em;
+	}
+
+	.crumbs li span, 
+	.crumbs li a, 
+	.crumbs li a:link, 
+	.crumbs li a:visited {
+		padding: 4px;
+		font-size: 0.8em;
+	}
+	
+	.crumbs:not(.boxed) li a:after {
+		padding-left: 5px;
+	}
+	
+}		
+

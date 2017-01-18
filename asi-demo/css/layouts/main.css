@@ -1,0 +1,149 @@
+/*****************************
+ * MAIN **********************
+ *****************************/
+.asi-sandbox-menu {
+	
+}
+
+.asi-sandbox-menu hr {
+	border: none;
+	background: #ccc;
+	display: block;
+	height: 1px;
+	width: 80%;
+}
+
+.asi-sandbox-menu, .asi-sandbox-menu ul {
+	border: none;
+	background: transparent;
+	position: relative;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.asi-sandbox-menu>ul {
+	visibility: visible;
+	display: block;
+}
+
+.asi-sandbox-menu li {
+	position: relative;
+	list-style: none;
+}
+
+.asi-sandbox-menu a {
+	display: block;
+	line-height: 1.7em;
+	padding: 5px 20px;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.asi-sandbox-menu>ul>li>a:after {
+	content: " ";
+	display: block;
+	border-bottom: 1px solid #CCC;
+	height: 1px;
+}
+
+.asi-sandbox-menu a:hover, .asi-sandbox-menu a:focus {
+	background: #333;
+	color: #FFF;
+}
+
+.asi-sandbox-menu>ul>li ul {
+	display: none;
+}
+
+.asi-sandbox-menu>ul>li:target>ul {
+	display: block;
+}
+
+.fpo {
+	display: block;
+	min-height: 200px;
+	margin: 0.25em;
+	padding: 25px;
+	background-color: blue;
+	text-align: center;
+	vertical-align: baseline;
+	text-transform: uppercase;
+	color: white;
+}
+
+.fpo.red {
+	background-color: red;
+}
+
+.fpo.purple {
+	background-color: purple;
+}
+
+.fpo.pink {
+	background-color: pink;
+}
+
+pre.code {
+	overflow: auto;
+	width: auto;
+	margin: 10px;
+	padding: 5px;
+	background-color: #eee;
+	max-height: 400px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+pre.code code {
+	margin: 0;
+	padding: 0;
+}
+
+.font-icon-examples-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.font-icon-examples-list li {
+	list-style: none;
+	margin: 0;
+	padding: 0.8em 0;
+}
+
+.font-icon-examples-list li i {
+	padding-right: 0.2em;
+}
+
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	font-size: 30px;
+}
+
+.rating span.star {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+}
+
+.rating span.star:hover {
+	cursor: pointer;
+}
+
+.rating span.star:before {
+	content: "\f006";
+	padding-right: 5px;
+	color: #777777;
+}
+
+.rating span.star:hover:before, .rating span.star:hover ~ span.star:before {
+	content: "\f005";
+	color: #e3cf7a;
+}

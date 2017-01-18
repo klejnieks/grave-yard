@@ -1,0 +1,56 @@
+/*****************************
+ * ACCORDION *****************
+ *****************************/
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+#accordion {
+	margin:0 auto;
+	width:500px;
+	margin:0;
+	padding:0;
+	}
+ 
+ul#accordion li {
+	list-style:none;
+	border:1px #efefef solid;
+	background-color:#34495e;
+	}
+	
+ul#accordion li h2 {
+	margin:0;
+	padding:10px;
+
+	font-family: 'Bree Serif', 'serif';
+	font-size:30px;
+	line-height:30px;
+	color:#FFFFFF;
+	
+	background-color:#3498db;
+	border-bottom: solid 8px #2980b9; 
+  
+	}	
+	
+ul#accordion li a {
+	text-decoration:none;
+	}	
+	
+ul li .content {
+    	height: 0;
+	overflow:hidden;
+	}	
+	
+ul#accordion li .content:target {
+	height:auto;
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	font-size:19px;
+	line-height:26px;
+	
+	background-color:#2ecc71;
+	}
+	
+	
+ul#accordion li .content p {
+  margin:0px;
+	padding:10px;
+	color:#ecf0f1;
+	}

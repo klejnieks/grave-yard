@@ -1,0 +1,40 @@
+/*****************************
+ * PROGRESS BAR **************
+ *****************************/
+.meter {
+	height: 20px; /* Can be anything */
+	position: relative;
+	background: #343434;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 2px;
+}
+
+.meter.orange > span {
+	background-color: #f1a165;
+}
+
+.meter.red > span {
+	background-color: #FF3300;
+}
+
+.meter > span {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	-webkit-border-top-right-radius: 20px;
+	-webkit-border-bottom-right-radius: 20px;
+	-moz-border-radius-topright: 20px;
+	-moz-border-radius-bottomright: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: rgb(43,194,83);
+}

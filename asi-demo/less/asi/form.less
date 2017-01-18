@@ -1,0 +1,325 @@
+
+
+
+
+
+
+.textbox-1 {
+	background: #FFF url(http://html-generator.weebly.com/files/theme/input-text-9.png) no-repeat 4px 4px;
+	border: 1px solid #999;
+	outline: 0;
+	padding-left: 25px;
+}
+
+.textbox-2 {
+	background: #FFF url(http://html-generator.weebly.com/files/theme/input-text-9.png) no-repeat 4px 4px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #848484;
+	outline: 0;
+	padding-left: 10px;
+}
+
+
+
+.asi-form input[type=text], 
+.asi-form input[type=password], 
+.asi-form input[type=email], 
+.asi-form input[type=url], 
+.asi-form input[type=date], 
+.asi-form input[type=month], 
+.asi-form input[type=time], 
+.asi-form input[type=datetime], 
+.asi-form input[type=datetime-local], 
+.asi-form input[type=week], 
+.asi-form input[type=number], 
+.asi-form input[type=search], 
+.asi-form input[type=tel], 
+.asi-form input[type=color], 
+.asi-form select, 
+.asi-form textarea {
+	.display(inline-block);
+	padding: .25em .5em;
+	margin: .25em 0;
+	outline: none;
+	border: @default-form-element-border;
+	border-radius: 0;
+	.box-size(border-box);
+}
+
+.asi-form input:required, 
+.asi-form textarea:required {
+	border-color: red;
+}
+
+.asi-form input:required + label {
+	color: red;
+}
+
+.asi-form input:required:focus {
+	border: 1px solid red;
+	outline: none;
+}
+
+.asi-form input:required:hover {
+	opacity: 1;
+}
+
+.asi-form input:not([type]) {
+	padding: .5em .6em;
+	.display(inline-block);
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 3px #ddd;
+	border-radius: 4px;
+	.box-size(border-box);
+}
+
+.asi-form input[type=color] {
+	padding: .2em .5em
+}
+
+.asi-form input[type=text]:focus, 
+.asi-form input[type=password]:focus, 
+.asi-form input[type=email]:focus, 
+.asi-form input[type=url]:focus, 
+.asi-form input[type=date]:focus, 
+.asi-form input[type=month]:focus, 
+.asi-form input[type=time]:focus, 
+.asi-form input[type=datetime]:focus, 
+.asi-form input[type=datetime-local]:focus, 
+.asi-form input[type=week]:focus, 
+.asi-form input[type=number]:focus, 
+.asi-form input[type=search]:focus, 
+.asi-form input[type=tel]:focus, 
+.asi-form input[type=color]:focus, 
+.asi-form select:focus, 
+.asi-form textarea:focus {
+	outline: 0;
+	outline: thin dotted \9;
+	border-color: @default-form-element-focus-border-color;
+}
+
+.asi-form input:not([type]):focus {
+	outline: 0;
+	outline: thin dotted \9;
+	border-color: #129FEA
+}
+
+.asi-form input[type=file]:focus, .asi-form input[type=radio]:focus, .asi-form input[type=checkbox]:focus {
+	outline: thin dotted #333;
+	outline: 1px auto #129FEA
+}
+
+.asi-form .asi-checkbox, .asi-form .asi-radio {
+	margin: .5em 0;
+	display: block
+}
+
+.asi-form input[type=text][disabled], .asi-form input[type=password][disabled], .asi-form input[type=email][disabled], .asi-form input[type=url][disabled], .asi-form input[type=date][disabled], .asi-form input[type=month][disabled], .asi-form input[type=time][disabled], .asi-form input[type=datetime][disabled], .asi-form input[type=datetime-local][disabled], .asi-form input[type=week][disabled], .asi-form input[type=number][disabled], .asi-form input[type=search][disabled], .asi-form input[type=tel][disabled], .asi-form input[type=color][disabled], .asi-form select[disabled], .asi-form textarea[disabled] {
+	cursor: not-allowed;
+	background-color: #eaeded;
+	color: #cad2d3
+}
+
+.asi-form input:not([type])[disabled] {
+	cursor: not-allowed;
+	background-color: #eaeded;
+	color: #cad2d3
+}
+
+.asi-form input[readonly], .asi-form select[readonly], .asi-form textarea[readonly] {
+	background: #eee;
+	color: #777;
+	border-color: #ccc
+}
+
+.asi-form input:focus:invalid, .asi-form textarea:focus:invalid, .asi-form select:focus:invalid {
+	color: #b94a48;
+	border-color: #ee5f5b
+}
+
+.asi-form input:focus:invalid:focus, .asi-form textarea:focus:invalid:focus, .asi-form select:focus:invalid:focus {
+	border-color: #e9322d
+}
+
+.asi-form input[type=file]:focus:invalid:focus, .asi-form input[type=radio]:focus:invalid:focus, .asi-form input[type=checkbox]:focus:invalid:focus {
+	outline-color: #e9322d
+}
+
+.asi-form select {
+	border: 1px solid #ccc;
+	background-color: #fff
+}
+
+.asi-form select[multiple] {
+	height: auto
+}
+
+.asi-form label {
+	margin: .5em 0 .2em
+	//min-width: 120px;
+	//float: left;
+	//margin-top: 7px;
+}
+
+.asi-form fieldset {
+	margin: 0;
+	padding: .35em 0 .75em;
+	border: 0
+}
+
+.asi-form legend {
+	display: block;
+	width: 100%;
+	padding: .3em 0;
+	margin-bottom: .3em;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.asi-form-stacked input[type=text], .asi-form-stacked input[type=password], .asi-form-stacked input[type=email], .asi-form-stacked input[type=url], .asi-form-stacked input[type=date], .asi-form-stacked input[type=month], .asi-form-stacked input[type=time], .asi-form-stacked input[type=datetime], .asi-form-stacked input[type=datetime-local], .asi-form-stacked input[type=week], .asi-form-stacked input[type=number], .asi-form-stacked input[type=search], .asi-form-stacked input[type=tel], .asi-form-stacked input[type=color], .asi-form-stacked select, .asi-form-stacked label, .asi-form-stacked textarea {
+	display: block;
+	margin: .25em 0
+}
+
+.asi-form-stacked input:not([type]) {
+	display: block;
+	margin: .25em 0
+}
+
+.asi-form-aligned input, .asi-form-aligned textarea, .asi-form-aligned select, .asi-form-aligned .asi-help-inline, .asi-form-message-inline {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: middle
+}
+
+.asi-form-aligned textarea {
+	vertical-align: top
+}
+
+.asi-form-aligned .asi-control-group {
+	margin-bottom: .5em
+}
+
+.asi-form-aligned .asi-control-group label {
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+	width: 10em;
+	margin: 0 1em 0 0
+}
+
+.asi-form-aligned .asi-controls {
+	margin: 1.5em 0 0 10em
+}
+
+.asi-form input.asi-input-rounded, .asi-form .asi-input-rounded {
+	border-radius: 2em;
+	padding: .5em 1em
+}
+
+.asi-form .asi-group fieldset {
+	margin-bottom: 10px
+}
+
+.asi-form .asi-group input {
+	display: block;
+	padding: 10px;
+	margin: 0;
+	border-radius: 0;
+	position: relative;
+	top: -1px
+}
+
+.asi-form .asi-group input:focus {
+	z-index: 2
+}
+
+.asi-form .asi-group input:first-child {
+	top: 1px;
+	border-radius: 4px 4px 0 0
+}
+
+.asi-form .asi-group input:last-child {
+	top: -2px;
+	border-radius: 0 0 4px 4px
+}
+
+.asi-form .asi-group button {
+	margin: .35em 0
+}
+
+.asi-form .asi-input-1 {
+	width: 100%
+}
+
+.asi-form .asi-input-2-3 {
+	width: 66%
+}
+
+.asi-form .asi-input-1-2 {
+	width: 50%
+}
+
+.asi-form .asi-input-1-3 {
+	width: 33%
+}
+
+.asi-form .asi-input-1-4 {
+	width: 25%
+}
+
+.asi-form .asi-help-inline, .asi-form-message-inline {
+	.display(inline-block);
+	padding-left: .3em;
+	color: #666;
+	vertical-align: middle;
+	font-size: .875em
+}
+
+.asi-form-message {
+	display: block;
+	color: #666;
+	font-size: .875em
+}
+
+.asi-form-row-container {
+	border: 1px solid lightblue;
+	padding: 8px;
+	margin-top: 8px;
+}
+
+
+@media only screen and (max-width: 480px) {
+	.asi-form button[type=submit] {
+		margin: .7em 0 0
+	}
+
+	.asi-form input:not([type]), .asi-form input[type=text], .asi-form input[type=password], .asi-form input[type=email], .asi-form input[type=url], .asi-form input[type=date], .asi-form input[type=month], .asi-form input[type=time], .asi-form input[type=datetime], .asi-form input[type=datetime-local], .asi-form input[type=week], .asi-form input[type=number], .asi-form input[type=search], .asi-form input[type=tel], .asi-form input[type=color], .asi-form label {
+		margin-bottom: .3em;
+		display: block
+	}
+
+	.asi-group input:not([type]), .asi-group input[type=text], .asi-group input[type=password], .asi-group input[type=email], .asi-group input[type=url], .asi-group input[type=date], .asi-group input[type=month], .asi-group input[type=time], .asi-group input[type=datetime], .asi-group input[type=datetime-local], .asi-group input[type=week], .asi-group input[type=number], .asi-group input[type=search], .asi-group input[type=tel], .asi-group input[type=color] {
+		margin-bottom: 0
+	}
+
+	.asi-form-aligned .asi-control-group label {
+		margin-bottom: .3em;
+		text-align: left;
+		display: block;
+		width: 100%
+	}
+
+	.asi-form-aligned .asi-controls {
+		margin: 1.5em 0 0
+	}
+
+	.asi-form .asi-help-inline, .asi-form-message-inline, .asi-form-message {
+		display: block;
+		font-size: .75em;
+		padding: .2em 0 .8em
+	}
+}

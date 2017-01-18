@@ -1,0 +1,147 @@
+html, body {
+	font-family: times;
+	-webkit-font-smoothing: antialiased;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #777;
+}
+
+#application-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+[hidden] {
+	display: none !important
+}
+
+.asi-img {
+	max-width: 100%;
+	height: auto;
+	display: block
+}
+
+//BUTTONS
+.asi-button {
+	display: block;
+	background-color: @btn-default-bg;
+	border: none;
+	padding: 0.5em 1em;
+	margin: 0;
+	margin-bottom: 0.5em;
+	line-height: normal;
+	zoom: 1;
+	color: @btn-default-color;
+	.font(inherit, 100%, @btn-font-weight);
+	text-decoration: none;
+	vertical-align: baseline;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	-webkit-user-drag: none;
+	.user-select(none);
+	
+	&:hover,
+	&.hover {
+		.background-filter(#000, 0.6);
+	}
+	
+	&:focus {
+		outline: 0;
+		//border-color: @btn-default-bg-focus;
+		.background-filter(#FFF);
+	}
+	
+	&:active,
+	&.active {
+		.background-filter(#404040);
+		//border-color: @btn-default-bg-active;
+	}
+	
+	&::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+	}
+	
+	&[disabled] {
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+		filter: alpha(opacity=4);
+		-khtml-opacity: .4;
+		-moz-opacity: .4;
+		opacity: .4;
+		cursor: not-allowed;
+		box-shadow: none
+	}
+	
+	&.primary {
+		color: @btn-primary-color;
+		background-color: @btn-primary-bg;
+	}
+	
+	&.secondary {
+		color: @btn-primary-color;
+		background-color: @btn-secondary-bg;
+	}
+	
+	&.tertiary {
+		color: @btn-tertiary-color;
+		background-color: @btn-tertiary-bg;
+	}
+	
+	&.success {
+		color: @btn-success-color;
+		background: @btn-success-bg; 
+	}
+	
+	&.error {
+		color: @btn-error-color;
+		background: @btn-error-bg; 
+	}
+	
+	&.warning {
+		color: @btn-warning-color;
+		background: @btn-warning-bg;
+	}
+
+	&.icon-button {
+		border: none;
+		background: none;
+		color: @btn-primary-bg;
+		
+		&:hover {
+			color: @btn-secondary-bg;
+			background: none;
+		}
+		
+		&:active {
+			color: @btn-tertiary-bg;
+			background: none;
+		}
+	}
+	
+}
+
+.asi-img-responsive {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (min-width: 35.5em) {
+	.asi-button {
+		.display(inline-block);
+		margin-bottom: 0;	
+	}
+}	
+
+
+
+
+

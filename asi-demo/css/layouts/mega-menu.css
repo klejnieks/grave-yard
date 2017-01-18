@@ -1,0 +1,167 @@
+/*****************************
+ * MEGA MENU *****************
+ *****************************/
+.mega-menu-container {
+	position: relative;
+	height: 100px;
+}
+
+
+.mega-menu-container > nav {
+	background: #666;
+	position: absolute;
+	height: 3em;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+
+
+/* Reset */
+.mega-menu-container > nav > ul,
+.mega-menu-container > nav > ul a,
+.mega-menu-container > nav > ul ul,
+.mega-menu-container > nav > ul li,
+.mega-menu-container > nav > ul div,
+.mega-menu-container > nav > ul form,
+.mega-menu-container > nav > ul input {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+.mega-menu-container > nav > ul a { 
+	text-decoration: none; 
+}
+
+.mega-menu-container > nav > ul li { 
+	list-style: none; 
+}
+
+/* Menu Container */
+.mega-menu-container > nav > ul {
+	display: inline-block;
+	position: relative;
+	cursor: default;
+}
+
+/* Menu List */
+.mega-menu-container > nav > ul > li {
+	display: block;
+	float: left;
+}
+
+/* Menu Links */
+.mega-menu-container > nav > ul > li > a {
+	position: relative;
+	display: block;
+	height: 3em;
+	line-height: 3em;
+	padding: 0 20px;
+	color: #FFF;
+	background: #666;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.mega-menu-container > nav > ul > li:hover > a { 
+	background: #333; 
+}
+
+/* Menu Dropdown */
+.mega-menu-container > nav > ul > li > div {
+	position: absolute;
+	display: block;
+	width: 100%;
+	top: 3em;
+	left: 0;
+	opacity: 0;
+	z-index: 110;
+	visibility: hidden;
+	overflow: hidden;
+	background: #333;
+	-webkit-transition: all .3s ease .15s;
+	-moz-transition: all .3s ease .15s;
+	-o-transition: all .3s ease .15s;
+	-ms-transition: all .3s ease .15s;
+	transition: all .3s ease .15s;
+}
+
+.mega-menu-container > nav > ul > li:hover > div {
+	opacity: 1;
+	visibility: visible;
+	overflow: visible;
+}
+
+/* Menu Content Styles */
+.mega-menu-container > nav > ul .nav-column {
+	float: left;
+	width: 20%;
+	padding: 2.5%;
+}
+
+.mega-menu-container > nav > ul .nav-column h3 {
+	margin: 20px 0 10px 0;
+	line-height: 1.1em;
+	color: #DADADA;
+	text-transform: uppercase;
+}
+
+.mega-menu-container > nav > ul .nav-column h3.orange { 
+	color: #ff722b; 
+}
+
+.mega-menu-container > nav > ul .nav-column li a {
+	display: block;
+	line-height: 2em;
+	font-size: 0.9em;
+	color: #888888;
+}
+
+.mega-menu-container > nav > ul .nav-column li a:hover { 
+	color: pink; 
+}
+
+
+@media only screen and (max-width: 680px) {
+	.mega-menu-container > nav > ul > li > a {
+		padding: 0 10px;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.mega-menu-container > nav > ul > li > a {
+		padding: 5px 10px;
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.mega-menu-container > nav {
+		background: transparent;
+	}
+	
+	.mega-menu-container > nav:before {
+		content: "=";
+		display: block;
+		background: #333;
+		color: #FFF;
+		padding: 10px 15px;
+		font-weight: bold;
+		position: absolute;
+		right: 0;
+	}
+	
+	.mega-menu-container > nav > ul > li {
+		display: none;
+	}
+	
+	.mega-menu-container > nav > ul > li > a {
+		background: orange;
+	}
+}

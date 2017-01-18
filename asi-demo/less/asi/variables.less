@@ -1,0 +1,169 @@
+// *************************************
+//
+//ASI LESS VARIABLES
+//
+// *************************************
+
+/////////////////////////////////////////////
+// COLOR PALLETE
+////////////////////////////////////////////
+@gray:                   #006699;
+@gray-darker:            lighten(@gray, 13.5%); // #222
+@gray-dark:              #767676;
+@gray-light:             #e8e8e8;
+@gray-lighter:           lighten(@gray, 50%); // #eee
+
+@brand-primary: #5075a6;
+@brand-success: #5cb85c;
+@brand-info: #5bc0de;
+@brand-warning: #f0ad4e;
+@brand-danger: #d9534f;
+
+@primary-color: #6e797c;
+@secondary-color: #4e8abe;
+@tertiary-color: #6d6e71;
+@quaternary-color: #677718;
+@quinary-color: #d43528;
+@senary-color: #d43528;
+@septenary-color: #d43528;
+@octonary-color: #d43528;
+@nonary-color: #d43528;
+@denary-color: #d43528;
+
+@btn-font-weight: normal;
+@btn-border-radius: 0;
+
+//Default Button Style
+@btn-default-color: #fff;
+@btn-default-bg: #588ab2;
+
+
+//Primary Button Style
+@btn-primary-color: #fff;
+@btn-primary-bg: #6e797c;
+
+//Secondary Button Style
+@btn-secondary-color: #fff;
+@btn-secondary-bg: #706259;
+
+//Tertiary Button Style
+@btn-tertiary-color: #fff;
+@btn-tertiary-bg: #899237;
+
+@btn-success-color: #fff;
+@btn-success-bg: #33c82b;
+
+@btn-error-color: #fff;
+@btn-error-bg: #ca3c3c;
+
+@btn-warning-color: #fff;
+@btn-warning-bg: #df7514;
+
+@default-form-element-border: 1px solid #DDDDDD;
+@default-form-element-focus-border-color: #129FEA;
+
+//** Background color for `<body>`.
+@body-bg: #FEFEFE;
+
+//** Global text color on `<body>`.
+@text-color: @gray-dark;
+
+//path to images 
+//usage: "@{images}"
+@images: "../img";
+
+//** Global textual link color.
+@link-color: @brand-primary;
+@link-hover-color: darken(@link-color, 15%);
+
+//** Typography and font.
+@font-family-sans-serif: Times, sans-serif;
+@font-family-serif: Times, sans-serif;
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+
+@font-size-base: 0.8125em; //13px
+@font-size-large: 1.125em; //18px
+@font-size-small: 0.75em;//12px
+
+@font-size-h1: 2em; //32px
+@font-size-h2: 1.75em; //28px
+@font-size-h3: 1.375em; //24px
+@font-size-h4: 1.125em; //18px
+@font-size-h5: 0.875em; //14px
+@font-size-h6: 0.75em; //12px
+
+@headings-font-family: inherit;
+@headings-font-weight: 400;
+@headings-line-height: 1.1;
+@headings-color: inherit;
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color: #fff;
+
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg: @brand-primary;
+
+//Button stuff
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:580px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min: @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:@screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:768px;
+@screen-sm-min: @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet: @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:1025px;
+@screen-md-min: @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop: @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:1200px;
+@screen-lg-min: @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop: @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max: (@screen-xs);
+@screen-sm-max: (@screen-md);
+@screen-md-max: (@screen-lg);
+
+
+@screen-height-xs: 300px;
+@screen-height-sm: 500px;
+@screen-height-md: 680px;
+@screen-height-lg: 760px;
+
+
+
+
+
+
+
+
+
+
+
+
+

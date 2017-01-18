@@ -1,0 +1,91 @@
+// *************************************
+//
+//ASI LESS VARIABLES
+//
+// *************************************
+
+//border
+.border-radius(@radius) {
+  -webkit-border-radius: @radius;
+     -moz-border-radius: @radius;
+          border-radius: @radius;
+}
+
+.border(@width: 1px; @style: solid; @color: pink; @radius:0) {
+	border: @width @style @color;
+	.border-radius(@radius);
+}
+
+.background-filter(@color: #000; @opacity: 0.5; @start: 0) {
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@color, endColorstr=@color, GradientType=0);
+    background-image: -webkit-linear-gradient(transparent, rgba(red(@color), green(@color), blue(@color), @opacity) @start, rgba(red(@color), green(@color), blue(@color), @opacity) );
+    background-image: -moz-linear-gradient(top, rgba(red(@color), green(@color), blue(@color), @opacity) @start, rgba(red(@color), green(@color), blue(@color), @opacity) );
+    background-image: -o-linear-gradient(transparent, rgba(red(@color), green(@color), blue(@color), @opacity) @start, rgba(red(@color), green(@color), blue(@color), @opacity) );
+    background-image: linear-gradient(transparent, rgba(red(@color), green(@color), blue(@color), @opacity) @start, rgba(red(@color), green(@color), blue(@color), @opacity) );	
+}
+
+//display
+.display(@type) when (@type = inline-block) {
+	display: inline-block;
+	*display: inline; /*IE 6/7*/
+	*overflow: visible; /*IE 6/7 - Because of IE's overly large left/right padding on buttons */
+}
+
+.display(@type) {
+	display: @type;
+}
+
+.box-size(@type) {
+	-webkit-box-sizing: @type;
+	-moz-box-sizing: @type;
+	box-sizing: @type;
+}
+
+.letter-spacing(@spacing) {
+	letter-spacing: @spacing;
+	*letter-spacing: normal;
+}
+
+.grid-width(@width) when (@width = 100%){
+	width: @width;
+}
+
+.grid-width(@width){
+	width: @width;
+	*width: @width - 0.031;
+}
+
+//font
+._font(@family; @size; @weight) {
+	font-family: @family;
+	font-weight: @weight;
+	font-size: @size;
+}
+
+.font(@family, @size, @weight) when (@size = 100%) {
+	._font(@family, @size, @weight);
+	*font-size: 90%; /*IE 6/7 - To reduce IE's oversized button text*/
+}
+
+.font(@family, @size, @weight) {
+	._font(@family, @size, @weight);
+}
+
+
+//user-select
+.user-select(@value: none) {
+	-webkit-user-select: @value;
+	-moz-user-select: @value;
+	-ms-user-select: @value;
+	user-select: @value;
+}
+
+
+//opacity
+.opacity(@value) {
+	@filter-opacity: @value*10;
+	filter: alpha(opacity=@filter-opacity);
+	-khtml-opacity: @value;
+	-moz-opacity: @value;
+	opacity: @value;
+}

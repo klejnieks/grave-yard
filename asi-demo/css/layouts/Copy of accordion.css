@@ -1,0 +1,70 @@
+* {
+	font-family: Arial;
+}
+
+body {
+	background: #EEE;
+	margin: 20px 0;
+}
+
+#accordion {
+	margin: 0 auto;
+	width: 500px;
+	padding: 0;
+}
+
+ul#accordion li {
+	list-style: none;
+	border: 1px 1px 1px 1px #efefef solid;
+	background-color: #34495e;
+}
+
+ul li h2 {
+	margin: 0;
+	padding: 10px;
+	color: #FFFFFF;
+	background-color: #3498db;
+	border-bottom: solid 1px #2980b9;
+}
+
+ul li h2 .badge {
+	background: #006699;
+	border: 1px solid #003d5d;
+	color: #6cb2d6;
+	padding: 4px;
+	float: right;
+	margin-top: -4px;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	font-size: 0.7em;
+	text-align: center;
+	border-radius: 22px;
+	-moz-box-shadow:    inset 0 0 4px #024162;
+	-webkit-box-shadow: inset 0 0 4px #024162;
+	box-shadow:         inset 0 0 4px #024162;
+}
+
+ul li a {
+	text-decoration: none;
+}
+
+ul li .content {
+	height: 0;
+	overflow: hidden;
+}
+
+ul li .content:target {
+	height: auto;
+	background-color: #FFF;
+}
+
+ul li .content p {
+	margin: 0px;
+	padding: 10px;
+	color: #333;
+}
+ul li .content .accordion-content-footer {
+	padding: 10px;
+	text-align: right;
+}

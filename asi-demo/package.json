@@ -1,0 +1,15 @@
+{
+  "name": "my-project-name",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-less": "~0.8.2",
+    "http-server": "^0.6.1"
+  },
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 9494"
+  },
+  "dependencies": {
+    "pushstate-server": "^1.5.0"
+  }
+}

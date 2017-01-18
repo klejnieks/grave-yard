@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+
+		<title></title>
+
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/layouts/pure.css">
+
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+		<![endif]-->
+		<!--[if gt IE 8]><!-->
+		<link rel="stylesheet" href="css/layouts/side-menu.css">
+		<!--<![endif]-->
+
+		<link rel="stylesheet" href="css/layouts/main.css">
+		<link rel="stylesheet" href="css/layouts/buttons.css">
+		<link rel="stylesheet" href="css/layouts/progress-bar.css">
+		<link rel="stylesheet" href="css/layouts/breadcrumb.css">
+		<link rel="stylesheet" href="css/layouts/tabbar.css">
+		<link rel="stylesheet" href="css/layouts/tabbed-view.css">
+		<link rel="stylesheet" href="css/layouts/pills.css">
+		<link rel="stylesheet" href="css/layouts/links.css">
+		<link rel="stylesheet" href="css/layouts/dropdown-menu.css">
+		<link rel="stylesheet" href="css/layouts/mega-menu.css">
+		<link rel="stylesheet" href="css/layouts/table.css">
+		<link rel="stylesheet" href="css/layouts/input.css">
+		
+		<script src="js/html5shiv.min.js"></script>
+
+	</head>
+	<body>
+
+		<div id="layout">
+			<!-- Menu toggle -->
+			<a href="#menu" id="menuLink" class="menu-link"> <!-- Hamburger icon --> <span></span> </a>
+
+			<div id="menu">
+				<div class="pure-menu pure-menu-open">
+					<h2>Components</h2>
+					<ul>
+						<li>
+							<a href="#">Glyphicons</a>
+						</li>
+						<li>
+							<a href="#">Dropdowns</a>
+						</li><!--class="menu-item-divided pure-menu-selected">-->
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Buttons</a>
+							<ul>
+								<li>
+									<a href="#">Button Groups</a>
+								</li>
+								<li>
+									<a href="#">Button Dropdowns</a>
+								</li>
+								<li>
+									<a href="#">Toggle Buttons</a>
+								</li>
+								<li>
+									<a href="#">Split Button</a>
+								</li>
+								<li>
+									<a href="#">Sizing Buttons</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Input Groups</a>
+							<ul>
+								<li>
+									<a href="#">Checkbox</a>
+								</li>
+								<li>
+									<a href="#">Radio Button</a>
+								</li>
+								<li>
+									<a href="#">Search Button</a>
+								</li>
+								<li>
+									<a href="#">Go Button</a>
+								</li>
+								<li>
+									<a href="#">Dropdown Button</a>
+								</li>
+								<li>
+									<a href="#">Split Button</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Navigation</a>
+							<ul>
+								<li>
+									<a href="#">Tabbar</a>
+								</li>
+								<li>
+									<a href="#">Tabbed View</a>
+								</li>
+								<li>
+									<a href="#">Pills</a>
+								</li>
+								<li>
+									<a href="#">Links</a>
+								</li>
+								<li>
+									<a href="#">Navbar</a>
+								</li>
+								<li>
+									<a href="#">Dropdown Menu</a>
+								</li>
+								<li>
+									<a href="#">Mega Menu</a>
+								</li>
+								<li>
+									<a href="#">Breadcrumbs</a>
+								</li>
+								<li>
+									<a href="#">Pagination</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Labels</a>
+						</li>
+						<li>
+							<a href="#">Badges</a>
+						</li>
+						<li>
+							<a href="#">Thumbnails</a>
+						</li>
+						<li>
+							<a href="#">Alerts</a>
+						</li>
+						<li>
+							<a href="#">Progress Bar</a>
+						</li>
+						<li>
+							<a href="#">Loader</a>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Lists</a>
+							<ul>
+								<li>
+									<a href="#">List Group</a>
+								</li>
+								<li>
+									<a href="#">Linked List</a>
+								</li>
+								<li>
+									<a href="#">With Badges</a>
+								</li>
+								<li>
+									<a href="#">Disabled Items</a>
+								</li>
+								<li>
+									<a href="#">Custom Content</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<hr />
+						</li>
+						<li>
+							<a href="#">Panels</a>
+							<ul>
+								<li>
+									<a href="#">Header</a>
+								</li>
+								<li>
+									<a href="#">Footer</a>
+								</li>
+								<li>
+									<a href="#">Table</a>
+								</li>
+								<li>
+									<a href="#">List Group</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">IFrame</a>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+
+			<div id="main">
+
+				<div class="header">
+					<h1>ASI 3.0 UI</h1>
+					<h2>CSS UI Framework</h2>
+				</div>
+
+				<div class="content">
+					<h2 class="content-subhead">How to use this framework</h2>
+					<p>
+						To use this framework, Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<!--GLYPHICONS-->
+					<h2 class="content-subhead">Glyphicons</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<div class="pure-g padded-rows">
+						<div class="pure-u-1">
+							<span class="wip-note">WIP</span>
+						</div>
+					</div>
+
+					<!--DROPDOWNS-->
+					<h2 class="content-subhead">Dropdowns</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+					<div class="pure-g padded-rows">
+						<div class="pure-u-1">
+							<span class="wip-note">WIP</span>
+						</div>
+					</div>
+
+					<!--BUTTONS-->
+					<h2 class="content-subhead">Buttons</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<div class="pure-g padded-rows">
+
+						<div class="pure-u-1">
+							<h3>Anchor Buttons</h3>
+						</div>
+
+						<div class="pure-u-1">
+							<a class="pure-button" href="#">Button</a>
+							<a class="pure-button pure-button-primary" href="#">A Primary Button</a>
+							<a class="pure-button pure-button-active" href="#">Active Button</a>
+							<a class="pure-button pure-button-disabled" href="#">Disabled Button</a>
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Buttons</h3>
+						</div>
+
+						<div class="pure-u-1">
+							<button class="pure-button">
+								Button
+							</button>
+							<button class="pure-button pure-button-primary">
+								A Primary Button
+							</button>
+							<button class="pure-button pure-button-active">
+								Active Button
+							</button>
+							<button class="pure-button pure-button-disabled">
+								Disabled Button
+							</button>
+						</div>
+
+						<div class="pure-u-1">
+							<h3>State Buttons</h3>
+						</div>
+						<div class="pure-u-1">
+							<button class="button-secondary pure-button">
+								Secondary Button
+							</button>
+							<button class="button-success pure-button">
+								Success Button
+							</button>
+							<button class="button-error pure-button">
+								Error Button
+							</button>
+							<button class="button-warning pure-button">
+								Warning Button
+							</button>
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Icon Buttons</h3>
+						</div>
+						<div class="pure-u-1">
+							<button class="pure-button">
+								<i class="fa fa-cog"></i>
+								Settings
+							</button>
+							<a class="pure-button" href="#"><i class="fa fa-shopping-cart fa-lg"></i> Checkout </a>
+							<button class="pure-button">
+								<i class="fa fa-bars"></i>
+							</button>
+							<a class="pure-button icon-button" href="#">
+								<i class="fa fa-copy fa-lg"></i> 
+							</a>
+							<a class="pure-button icon-button conditional-ie8" href="#">
+								<i class="fa fa-copy"></i> 
+							</a>
+						</div>
+						<div class="pure-u-1">
+							<h3>Toggle Button</h3>
+						</div>
+						<div class="pure-u-1">
+							<span class="wip-note">WIP</span>
+						</div>
+					</div>
+					
+					
+					<!--INPUT-->
+					<h2 class="content-subhead">Inputs</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<div class="pure-g padded-rows">
+
+						<div class="pure-u-1">
+							<h3>Text Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="text" placeholder="Text">
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Disabled Text Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="text" placeholder="Disabled input here..." disabled>
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Read Only Text Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="text" value="Readonly input here..." readonly>
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Icon Text Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input class="textbox-1" type="text">
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Rounded Icon Text Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input class="textbox-2" type="text">
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Email Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="email" placeholder="Enter Email">
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Required Email Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="email" placeholder="Requires an email" required>
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Required Email Input with pattern match</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="email" placeholder="Enter Email" required pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?">
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Password Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<input type="password" placeholder="Password">
+						</div>
+						
+						<div class="pure-u-1">
+							<h3>Search Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<label for="googlesearch">Search Google:</label>
+							<input type="search" name="googlesearch">
+						</div>
+
+						<div class="pure-u-1">
+							<h3>Phone Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<label for="usrtel">Telephone:</label>
+							<input type="tel" name="usrtel">
+						</div>
+
+						<div class="pure-u-1">
+							<h3>URL Input</h3>
+						</div>
+						<div class="pure-u-1">
+							<label for="homepage">URL:</label>
+							<input type="url" name="homepage">
+						</div>
+					</div>
+
+					<!--NAVIGATION-->
+					<h2 class="content-subhead">Navigation</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<!--Tabbar-->
+					<div class="pure-u-1">
+						<h3>Tabbar</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="tabbar-container">
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>				
+								<li><a href="#">Link 5</a></li>				
+							</ul>
+						</div>
+					</div>
+					
+					<!--Tabbed view-->
+					<div class="pure-u-1">
+						<h3>Tabbed View</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="tabbar-container">
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>				
+								<li><a href="#">Link 5</a></li>				
+							</ul>
+						</div>
+						<div class="tabbed-view-container">
+							Lorem Ipsum and all that...
+						</div>
+					</div>
+
+
+					<!--Pills-->
+					<div class="pure-u-1">
+						<h3>Pills</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="pills-container">
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>				
+								<li><a href="#">Link 5</a></li>				
+							</ul>
+						</div>
+					</div>
+					
+
+					<!--Links-->
+					<div class="pure-u-1">
+						<h3>Links</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="links-container">
+							<ul>
+								<li><a href="#">Link 1</a></li>
+								<li><a href="#">Link 2</a></li>
+								<li><a href="#">Link 3</a></li>
+								<li><a href="#">Link 4</a></li>				
+								<li><a href="#">Link 5</a></li>				
+							</ul>
+						</div>
+					</div>
+					
+					
+					<!--Accordion-->
+					<div class="pure-u-1">
+						<h3>Accordion</h3>
+					</div>
+					<div class="pure-u-1">
+
+					</div>
+
+					<!--Dropdown Menu-->
+					<div class="pure-u-1">
+						<h3>Dropdown Menu</h3>
+					</div>
+					<div class="pure-u-1">
+						<nav class="dropdown-menu-2">
+							<ul>
+								<li>
+									<a href="index.html">Home</a>
+								</li>
+								<li>
+									<a href="#">Profile</a>
+								</li>
+								<li>
+									<a href="#">Post Jobs</a>
+									<ul>
+										<li>
+											<a href="#">Type 1</a>
+										</li>
+										<li>
+											<a href="#">Type 2</a>
+										</li>
+										<li>
+											<a href="#">Type 3</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Browse Jobs</a>
+									<ul>
+										<li>
+											<a href="#">Type 1</a>
+										</li>
+										<li>
+											<a href="#">Type 2</a>
+										</li>
+										<li>
+											<a href="#">Type 3</a>
+										</li>
+										<li>
+											<a href="#">Type 4</a>
+										</li>
+										<li>
+											<a href="#">Type 5</a>
+										</li>
+										<li>
+											<a href="#">Type 6</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+
+					<!--Mega Menu-->
+					<div class="pure-u-1">
+						<h3>Mega Menu</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="mega-menu-container">
+							<nav>
+								<ul>
+									<li>
+										<a href="#">What's new</a>
+										<div>
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Seventh Generation</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+													<li>
+														<a href="#">Derbies</a>
+													</li>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+	
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Seventh Generation</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+													<li>
+														<a href="#">Derbies</a>
+													</li>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3 class="orange">Related Categories</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+												</ul>
+	
+												<h3 class="orange">Brands</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">Top rated</a>
+									</li>
+									<li>
+										<a href="#">Earnings</a>
+										<div>
+											<div class="nav-column">
+												<h3 class="orange">Related Categories</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+												</ul>
+	
+												<h3 class="orange">Brands</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Seventh Generation</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+													<li>
+														<a href="#">Derbies</a>
+													</li>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+	
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+	
+											<div class="nav-column">
+												<h3>Home</h3>
+												<ul>
+													<li>
+														<a href="#">Pampers Diapers</a>
+													</li>
+													<li>
+														<a href="#">Huggies Diapers</a>
+													</li>
+													<li>
+														<a href="#">Seventh Generation</a>
+													</li>
+													<li>
+														<a href="#">Diapers</a>
+													</li>
+													<li>
+														<a href="#">Derbies</a>
+													</li>
+													<li>
+														<a href="#">Driving shoes</a>
+													</li>
+													<li>
+														<a href="#">Espadrilles</a>
+													</li>
+													<li>
+														<a href="#">Loafers</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#">Rings</a>
+									</li>
+									<li>
+										<a href="#">Bracelets</a>
+									</li>
+									<li>
+										<a href="#">All Categories</a>
+									</li>
+								</ul>
+	
+							</nav>
+						</div>
+					</div>
+					
+					
+					<!--Breadcrumb-->
+					<div class="pure-u-1">
+						<h3>Breadcrumb</h3>
+					</div>
+					<div class="pure-u-1">
+						<h3>Boxed Layout</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="breadcrumb-container">
+							<ul class="crumbs boxed"><li><a href="#">Blog Home</a></li><li><a href="#">Archives</a></li><li><a href="#">2011 Writing</a></li><li class="last"><a href="#">Tips for jQuery Development in HTML5</a></li></ul>
+						</div>
+					</div>
+					<div class="pure-u-1">
+						<h3>Link Layout</h3>
+					</div>
+					<div class="pure-u-1">
+						<div class="breadcrumb-container">
+							<ul class="crumbs">
+								<li><a href="#">Blog Home</a></li>
+								<li><a href="#">Archives</a></li>
+								<li><a href="#">2011 Writing</a></li>
+								<li class="last"><span>Tips for jQuery Development in HTML5</span></li>				
+							</ul>
+						</div>
+					</div>
+
+
+
+					<!--THUMBNAILS-->
+					<h2 class="content-subhead">Thumbnails</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<div class="pure-g">
+						<div class="pure-u-1-4">
+							<img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
+						</div>
+						<div class="pure-u-1-4">
+							<img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
+						</div>
+						<div class="pure-u-1-4">
+							<img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
+						</div>
+						<div class="pure-u-1-4">
+							<img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
+						</div>
+					</div>
+
+					<!--PROGRESS BAR-->
+					<h2 class="content-subhead">Progress Bar</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<div class="pure-g">
+						<div class="pure-u-1">
+							<div class="meter">
+								<span style="width: 25%"></span>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<div class="pure-g">
+						<div class="pure-u-1">
+							<div class="meter orange">
+								<span style="width: 50%"></span>
+							</div>
+						</div>
+					</div>
+					<br/>
+					<div class="pure-g">
+						<div class="pure-u-1">
+							<div class="meter red">
+								<span style="width: 75%"></span>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!--TABLE-->
+					<h2 class="content-subhead">Table</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<div class="pure-g">
+						<div class="pure-u-1">
+							<table>
+								<thead>
+									<tr>
+										<th scope="col">Name</th>
+										<th scope="col">Email</th>
+										<th scope="col">Dept, Title</th>
+										<th scope="col">Phone</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr class="vcard">
+										<th scope="row" class="n" data-title="Name"><b class="family-name">Smith</b>, <b class="given-name">Laura</b></th>
+										<td data-title="Email"><a class="email" href="mailto:laura.smith@domain.com">laura.smith@domain.com</a></td>
+										<td data-title="Dept, Title">Biology, Director</td>
+										<td class="tel" data-title="Phone"><a href="tel:+1123456789">123-456-789</a></td>
+									</tr>
+									<tr class="vcard">
+										<th scope="row" class="n" data-title="Name"><b class="family-name">Johnson</b>, <b class="given-name">Ron</b></th>
+										<td data-title="Email"><a class="email" href="mailto:ron.johnson@domain.com">ron.johnson@domain.com</a></td>
+										<td data-title="Dept, Title">Purchasing, Director</td>
+										<td class="tel" data-title="Phone"><a href="tel:+11234567891">123-456-7891</a></td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+
+					<!-- GENERAL USER INSTRUCTIONS -->
+					<h2 class="content-subhead">Try Resizing your Browser</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/ui.js"></script>
+
+	</body>
+</html>

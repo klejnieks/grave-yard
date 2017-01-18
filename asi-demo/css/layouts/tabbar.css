@@ -1,0 +1,44 @@
+/*****************************
+ * TABBAR ********************
+ *****************************/
+.tabbar-container {
+	display: block;
+	border-bottom: 1px solid #d2d8c1;
+}
+
+.tabbar-container > ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tabbar-container > ul > li {
+	display: inline-block;
+	padding: 0;
+	margin-left: -4px;
+	background: #f8ffe5;
+}
+
+.tabbar-container > ul > li:first-child {
+	margin-left: 0;
+}
+
+.tabbar-container > ul > li:first-child a {
+	border-left: 1px solid #d2d8c1;
+}
+
+.tabbar-container > ul > li a {
+	display: block;
+	text-decoration: none;
+	color: #575853;
+	border-top: 1px solid #d2d8c1;
+	border-right: 1px solid #d2d8c1;
+	padding: 8px 16px;
+}
+
+.tabbar-container > ul > li a:hover,
+.tabbar-container > ul > li a:active {
+	text-decoration: none;
+	color: #2d2d2b;
+	background: #d0e0a3;
+}

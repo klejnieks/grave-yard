@@ -1,0 +1,17 @@
+/*****************************
+ * UTILITY *******************
+ *****************************/
+.wip-note {
+	font-weight: bold;
+	color: purple;
+}
+
+.conditional-ie8 {
+	display: none\9;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}

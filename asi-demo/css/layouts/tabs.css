@@ -1,0 +1,59 @@
+* {
+	font-family: Arial;
+}
+
+body {
+	background: #EEE;
+	margin: 20px 0;
+	padding: 0 20px;
+}
+
+.tabbed-container {
+	min-height: 250px;
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.tabbed-container > li {
+	list-style: none;
+	display: inline;
+}
+.tabbed-container > li > a {
+	margin-left: -1px;
+	position: relative;
+	left: 1px;
+	text-decoration: none;
+	color: black;
+	background: white;
+	display: block;
+	float: left;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	border-bottom: 1px solid white;
+}
+.tabbed-container > li:not(:target) > a {
+	border-bottom: 0;
+	background: -moz-linear-gradient(top, white, #eee);
+}
+.tabbed-container > li:target > a {
+	background: white;
+}
+.tabbed-container > li > div {
+	background: white;
+	z-index: -2;
+	left: 0;
+	top: 30px;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+.tabbed-container > li:not(:target) > div {
+	position: absolute
+}
+.tabbed-container > li:target > div {
+	position: absolute;
+	z-index: -1;
+}
