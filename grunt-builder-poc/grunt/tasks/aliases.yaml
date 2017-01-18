@@ -1,0 +1,19 @@
+default:
+  description: 'Default (production) build'
+  tasks:
+    - prod
+
+dev:
+  description: 'Development build'
+  tasks:
+    - 'sass:dist'
+
+img:
+  description: 'Image tasks'
+  tasks:
+    - 'sass:dist'
+    
+prod:
+  description: 'Production build'
+  tasks:
+    - 'concurrent:devSecond'
