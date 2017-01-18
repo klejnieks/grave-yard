@@ -1,0 +1,134 @@
+
+<% if ( data.noResearch === true ) { %>
+  <div class="small-12 columns">
+    <div class="alert-box warning radius">
+      <%= data.polyglot.t("orders_research_no_data") %>
+    </div>
+  </div>
+  <% } else { %>
+  
+        
+    
+    <% if ( data.fundamentals ) { %>
+        <% if ( data.fundamentalDataModel['yesterdayClose'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Yesterday Close") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['yesterdayClose']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['openPrice'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Open Price") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['openPrice']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['lowPrice'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Low Price") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['lowPrice']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['highPrice'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("High Price") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['highPrice']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['fiftyTwoWeekLowPrice'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("52-Week Low") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['fiftyTwoWeekLowPrice']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['fiftyTwoWeekHighPrice'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("52-Week High") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['fiftyTwoWeekHighPrice']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['cumulativeVolume'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Cumulative Volume") %></h6>
+        <h3><strong><%= numeral(data.fundamentalDataModel['cumulativeVolume']).format('0.00a').toUpperCase() %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['thirtyDayAvgVolume'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("30-Day Avg. Vol.") %></h6>
+        <h3><strong><%= numeral(data.fundamentalDataModel['thirtyDayAvgVolume']).format('0.00a').toUpperCase() %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['marketCap'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Market Cap") %></h6>
+        <h3><strong><%= numeral(data.fundamentalDataModel['marketCap']).format('0.00a').toUpperCase() %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['peRatio'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("P/E Ratio") %></h6>
+        <h3><strong><%= numeral(data.fundamentalDataModel['peRatio']).format('0.00') %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['earningsPerShare'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Earnings Per Share") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['earningsPerShare']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['dividend'] ) { %>
+        <div class="small-6 medium-4 columns text-left small-text-center">
+        <h6 class="subheader"><%= data.polyglot.t("Dividend") %></h6>
+        <h3><strong><%= data.helpers.formatMoney(data.fundamentalDataModel['dividend']) %></strong></h3>
+        </div>
+        <% } %>
+        <% if ( data.fundamentalDataModel['dividendYield'] ) { %>
+          <div class="small-6 medium-4 columns text-left small-text-center">
+            <h6 class="subheader"><%= data.polyglot.t("Dividend Yield") %></h6>
+            <h3><strong><%= numeral(data.fundamentalDataModel['dividendYield']).format('0.00') %>%</strong></h3>
+          </div>
+          <% } %>
+    <% } %>
+
+    <% if ( data.description ) { %>
+      <div class="small-12 columns">
+        <hr />
+        <h5><strong><%= data.polyglot.t("orders_research_desc_header") %></strong></h5>
+        <p><%= data.description %></p>
+      </div>
+    <% } %>
+
+    <% if ( data.urlInvestor ) { %>
+    <div class="small-12 columns">
+    <p>
+    <% if ( data.buildType === "phonegap" ) { %>
+      <a href="#" onclick="window.open('<%= data.urlInvestor %>', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="button small nav-item radius">
+        <%
+        // Build button based on product type
+        print( data.polyglot.t("orders_research_view_performance_btn") + " "  );
+        // It is an ETF
+        if ( _.indexOf( data.tags, "etf" ) !== -1 ) {
+          print( data.polyglot.t("orders_research_url_header_etf") );
+        } else {
+          print( data.polyglot.t("orders_research_url_header_stock") );
+        }
+        %>
+      </a>.
+      <% } else { %>
+        <a href="<%= data.urlInvestor %>" target="_blank" class="button small nav-item radius">
+          <%
+          // Build button based on product type
+          print( data.polyglot.t("orders_research_view_performance_btn") + " " );
+          // It is an ETF
+          if ( _.indexOf( data.tags, "etf" ) !== -1 ) {
+            print( data.polyglot.t("orders_research_url_header_etf") );
+          } else {
+            print( data.polyglot.t("orders_research_url_header_stock") );
+          }
+          %>
+        </a>
+        <% } %>
+      </p>
+    </div>
+    <% } %>
+<% } %>

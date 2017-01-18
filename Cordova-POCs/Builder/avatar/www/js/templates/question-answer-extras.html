@@ -1,0 +1,12 @@
+<a class="close-reveal-modal">&#215;</a>
+<div class="row">
+    <div class="small-12 columns">
+        <h5 class="icon-share"> <%= polyglot.t("Share this answer") %></h5>
+         <p class="t-ltgr t-med"><%= polyglot.t("Copy the permalink below to share this answer") %>.</p>
+         <input type="text" value="<%= shareUrl %>" readonly id="<%= answerID %>" />
+        <hr />
+        <h5 class="icon-flag"> <%= polyglot.t("Flag this answer") %></h5>
+        <p class="t-ltgr t-med"><%= polyglot.t("question_answer_extra_description") %>.</p>
+        <button type="button" class="ladda-button radius tiny alert" id="answer-extras-flag" data-style="zoom-in"><%= polyglot.t("Flag") %></button>
+    </div>
+</div>

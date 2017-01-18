@@ -1,0 +1,6 @@
+{
+	boss: true,
+	devel: true,
+	browser: true,
+	jquery: true
+}

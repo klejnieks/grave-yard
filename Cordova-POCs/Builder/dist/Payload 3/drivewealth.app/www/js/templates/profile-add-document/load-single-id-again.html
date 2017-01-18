@@ -1,0 +1,53 @@
+<div class="small-12 columns text-center">
+  <p><img src="<%= cdn %>/images/doc-upload/id-sample-<%= languageID %>.jpg" /></p>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+    <div class="panel-upload text-center">
+      <h4><%= polyglot.t("document_upload_choose_header") %></h4>
+      <p class="t-ltgr t-med"><%= polyglot.t("document_upload_file_types") %></p>
+      <!-- Select Government issued ID -->
+
+	  <% if ( buildType === "phonegap" ) { %>
+
+      <div class="row">
+        <div class="small-6 columns">
+    		  <button type="button" id="document-image-upload-library" class="radius button small needsclick">
+            <span class="icon-upload app-icon-btn-lg"></span>
+    			  <%= polyglot.t("Upload a document from your photo library") %>
+    		  </button>
+        </div>
+        <div class="small-6 columns">
+    		  <button type="button" id="document-image-upload-camera" class="radius button small needsclick">
+            <span class="icon-camera app-icon-btn-lg"></span>
+    			  <%= polyglot.t("document_image_camera") %>
+    		  </button>
+        </div>
+      </div>
+
+	  <% } else { %>
+
+  	  <button type="button" id="document-image-upload" class="radius button needsclick">
+        <span class="icon-upload app-icon-btn-lg"></span>
+        <%= polyglot.t("document_image_upload") %>
+  	  </button>
+
+	  <% } %>
+
+      <input type="file" id="document-image-input" name="images" class="hide" />
+      <div id="document-image"></div>
+      <input type="hidden" name="documentType" id="documentType" value="Picture ID_Proof of address" />
+      <!-- submit Government issued ID -->
+      <button id="document-submit" type="submit" class="ladda-button radius success submit expand hide" data-style="zoom-in">
+          <%= polyglot.t("Submit Document") %>
+      </button>
+
+	  <% if ( buildType != "phonegap" ) { %>
+
+		<p class="alert-box t-med warning show-for-touch bottom"><%= polyglot.t("document_upload_tip") %></p>
+
+	  <% } %>
+
+    </div>
+  </div>
+</div>

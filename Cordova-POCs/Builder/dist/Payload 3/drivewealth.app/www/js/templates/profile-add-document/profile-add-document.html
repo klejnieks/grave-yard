@@ -1,0 +1,84 @@
+<div class="row card placard">
+  <div class="small-11 medium-11 small-centered columns">
+    <form id="document-add-form" data-abide>
+
+      <div class="row">
+        <div class="small-12 columns text-center">
+          <h4><strong><%= polyglot.t("document_upload_welcome_header") %></strong></h4>
+          <p class="t-ltgr"><%= polyglot.t("document_upload_welcome_copy_1") %> <a id="uploadDocuments" class="nav-link"><%= polyglot.t("document_upload_welcome_no_id") %></a></p>
+        </div>
+      </div>
+
+      <div class="row">
+
+
+          <% if ( hasDocumentIDandAddr || (hasDocumentId && hasDocumentAddr) ) { %>
+
+            <div class="small-12 medium-8 medium-centered text-center columns uploaded" id="hide-for-single-id-resubmit">
+              <div class="uploaded-container">
+                <div class="icon-answered" style="font-size:4rem;margin:0 0 0.5rem 0;"></div>
+                <h5><strong><%= polyglot.t("document_upload_uploaded_header") %></strong></h5>
+                <p class="t-med t-ltgr"><%= polyglot.t("document_upload_2form_poa_uploaded_copy_1") %></p>
+                <p class="bottom"><a id="submit-single-id-again" class="button tiny tertiary radius"><%= polyglot.t("document_upload_2form_id_uploaded_btn") %></a></p>
+                </div>
+              </div>
+            <div id="load-single-id"></div>
+
+          <% } else { %>
+            <div class="small-12 columns text-center">
+              <p><img src="<%= cdn %>/images/doc-upload/id-sample-<%= languageID %>.jpg" /></p>
+            </div>
+            <div class="small-12 columns text-center">
+            <div class="panel-upload">
+              <h3><%= polyglot.t("document_upload_choose_header") %></h3>
+              <p class="t-ltgr t-med"><%= polyglot.t("document_upload_file_types") %></p>
+
+
+		      <% if ( buildType === "phonegap" ) { %>
+
+            <div class="row">
+              <div class="small-6 columns">
+      				  <button type="button" id="document-image-upload-library" class="radius button small needsclick">
+                  <span class="icon-upload app-icon-btn-lg"></span>
+                  <%= polyglot.t("Upload a document from your photo library") %>
+      				  </button>
+              </div>
+              <div class="small-6 columns">
+                <button type="button" id="document-image-upload-camera" class="radius button small needsclick">
+                  <span class="icon-camera app-icon-btn-lg"></span>
+                  <%= polyglot.t("document_image_camera") %>
+                </button>
+              </div>
+            </div>
+
+			  <% } else { %>
+
+			    <button type="button" id="document-image-upload" class="radius button needsclick">
+            <span class="icon-upload app-icon-btn-lg"></span>
+            <%= polyglot.t("document_image_upload") %>
+          </button>
+
+			  <% } %>
+
+              <input type="file" id="document-image-input" name="images" class="hide" />
+              <div id="document-image"></div>
+              <input type="hidden" name="documentType" id="documentType" value="Picture ID_Proof of address" />
+      			  <button id="document-submit" type="submit" class="ladda-button radius success submit expand hide" data-style="zoom-in">
+      			    <%= polyglot.t("Submit Document") %>
+      			  </button>
+
+              <% if ( buildType != "phonegap" ) { %>
+
+				<p class="alert-box t-med warning show-for-touch bottom"><%= polyglot.t("document_upload_tip") %></p>
+
+              <% } %>
+
+            </div>
+          </div>
+          <% } %>
+
+      </div>
+
+    </form>
+  </div>
+</div>

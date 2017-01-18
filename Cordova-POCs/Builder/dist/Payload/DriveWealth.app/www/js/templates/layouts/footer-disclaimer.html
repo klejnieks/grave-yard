@@ -1,0 +1,50 @@
+<a class="close-reveal-modal">&#215;</a>
+<h4><%= polyglot.t("Disclaimers") %></h4>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_7") %>
+  <% if ( buildType === "phonegap" ) { %>
+      <a href="#" onclick="window.open('http://bit.ly/DWFees', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">http://bit.ly/DWFees</a>.
+  <% } else { %>
+      <a href="http://bit.ly/DWFees" target="_blank" class="t-ltgr nav-item">http://bit.ly/DWFees</a>.
+  <% } %>
+</p>
+
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_5", {
+        "_": "Member of SIPC, which protects securities customers of its members up to $500,000 (including $250,000 for claims for cash). Explanatory brochure available upon request or at "
+    }) %>
+    <% if ( buildType === "phonegap" ) { %>
+        <a href="#" onclick="window.open('http://www.sipc.org', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">www.sipc.org</a>.
+    <% } else { %>
+        <a href="http://www.sipc.org" target="_blank" class="t-ltgr nav-item">www.sipc.org</a>.
+    <% } %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_6", {
+        "_": "There is a $50 minimum initial deposit required to open a live investing account. Fees and Expenses associated with the DriveWealth platform include $2.99 commission per transaction. There are no monthly minimum fees, or required ongoing minimum account balance. For non-resident aliens, there is a one-time tax verification fee of $5.00 (representing Form W-8BEN pass-through processing cost). View a full list of our fees at "
+    }) %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_1", {
+        "_": "Symbols, images, price, and volume data which are shown within this website are for illustrative purposes only and do not constitute a recommendation by DriveWealth to buy or sell a particular security."
+    }) %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_2", {
+        "_": "Brand logos are owned by the respective companies and not by DriveWealth. The use of a company's brand logo does not represent an endorsement of DriveWealth by the company, nor an endorsement of the company by DriveWealth, nor does it necessarily imply the existence of any contractual relationship."
+    }) %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("etf_risk_disclaimer", {
+        "_": "You should consider the investment objectives, risks, charges and expenses of an exchange traded product before investing in such product. Contact DriveWealth for a prospectus, containing information about the exchange traded product. The prospectus should be read carefully before investing. ETFs are subject to the risks of the underlying investments, and to expenses, such as management fees. ETF shares are purchased or sold at the prevailing market price, which may be higher or lower than the Net Asset Value (NAV) of the ETF. Before investing, carefully consider your circumstances and the investment objectives, risks, charges and expenses of the ETF."
+    }) %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_8") %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_9") %>
+</p>
+<p class="footer-disclaimer">
+    <%= polyglot.t("app_disclaimer_10") %>
+</p>

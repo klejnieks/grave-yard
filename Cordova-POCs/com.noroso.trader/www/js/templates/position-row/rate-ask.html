@@ -1,0 +1,1 @@
+<%= data.position.openQty %> share<% if ( data.position.openQty > 1 ) { %>s<% } %> @ <%= data.helpers.formatFlashRate( data.position.instrument.rateAsk, data.position.instrument.prevRateAsk, data.position.instrument.rateChangeAskFlash, true ) %>

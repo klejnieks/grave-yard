@@ -1,0 +1,87 @@
+<div class="row card placard question">
+	<% if ( userOwnsQuestion ) { %>
+		<div class="alert-box primary radius text-center"><%= polyglot.t("This is your question") %></div>
+	<% } %>
+	<div class="small-3 medium-2 columns text-center">
+		<div class="qa-answer-num <% if ( acceptedAnswerID ) { %>answered icon-answered<% } %>">
+			<%= countAnswer %>
+			<small><%= polyglot.t("ANSWERS") %></small>
+		</div>
+		<img src="<%= avatarUrl %>?s=64&r=pg&d=mm" class="user-avatar" />
+    </div>
+	<div class="small-9 medium-10 columns">
+        <h4><%= escapeHtml( title ) %></h4>
+        <p><%= escapeHtml( content ) %></p>
+        <p><a class="button radius icon-like question-like" href="#" data-question-like> <%= countLike %></a>
+        <a class="button radius icon-dislike question-dislike" href="#" data-question-dislike> <%= countDislike %></a></p>
+        <div class="row">
+            <div class="small-12 medium-6 columns">
+                <% if ( displayName ) { print( displayName ) } %>
+                <% if ( createdWhen ) { %>
+                    <p class="t-ltgr"><small><%= moment( createdWhen ).format("MMM Do YY, h:mm A") %></small></p>
+                <% } %>
+            </div>
+            <div class="small-12 medium-3 columns">
+                <ul class="inline-list icon-tags tags">
+                    <% _.each( tags, function( el ) { %>
+                        <li><a href="/tags/<%= el %>" class="tag">#<%= el %></a></li>
+                    <% }); %>
+                </ul>
+            </div>
+            <div class="small-12 medium-3 columns text-right">
+                <a href="<%=window.location.origin%>/questions/<%=createSlug(title)%>/<%=questionID%>/%>" title="<%= polyglot.t("Share or flag this question") %>" class="question-link button icon-more radius"></a>
+            </div>
+        </div>
+    </div>
+	<hr>
+	<div class="row">
+	    <% if ( loggedIn ) { %>
+	    <div class="small-10 small-offset-2 columns">
+	        <h5 id="answer-insert"><strong><%= polyglot.t("Want to add to the conversation?") %></strong><br /><small><%= polyglot.t("Type your answer here...") %></small></h5>
+	    </div>
+	    <% } else { %>
+	    <div id="" class="small-10 small-offset-2 columns">
+	        <h3><small><%= polyglot.t("question_detail_login") %></small></h3>
+	    </div>
+	    <% } %>
+	</div>
+	<hr>
+	<% _.each( answers, function( answer ) { %>
+	<div data-answer-id="<%= answer.answerID %>">
+        <div class="small-2 columns text-center">
+            <% if ( answer.avatarUrl ) { %>
+                <img src="<%= answer.avatarUrl %>?s=48&r=pg&d=mm" class="user-avatar" />
+            <% } %>
+            <div class="answer-action-container">
+            <% if ( acceptedAnswerID === answer.answerID ) { %>
+				<div class="icon-answered answered answer-action"></div>
+            <% } %>
+            <% if ( userOwnsQuestion && acceptedAnswerID !== answer.answerID ) { %>
+				<a href="#" class="icon-unanswered answer-accept answer-action" title="<%= polyglot.t("Mark as Accepted Answer") %>"></a>
+            <% } %>
+            </div>
+		</div>
+        <div class="small-10 columns">
+			<p><%= formatText( escapeHtml( answer.content ) ) %></p>
+			<hr />
+			<p class="t-med">
+			    <%= polyglot.t("by") %> <% if ( answer.displayName ) { print( answer.displayName ) } %> <%= polyglot.t("at") %> <%= moment( answer.createdWhen ).format("MMM Do YY, h:mm A") %>
+			</p>
+
+            <ul class="inline-list">
+				<li>
+					<a class="button radius icon-like answer-like" href="#" data-answer-upvote> <%= answer.countLike %></a>
+                </li>
+                <li>
+                	<a class="button radius icon-dislike answer-dislike" href="#" data-answer-downvote> <%= answer.countDislike %></a>
+                </li>
+                <li>
+                	<a href="<%=window.location.origin%>/questions/<%=createSlug(title)%>/<%=questionID%>/answer/<%=answer.answerID%>" title="<%= polyglot.t("Share or flag this answer") %>" class="answer-link button icon-more radius"></a>
+                </li>
+			</ul>
+		</div>
+	</div>
+	<hr>
+	<% }); %>
+	<div class="small-12 columns" id="tags-container"></div>
+</div>

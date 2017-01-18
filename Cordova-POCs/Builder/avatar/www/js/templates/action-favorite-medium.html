@@ -1,0 +1,7 @@
+<div id="action-bar">
+	<% if ( !loggedIn ) { %>
+	    <a href="#" title="Log in to add favorite" class=" icon-unstarred favorite"></a> 
+	<% } else { %>
+	    <a href="#" class="right action-bar-favorite favorite <% if ( isFavorited ) { %> icon-starred <% } else { %> icon-unstarred <% } %>" data-favorite-type="<%= favoriteType %>" data-favorite-id="<%= id %>"></a>
+	<% } %>
+</div>

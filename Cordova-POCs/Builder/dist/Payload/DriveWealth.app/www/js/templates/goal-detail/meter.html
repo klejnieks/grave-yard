@@ -1,0 +1,4 @@
+<% if (data.percentOfGoal == "0") { } else { %>
+<span class="meter" style="width:<%= data.percentOfGoal %>%;"></span>
+<% } %>
+<span class="goal-percent"><%= data.polyglot.t("percent_of_goal", { "percent": data.percentOfGoal, "amount": data.helpers.formatMoney(data.amount) }) %></span>

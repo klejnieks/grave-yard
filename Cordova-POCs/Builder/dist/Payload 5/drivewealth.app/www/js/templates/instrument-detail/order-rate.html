@@ -1,0 +1,49 @@
+<div class="row">
+    <% if ( data.order.ordType == 1 ) { %>
+      <div class="small-6 columns small-text-center">
+        <h3 class="">
+          <strong>
+          <%= data.helpers.formatFlashRate( data.rateAsk, data.prevRateAsk, data.rateChangeAskFlash, true ) %>
+          </strong>
+        </h3>
+      </div>
+      <div class="small-6 columns small-text-center">
+        <h3 class="">
+          <strong>
+          <%= data.helpers.formatFlashRate( data.rateBid, data.prevRateBid, data.rateChangeBidFlash, true ) %>
+          </strong>
+        </h3>
+      </div>
+    <% } else { %>
+        <div class="small-10 small-centered columns text-center">
+          <h6 class="bottom" id="order-rate-label">
+            <%= data.renderRateLabel({ "data": data }) %>
+          </h6>
+          <div class="row collapse">
+            <div class="small-2 columns">
+              <span class="prefix">$</span>
+            </div>
+            <div class="small-10 columns">
+              <input type="text" class="" id="order-rate-input" pattern="^[0-9]+([.][0-9]{1,2})?$" value="<%= data.order.rateRequest %>" />
+              <small class="error"><%= data.polyglot.t("Not a valid price") %></small>
+            </div>
+          </div>
+        <% if ( data.hasData && data.order.ordType === "3" ) { %>
+          <p class="t-ltgr t-med" id="order-rate-rule">
+            <%= data.renderRateRule( { "data": data } ) %>
+          </p>
+        <% } else if (data.order.ordType === "2") { %>
+          <p class="t-ltgr t-med"><%= data.polyglot.t("order_limit_price_enter_disc") %>
+            <% if ( data.buildType === "phonegap" ) { %>
+              <a href="#" onclick="window.open('http://help.drivewealth.com/customer/portal/articles/1843915-what-is-a-limit-order-', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="nav-item nav-link">
+                <%= data.polyglot.t("Learn More") %>
+              </a>
+            <% } else { %>
+              <a href="http://help.drivewealth.com/customer/portal/articles/1843915-what-is-a-limit-order-" target="_blank" class="nav-item nav-link">
+                <%= data.polyglot.t("Learn More") %>
+              </a>
+            <% } %>
+        <% } %>
+      </div>
+    <% } %>
+</div>

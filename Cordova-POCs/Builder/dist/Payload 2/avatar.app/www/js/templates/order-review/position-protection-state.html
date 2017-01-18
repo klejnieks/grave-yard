@@ -1,0 +1,50 @@
+<form>
+<div class="row">
+<div class="small-12 medium-9 medium-offset-3 columns">
+<div class="<% if ( data.autoStop > 0 ) { %>airbag-callout<% } else { %>airbag-callout off<% } %>">
+    <div class="row">
+    <div class="show-for-medium-up medium-1 columns">
+        <br />
+        <% if ( data.autoStop > 0 ) { %>
+            <span ></span>
+        <% } else { %>
+            <span></span>
+        <% } %>
+    </div>
+    <div class="small-8 columns">
+        <div id="protectionDesc">
+        <% if ( data.autoStop > 0 ) { %>
+            <h5 class="icon-invest-airbag-on airbag-icons"> <strong><%= data.polyglot.t("investment_airbag_on_header") %></strong></h5>
+            <p class="t-ltgr t-med">
+                <%= data.polyglot.t("investment_airbag_on_desc", {
+                    "_": "With Investment Airbag, you can set how much of your investment you want protected and we will do the rest. We will automatically sell your position if the price drops below your selected protection level. ",
+                    "symbol": data.symbol
+                }) %>
+            </p>
+            <p class="bottom">
+                <%= data.polyglot.t("investment_airbag_level") %>: 
+                <a href="#" id="position-protect-modal" class="nav-link btn-protection"><strong id="settingprotection"><%= data.protectionPercent %>%</strong></a>
+            </p>
+        <% } else { %>
+            <h5 class="icon-invest-airbag-off airbag-icons"> <strong><%= data.polyglot.t("investment_airbag_off_header") %></strong></h5>
+            <p class="t-ltgr t-med">
+                <%= data.polyglot.t("investment_airbag_off_desc", {
+                    "_": "By turning off Investment Airbag, there is a greater risk this investment could lose all of it's value.."
+                }) %>
+            </p>
+        <% } %>
+        </div>
+    </div>
+    
+    <div class="small-2 columns">
+        <br />
+        <div class="switch right round">
+            <input id="order-protect" class="" type="checkbox" name="protect-disable" <% if ( data.autoStop > 0 ) { %>checked<%}%> />
+            <label for="order-protect"></label>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</form>

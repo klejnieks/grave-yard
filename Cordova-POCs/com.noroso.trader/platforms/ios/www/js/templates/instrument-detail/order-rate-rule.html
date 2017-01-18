@@ -1,0 +1,8 @@
+<%= data.polyglot.t( ( data.order.side === "B" ? "Must be &gt;" : "Must be &lt;" ) ) %>
+<span class="rate-ask">
+    <% if ( data.order.side === "B" ) { %>
+        <%= data.helpers.formatFlashRate( data.rateAsk + data.stopOrderBuffer, data.prevRateAsk + data.stopOrderBuffer, data.rateChangeAskFlash, true ) %>
+    <% } else { %>
+        <%= data.helpers.formatFlashRate( data.rateBid - data.stopOrderBuffer, data.prevRateBid - data.stopOrderBuffer, data.rateChangeBidFlash, true ) %>
+    <% } %>
+</span>

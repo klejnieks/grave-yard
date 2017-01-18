@@ -1,0 +1,29 @@
+<div class="post card row placard">
+	<div id="post-byline-container" class="clearfix">
+		<div id="post-byline" class="left radius">
+	        <h5 class="t-wh"><strong><%= polyglot.t("By:") %> <%= byline %></strong></h5>
+        </div>
+    </div>
+    <div class="small-12 medium-11 medium-centered columns">
+    	<h3><%= title %></h3>
+    	<ul class="inline-list tags">
+    	    <% _.each( tags, function( el ) { %>
+    	        <li><a href="/tags/<%= el %>" class="tag">#<%= escapeHtml( el ) %></a></li>
+    	    <% }); %>
+    	</ul>
+    	<hr />
+    	<div class="row">
+    	<div class="small-12 columns" id="post-content">
+        	<%= formatText( content ) %>
+        </div>
+        </div>
+		<hr />
+		<h6><%= polyglot.t("What did you think of this article?") %></h6>
+		<p>
+		<a class="button radius icon-like  post-like" href="#" data-post-like> <%= countLike %></a>
+		<a class="button radius icon-dislike post-dislike" href="#" data-post-dislike> <%= countDislike %></a>
+		</p>
+		<hr />
+		<div id="tags-container"></div>
+	</div>
+</div>

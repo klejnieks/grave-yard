@@ -1,0 +1,43 @@
+[{
+	"tag": "vehicle",
+	"desc": "Cars, Trucks and Motorcycles"
+},{
+	"tag": "collectibles",
+	"desc": "Art, Comic Books and Sculptures"
+},{
+	"tag": "education",
+	"desc": "College, MBA, Masters, Doctorate"
+},{
+	"tag": "travel",
+	"desc": "Vacations, Moving, New Identity"
+},{
+	"tag": "wedding",
+	"desc": "Everything Related To Weddings"
+},{
+	"tag": "tech",
+	"desc": "Tablets, Phones, Laptops and TVs"
+},{
+	"tag": "fashion",
+	"desc": "Clothing, Accessories and Jewelry"
+},{
+	"tag": "charity",
+	"desc": "Charitable Causes"
+},{
+	"tag": "home",
+	"desc": "Real Estate, Furniture, Landscaping, Remodeling, Appliances"
+},{
+	"tag": "retirement",
+	"desc": "Retirement"
+},{
+	"tag": "gifts",
+	"desc": "Endowments, Pledges, Cash"
+},{
+	"tag": "health",
+	"desc": "Tattoos, Surgery, Health Care"
+},{
+	"tag": "fun",
+	"desc": "Rainy Day Fund, Frivolous Purchases"
+},{
+	"tag": "investing",
+	"desc": "Investing"
+}]

@@ -1,0 +1,30 @@
+<div class="progress success goal-meter">
+	<% if (data.goal.percentOfGoal == "0") { } else { %>
+    <span class="meter" style="width:<%= data.goal.percentOfGoal %>%;"></span>
+    <% } %>
+    <span class="goal-percent"><%= data.polyglot.t("percent_of_goal", { "percent": data.goal.percentOfGoal, "amount": data.helpers.formatMoney(data.goal.amount) }) %></span>
+</div>
+<div class="small-12 columns">
+    <div class="row">
+        <div class="small-7 columns">
+            <h4><%= data.helpers.escapeHtml( data.goal.description ) %></h4>
+            <ul class="inline-list tags icon-tags">
+                <% _.each( data.goal.tags, function( el ) { %>
+                    <li><a href="/tags/<%= el %>" class="tag">#<%= data.helpers.escapeHtml( el ) %></a></li>
+                <% }); %>
+            </ul>
+        </div>
+        <div class="small-3 columns text-right">
+            <h3><%= data.helpers.formatMoney( data.goal.markToMarket ) %></h3>
+            <span class="label tiny radius pl-label <% if (data.helpers.extractSign( data.goal.profitAndLoss ) == "+") { print(' success') } else { print(' alert') } %>">
+            <%= data.helpers.extractSign( data.goal.profitAndLoss )%> <%= data.helpers.formatMoney( data.helpers.removeSign( data.goal.profitAndLoss ) ) %></span>
+        </div>
+        <div class="small-2 columns text-right">
+        	<% if ( _.findWhere( data.favorites, { "ID": data.goal.goalID, "type": "goal" } ) ) { %>
+        	    <a href="#" class="favorite icon-starred" data-favorite-type="goal" data-favorite-id="<%= data.goal.goalID %>"></a> 
+        	<% } else { %>
+        	    <a href="#" class="favorite icon-unstarred" data-favorite-type="goal" data-favorite-id="<%= data.goal.goalID %>"></a>
+        	<% } %> 
+        </div>
+    </div>
+</div>

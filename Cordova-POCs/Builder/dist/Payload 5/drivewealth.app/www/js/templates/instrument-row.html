@@ -1,0 +1,27 @@
+<li class="product-list">
+<div class="instrument">
+	<div class="card" id="<%= data.instrument.symbol %>" data-instrument-id="<%= data.instrument.instrumentID %>" data-target-path="/stocks-etfs/">
+		<div class="row">
+			<div class="small-12 medium-5 columns small-only-text-center">
+            	<img class="product-logo" src="<%= data.cdn %>/images/symbols/<%= data.instrument.symbol.toLowerCase() %>.png">
+            </div>
+			<div class="small-12 medium-5 columns small-only-text-center">
+				<h6 class="snip"><%= data.instrument.name %></h6>
+				<h6 class="t-ltgr"><%= data.instrument.symbol %></h6>
+		    <div class="instrument-rates">
+          <h3><%= data.templateInstRates( { "data": data } ) %></h3>
+        </div>
+			</div>
+			<div class="small-12 medium-2 columns small-only-text-right">
+				<% if ( _.findWhere( data.favorites, { "ID": data.instrument.instrumentID, "type": "instrument" } ) ) { %>
+				    <a href="#" class="favorite icon-starred" data-favorite-type="instrument" data-favorite-id="<%= data.instrument.instrumentID %>">
+				    </a>
+				<% } else { %>
+				    <a href="#" class="favorite icon-unstarred" data-favorite-type="instrument" data-favorite-id="<%= data.instrument.instrumentID %>">
+				    </a>
+				<% } %>
+			</div>
+		</div>
+	</div>
+</div>
+</li>

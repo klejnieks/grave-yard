@@ -1,0 +1,44 @@
+<%
+var titleSlug = helpers.createSlug( question.title );
+%>
+<div class="row card" id="<%= question.questionID %>" data-target-path="/questions/<%= titleSlug ? titleSlug : "no-title" %>/">
+    <div class="small-12 medium-5 columns">
+        <h5 class="bottom"><%= question.title %></h5>
+        <ul class="inline-list tags">
+            <% _.each( question.tags, function( el ) { %>
+                <li><a href="/tags/<%= el %>" class="tag">#<%= el %></a></li>
+            <% }); %>
+        </ul>
+    </div>
+    <div class="small-10 medium-6 columns text-center">
+    	<ul class="small-block-grid-3 question-meta">
+    		<li class="text-center left">
+    			<div class="qa-answer-num <% if ( question.acceptedAnswerID ) { %>answered text-center<% } %>">
+    				<% if ( question.acceptedAnswerID ) {%>
+    					<div class="icon-answered">&nbsp;</div>
+    					<small><%= polyglot.t("ANSWERED!") %></small>
+    				<% } else { %>
+	    				<%= question.countAnswer %>
+	    				<small><%= polyglot.t("ANSWERS") %></small>
+	    			<% } %>
+    			</div>
+    		</li>
+    		<li class="text-center question-meta-avatar">
+    			<h5><small><span class="show-for-medium-up"><%= polyglot.t("ASKED BY") %></span> <%= question.displayName.toUpperCase() %></small></h5>
+          <img src="<%= question.avatarUrl %>?s=48&r=pg&d=mm" class="user-avatar" />
+    		</li>
+    		<li class="text-center ">
+    			<h5><small><%= polyglot.t("ASKED ON") %></small><br /><%= moment(question.createdWhen).format("MMM Do") %></h5>
+    		</li>
+    	</ul>
+    </div>
+    <div class="small-2 medium-1 columns text-right">
+    	<% if ( !loggedIn ) { %>
+    	    <a href="#" title="<%= polyglot.t("Log in to add favorite") %>" class="favorite icon-unstarred"></a>
+    	<% } else if ( _.findWhere( favorites, { "ID": question.questionID, "type":"question" } ) ) { %>
+    	    <a href="#" class="favorite icon-starred" data-favorite-type="question" data-favorite-id="<%= question.questionID %>"></a>
+    	<% } else { %>
+    	    <a href="#" class="favorite icon-unstarred" data-favorite-type="question" data-favorite-id="<%= question.questionID %>"></a>
+    	<% } %>
+    </div>
+</div>

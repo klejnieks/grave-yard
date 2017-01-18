@@ -1,0 +1,22 @@
+<% if ( buildType === "phonegap" ) { %>
+<form method="POST" action="<%= url %>" target="">
+<% } else { %>
+<form method="POST" action="<%= url %>" target="_blank">
+<% } %>
+    <input type="hidden" id="ReportName" name="ReportName" value="<%= ReportName %>" />
+    <input type="hidden" id="ReportFormat" name="ReportFormat" value="<%= ReportFormat %>" />
+    <input type="hidden" id="DateStart" name="DateStart" value="<%= DateStart %>" />
+    <input type="hidden" id="DateEnd" name="DateEnd" value="<%= DateEnd %>" />
+    <input type="hidden" id="sessionKey" name="sessionKey" value="<%= sessionKey %>" />
+<% if ( ReportName === "CoinTrans" ) { %>
+    <input type="hidden" id="UserId" name="UserId" value="<%= UserId %>" />
+<% } else if ( ReportName === "ReferralSummaryPerformance" ) { %>
+    <input type="hidden" id="IbUserId" name="IbUserId" value="<%= IbUserId %>" />
+    <input type="hidden" id="AccountType" name="AccountType" value="<%= AccountType %>" />
+<% } else if ( ReportName === "Instrument" ) { %>
+    <input type="hidden" id="InstrumentType" name="InstrumentType" value="<%= InstrumentType %>" />
+    <input type="hidden" id="TradeStatus" name="TradeStatus" value="<%= TradeStatus %>" />
+<% } else { %>
+    <input type="hidden" id="AccountNumber" name="AccountNumber" value="<%= AccountNumber %>" />
+<% } %>
+</form>

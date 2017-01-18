@@ -1,0 +1,43 @@
+<div class="row card placard">
+	<div class="small-12 columns medium-8 medium-centered">
+	<h4><strong><%= data.polyglot.t("Don’t go it alone - Invest Together") %></strong></h4>
+	<p class="t-med t-ltgr"><%= data.polyglot.t("questions_description") %></p> 
+	<h6><%= data.polyglot.t("The most popular topics") %></h6>
+	<ul class="inline-list tags">
+		<li><a href="/questions/tags/investing" class="tag nav-link"><%= data.polyglot.t("Investing") %></a></li>
+		<li><a href="/questions/tags/bonds" class="tag nav-link"><%= data.polyglot.t("Bonds") %></a></li>
+		<li><a href="/questions/tags/technology" class="tag nav-link"><%= data.polyglot.t("Technology") %></a></li>
+		<li><a href="/questions/tags/etfs" class="tag nav-link"><%= data.polyglot.t("ETFs") %></a></li>
+		<li><a href="/questions/tags/investingfoundations" class="tag nav-link"><%= data.polyglot.t("Investing Foundations") %></a></li>
+	</ul>
+	</div>
+</div>
+<%
+if ( !data.questions || data.questions.length == 0 ) {
+%>
+<div class="row">
+    <div class="small-12 columns">
+        <div class="alert-box warning"> 
+        <% if ( data.searchTag ) { %>
+            <%= data.polyglot.t("No results found for tag '%{tag}'", { "tag": data.searchTag } ) %>
+        <% } else { %>
+            <%= data.polyglot.t("No results found") %>
+        <% } %>
+        </div>
+    </div>
+</div>
+<%
+} else {
+    _.each( data.questions, function( question ) { 
+        _.extend( data, {
+            "question": question,
+        }); 
+        print( data.renderRow( data ) ); 
+    }, this ); 
+}
+%>
+<div class="row">
+    <div class="small-12 columns">
+        <a id="action-button" href="/questions/add" class="circle button success right"><%= data.polyglot.t("Add") %></a>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+{
+    "learn": {
+        "Unauth": "Acquisition"
+    },
+    "education": {
+        "Unauth": "Acquisition"
+    },
+    "questions": {
+        "Unauth": "Acquisition"
+    },
+    "marketplace": {
+        "Unauth": "Acquisition"
+    },
+    "learningmarkets": {
+       "Unauth": "Acquisition"
+    },
+    "upload": {
+        "Auth":  "Upload"
+    },
+    "upload-2forms": {
+        "Auth":  "Upload"
+    },
+    "reporting": {
+        "Auth":  "Reporting"
+    }
+}

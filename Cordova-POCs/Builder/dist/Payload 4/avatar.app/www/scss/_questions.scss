@@ -1,0 +1,129 @@
+$unanswered-color: #999;
+
+.question-meta {	
+	margin-bottom: 0;
+	
+	& .qa-answer-num {
+		margin-bottom: 0.75rem;
+	}
+	
+	.question-meta-avatar {
+		> img {
+			width:50px;
+		}
+	}
+}
+.qa-answer-num {
+	background: #FFF;
+	color: $unanswered-color;
+	margin: 1rem 0 2rem 0;
+	//width: 4rem;
+	font-size: 1.5rem;
+	border-radius: $global-radius;
+	font-weight: 400;
+	padding: 0.5rem;
+	line-height: 1;
+	position: relative;
+	border: 2px solid lighten($unanswered-color,30%);
+
+	.icon-answered:before {
+		color: $success-color;
+	}
+	
+	> small {
+		display: block;	
+		margin: 0.5rem 0 0 0;
+		font-weight: normal;
+		font-size: 0.5rem;
+		color: lighten($unanswered-color,10%);
+	}
+	
+	&.answered {
+		color: $success-color;
+		border-color: lighten($success-color,5%);
+		
+		&.icon-answered:before {
+			position: absolute;
+			bottom: -1rem;
+			right: -1rem;
+		}
+		
+		> small {
+			color: lighten($success-color,25%);
+		}
+	}
+
+}
+.answer-action-container {
+	margin: 1rem 0 0 0;
+	
+	.answer-action {
+		
+		&:before {
+			font-size: 3rem;
+		}
+	}
+	.icon-answered:before {
+		color: $success-color;
+	}
+}
+
+.icon-unanswered{
+	
+	&:before {
+		color: $unanswered-color;
+	}
+	&:hover:before {
+		color: $success-color;
+	}
+}
+.icon-like, .icon-dislike {
+	background: #FFF;
+	font-size: 1rem;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0.25rem 0.5rem;
+	line-height: 1rem;
+		&:before {
+			font-size:1.25rem;
+			vertical-align: text-bottom;
+		}
+}
+.icon-like {
+	border-color: lighten($success-color,30%);
+	color: $success-color;
+	
+	&:hover, &:focus, &:active {
+		background:$success-color;
+		border-color: darken($success-color,10%);
+	}
+}
+.icon-dislike {
+	border-color: lighten($alert-color,30%);
+	color: $alert-color;
+	
+	&:hover, &:focus, &:active {
+		background:$alert-color;
+		border-color: darken($alert-color,10%);
+	}
+}
+.button.icon-more {
+	background: #f6f6f6;
+	border: 1px solid #DDD;
+	padding: 0;
+	line-height:1;
+	
+	&:hover, &:focus, &:active {
+		background:$primary-color;
+		border: 1px solid darken($primary-color,10%);
+		
+		&:before {
+			color:#FFF;
+		}
+	}
+	
+	&:before {
+		font-size:1.75rem;
+		color: #999;
+	}
+}

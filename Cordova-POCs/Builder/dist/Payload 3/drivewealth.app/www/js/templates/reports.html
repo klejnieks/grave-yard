@@ -1,0 +1,196 @@
+<div class="row placard">
+  <div class="report-wrap">
+    <div class="small-12 medium-centered medium-8 columns">
+      <h6 class="t-ltgr text-center"><%= polyglot.t("Choose Report Type:") %></h6>
+
+      <button href="#" data-dropdown="report-drop" class="dds" id="report-drop-btn">
+        <h6 class="dds-item-name"><%= polyglot.t("Financial Transactions Report") %></h6>
+        <p class="t-med t-ltgr dds-item-desc"><%= polyglot.t("report_fintrans_desc", {"_":"Provides all transactions with this account, such as deposits, withdrawals and adjustments."}) %></p>
+      </button><br>
+      <ul id="report-drop" class="dds-items large f-dropdown" data-dropdown-content>
+        <li class="dds-item" data-report-name="FinTrans">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("Financial Transactions Report") %></h6>
+              <p class="t-med t-ltgr dds-item-desc"><%= polyglot.t("report_fintrans_desc", {"_":"Provides all transactions with this account, such as deposits, withdrawals and adjustments."}) %></p>
+            </div>
+            <div class="small-3 columns text-center">
+              <div class="icon-answered dds-item-select active"></div>
+            </div>
+          </div>
+        </li>
+        <li class="dds-item" data-report-name="OrderTrans">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("report_order_trans", {"_":"Order Transaction Report"}) %></h6>
+              <p class="t-med t-ltgr dds-item-desc">
+                <%= polyglot.t("report_order_trans_desc", {"_":"Provides all market order transactions on this account"}) %></p>
+            </div>
+            <div class="small-3 columns text-center">
+              <div class="icon-answered dds-item-select"></div>
+            </div>
+          </div>
+        </li>
+        <li class="dds-item" data-report-name="Instrument">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("report_instrument", {"_":"Stocks, ETFs and ADRs Offered"}) %></h6>
+              <p class="t-med t-ltgr dds-item-desc">
+                <%= polyglot.t("report_instrument_desc", {"_":"Provides a full list of stocks, ETFs and ADRs available to purchase"}) %></p>
+            </div>
+            <div class="small-3 columns text-center">
+              <div class="icon-answered dds-item-select"></div>
+            </div>
+          </div>
+        </li>
+        <li class="dds-item" data-report-name="ReferralSummaryPerformance">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("Referral Summary Report") %></h6>
+              <p class="t-med t-ltgr dds-item-desc"><%= polyglot.t("report_referralsummary_desc", {"_":"Provides a summary of your referral's performance."}) %></p>
+            </div>
+            <div class="small-3 columns text-center">
+              <div class="icon-answered dds-item-select"></div>
+            </div>
+          </div>
+        </li>
+        <li class="dds-item" data-report-name="CoinTrans">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("Coin Transactions Report") %></h6>
+              <p class="t-med t-ltgr dds-item-desc"><%= polyglot.t("report_cointrans_desc", {"_":"Provides a summary of transactions that generated coins for you."}) %></p>
+            </div>
+            <div class="small-3 columns text-center">
+              <div class="icon-answered dds-item-select"></div>
+            </div>
+          </div>
+        </li>
+        <li class="dds-item" data-report-name="PositionRestingOrder">
+          <div class="row">
+            <div class="small-9 columns">
+              <h6 class="dds-item-name"><%= polyglot.t("report_positionrestingorder_title", {"_":"Open Positions & Resting Orders"}) %></h6>
+              <p class="t-med t-ltgr dds-item-desc">
+                <%= polyglot.t("report_positionrestingorder_desc", {"_":"Provides all current investments and pending orders with this account."}) %></p>
+              </div>
+              <div class="small-3 columns text-center">
+                <div class="icon-answered dds-item-select"></div>
+              </div>
+            </div>
+          </li>
+          <li class="dds-item" data-report-name="Statement">
+            <div class="row">
+              <div class="small-9 columns">
+                <h6 class="dds-item-name"><%= polyglot.t("report_accountstatement", {"_":"Account Statements"}) %></h6>
+                <p class="t-med t-ltgr dds-item-desc">
+                  <%= polyglot.t("report_accountstatement_desc", {"_":"Provides a monthly snapshot of this account."}) %></p>
+                </div>
+                <div class="small-3 columns text-center">
+                  <div class="icon-answered dds-item-select"></div>
+                </div>
+              </div>
+            </li>
+            <li class="dds-item" data-report-name="Trade Confirm">
+              <div class="row">
+                <div class="small-9 columns">
+                  <h6 class="dds-item-name"><%= polyglot.t("report_tradeconfirms", {"_":"Trade Confirmations"}) %></h6>
+                  <p class="t-med t-ltgr dds-item-desc">
+                    <%= polyglot.t("report_tradeconfirms_desc", {"_":"Provides a daily recap of all of trades executed on this account."}) %></p>
+                  </div>
+                  <div class="small-3 columns text-center">
+                    <div class="icon-answered dds-item-select"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="dds-item" data-report-name="1099-B">
+                <div class="row">
+                  <div class="small-9 columns">
+                    <h6 class="dds-item-name"><%= polyglot.t("report_1099B", {"_":"1099-B"}) %></h6>
+                    <p class="t-med t-ltgr dds-item-desc">
+                      <%= polyglot.t("report_1099B_desc", {"_":"Provides a summary of the proceeds of all stock transactions for the year."}) %></p>
+                    </div>
+                    <div class="small-3 columns text-center">
+                      <div class="icon-answered dds-item-select"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+            </div>
+            <form class="form" id="report-form" data-abide>
+              <div class="small-12 medium-centered medium-10 columns date-range-container">
+                <h6 class="t-ltgr text-center"><%= polyglot.t("Choose Date:") %></h6>
+                <div class="row">
+                  <div class="small-12 small-centered columns">
+                    <ul class="button-group even-4 radius report-buttons">
+                      <li>
+                        <input  type="radio" id="radio1" name="time-range" value="week" checked class="report-hidden-btn-time">
+                        <a href="#" class="time-group button" data-time="week"> <%= polyglot.t("This Week") %></a>
+                      </li>
+                      <li>
+                        <input  type="radio"  id="radio2" name="time-range" value="month" class="report-hidden-btn-time">
+                        <a href="#" class="time-group button" data-time="month"><%= polyglot.t("This Month") %></a>
+                      </li>
+                      <li>
+                        <input  type="radio"   id="radio3" name="time-range" value="year" class="report-hidden-btn-time">
+                        <a href="#" class="time-group button" data-time="year"><%= polyglot.t("This Year") %></a>
+                      </li>
+                      <li>
+                        <input  type="radio" id="radio4" name="time-range" value="custom" class="report-hidden-btn-time">
+                        <a href="#" class="time-group button" data-time="custom">  <%= polyglot.t("Custom") %></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="row custom-date-inputs">
+                  <div class="small-5 columns time-input">
+                    <label>Start Date
+                      <input type="input" name="custom-date" id="start_date" class="">
+                    </label>
+                  </div>
+                  <div class="small-5 columns time-input">
+                    <label>End Date
+                      <input type="input" name="custom-date" id="end_date" class="">
+                    </label>
+                  </div>
+                </div>
+
+              </div>
+
+
+
+
+              <div class="small-12 medium-centered medium-8 columns format-group-nav">
+                <h6 class="t-ltgr text-center"><%= polyglot.t("Choose Format:") %></h6>
+                <div class="row">
+                  <div class="small-12 small-centered columns">
+                    <ul class="button-group even-3 radius report-buttons">
+                      <li>
+                        <input  type="radio" id="radio1" name="format" value="HTML" checked class="report-hidden-btn-format">
+                        <a href="#" class="format-group button icon-html">HTML</a>
+                      </li>
+                      <li>
+                        <input  type="radio" id="radio2"  name="format" value="PDF" class="report-hidden-btn-format">
+                        <a href="#" class="format-group button icon-pdf">PDF</a>
+                      </li>
+                      <li>
+                        <input type="radio" id="radio3" name="format" value="XLS" class="report-hidden-btn-format">
+                        <a href="#" class="format-group button icon-xls">Excel</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="small-12 medium-centered medium-9 columns">
+                <button id="request-report-submit" class="primary ladda-button radius submit">
+                  <%= polyglot.t("Build") %>
+                </button>
+              </div>
+            </form>
+            <div class="small-12 medium-centered medium-8 columns">
+              <div id="reports-list"></div>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "drivewealth-app";
+  src:url("fonts/drivewealth-app.eot");
+  src:url("fonts/drivewealth-app.eot?#iefix") format("embedded-opentype"),
+    url("fonts/drivewealth-app.woff") format("woff"),
+    url("fonts/drivewealth-app.ttf") format("truetype"),
+    url("fonts/drivewealth-app.svg#drivewealth-app") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "drivewealth-app" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "drivewealth-app" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flag:before {
+  content: "b";
+}
+.icon-like:before {
+  content: "c";
+}
+.icon-dislike:before {
+  content: "d";
+}
+.icon-home:before {
+  content: "e";
+}
+.icon-unstarred:before {
+  content: "f";
+}
+.icon-q-and-a:before {
+  content: "h";
+}
+.icon-goals:before {
+  content: "i";
+}
+.icon-upload:before {
+  content: "j";
+}
+.icon-unanswered:before {
+  content: "l";
+}
+.icon-settings:before {
+  content: "k";
+}
+.icon-learn:before {
+  content: "n";
+}
+.icon-help:before {
+  content: "o";
+}
+.icon-back:before {
+  content: "p";
+}
+.icon-allocation:before {
+  content: "r";
+}
+.icon-logout:before {
+  content: "t";
+}
+.icon-starred:before {
+  content: "u";
+}
+.icon-answered:before {
+  content: "w";
+}
+.icon-more:before {
+  content: "y";
+}
+.icon-share:before {
+  content: "E";
+}
+.icon-accounts:before {
+  content: "x";
+}
+.icon-products:before {
+  content: "g";
+}
+.icon-positions:before {
+  content: "m";
+}
+.icon-tag:before {
+  content: "a";
+}
+.icon-pending:before {
+  content: "s";
+}
+.icon-delete:before {
+  content: "q";
+}
+.icon-closed:before {
+  content: "v";
+}
+.icon-open:before {
+  content: "z";
+}
+.icon-html:before {
+  content: "F";
+}
+.icon-pdf:before {
+  content: "G";
+}
+.icon-xls:before {
+  content: "H";
+}
+.icon-marketplace:before {
+  content: "A";
+}
+.icon-invest-airbag-off:before {
+  content: "I";
+}
+.icon-invest-airbag-on:before {
+  content: "J";
+}
+.icon-camera:before {
+  content: "C";
+}

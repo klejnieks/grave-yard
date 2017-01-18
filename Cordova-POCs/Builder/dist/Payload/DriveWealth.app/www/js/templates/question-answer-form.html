@@ -1,0 +1,7 @@
+<form id="answer-add-form" data-abide novalidate="novalidate">
+    <textarea placeholder="" name="answer-add-content" id="answer-add-content" required  data-abide-validator="nonEmptyString" style="height:100px;"></textarea>
+    <small class="error"><%= polyglot.t("Answer is required") %>.</small>
+    <button id="answer-add-submit" type="submit" class="ladda-button radius small primary submit" data-style="zoom-in">
+        <span class="ladda-label"><%= polyglot.t("Add Answer") %></span>
+    </button>
+</form>

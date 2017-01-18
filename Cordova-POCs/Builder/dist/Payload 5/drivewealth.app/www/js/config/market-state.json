@@ -1,0 +1,38 @@
+{
+    "default": {
+        "0": {
+            "desc": "",
+            "className": ""
+        },
+        "1": {
+            "desc": "Market Open",
+            "className": "icon-open"
+        },
+        "2": {
+            "desc": "Market Closed",
+            "className": "icon-closed closed"
+        },
+        "3": {
+            "desc": "Market Suspended",
+            "className": "icon-closed suspended"
+        }
+    },
+    "1": {
+        "0": {
+            "desc": "",
+            "className": ""
+        },
+        "1": {
+            "desc": "Practice Market Open 24/7",
+            "className": "icon-open"
+        },
+        "2": {
+            "desc": "Practice Market Open 24/7",
+            "className": "icon-open"
+        },
+        "3": {
+            "desc": "Market Suspended",
+            "className": "icon-closed suspended"
+        }
+    }
+}

@@ -1,0 +1,3 @@
+<%= data.helpers.formatMoney( data.markToMarket ) %> 
+<span class="label tiny radius pl-label <% if (data.helpers.extractSign( data.profitAndLoss ) == "+") { print(' success') } else { print(' alert') } %>">
+<%= data.helpers.extractSign( data.profitAndLoss )%><%= data.helpers.formatMoney( data.helpers.removeSign( data.profitAndLoss ) ) %></span>

@@ -1,0 +1,5 @@
+<% if ( data.order.side === "B" ) { %>
+    <%= data.helpers.formatFlashRate( data.rateAsk, data.prevRateAsk, data.rateChangeAskFlash, true ) %>
+<% } else { %>
+    <%= data.helpers.formatFlashRate( data.rateBid, data.prevRateBid, data.rateChangeBidFlash, true ) %>
+<% } %>

@@ -1,0 +1,19 @@
+{
+  "name": "TBD",
+  "version": "0.0.1",
+  "description": "Some Description",
+  "main": "XYZ",
+  "authors": ["DW"],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "build",
+    "lib",
+    "tests"
+  ],
+  "dependencies": {
+    "require": "requirejs#2.1.15",
+    "jquery": "2.1.1"
+  }
+}

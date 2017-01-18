@@ -1,0 +1,56 @@
+{
+    "1D": {
+        "compression":  4,
+        "shortValue":   "1",
+        "shortUnit":    "d",
+        "abbr":         "1 Day",
+        "tradingDays":  "1",
+        "length":       86400,
+        "corLimit":     0.99
+    },
+    "5D": {
+        "compression":  8,
+        "shortValue":   5,
+        "shortUnit":    "d",
+        "abbr":         "5 Day",
+        "tradingDays":  "5",
+        "length":       432000,
+        "corLimit":     0.667
+    },
+    "1M": {
+        "compression":  0,
+        "shortValue":   1,
+        "shortUnit":    "M",
+        "abbr":         "1 Month",
+        "tradingDays":  "31",
+        "length":       2678400,
+        "corLimit":     0.50
+    },
+    "3M": {
+        "compression":  0,
+        "shortValue":   3,
+        "shortUnit":    "M",
+        "abbr":         "3 Month",
+        "tradingDays":  "93",
+        "length":       8035200,
+        "corLimit":     0.667
+    },
+    "1Y": {
+        "compression":  0,
+        "shortValue":   1,
+        "shortUnit":    "y",
+        "abbr":         "1 Yr.",
+        "tradingDays":  "365",
+        "length":       31536000,
+        "corLimit":     0.50
+    },
+    "2Y": {
+        "compression":  10,
+        "shortValue":   5,
+        "shortUnit":    "y",
+        "abbr":         "5 Yr.",
+        "tradingDays":  "1825",
+        "length":       157680000,
+        "corLimit":     0.80
+    }
+}

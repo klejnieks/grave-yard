@@ -1,0 +1,4 @@
+<%
+    var rateLabel = "Enter " + data.helpers.formatOrderSide( data.order.side ) + ( data.order.ordType === "1" ? "" : " " + data.helpers.formatOrderType( data.order.ordType ) ) + " Price"; 
+%>
+<%= data.polyglot.t( rateLabel ) %>

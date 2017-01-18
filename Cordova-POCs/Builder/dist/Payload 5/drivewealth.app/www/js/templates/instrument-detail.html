@@ -1,0 +1,126 @@
+<% if ( data.hasData ) { %>
+<div class="row">
+	<div class="small-2 medium-2 columns text-left">
+		<p class="card placard"><img src="<%= data.cdn %>/images/symbols/<%= data.symbol.toLowerCase() %>.png" /></p>
+	</div>
+	<div class="small-6 medium-7 columns text-left">
+        <h4 class="bottom snip"><%= data.name %></h4>
+        <h6 class="t-ltgr"><%= data.symbol.toUpperCase() %></h6>
+	</div>
+	<div class="small-4 medium-3 columns text-right">
+		<h2 class="instrument-rates"><%= data.renderRates( { "data": data } ) %></h2>
+  </div>
+</div>
+<% } %>
+<div class="row card placard">
+    <div class="small-12 columns clearfix text-center">
+      <% if ( data.chartRanges ) { %>
+      <ul class="button-group bar-range-group right">
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "1D"){ %>chart-range-active<%}%>" data-value="1D" data-style="zoom-in">1D</a></li>
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "5D"){ %>chart-range-active<%}%>" data-value="5D" data-style="zoom-in">5D</a></li>
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "1M"){ %>chart-range-active<%}%>" data-value="1M" data-style="zoom-in">1M</a></li>
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "3M"){ %>chart-range-active<%}%>" data-value="3M" data-style="zoom-in">3M</a></li>
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "1Y"){ %>chart-range-active<%}%>" data-value="1Y" data-style="zoom-in">1Y</a></li>
+        <li><a href="#" class="ladda-button button tiny bar-range <% if(data.range === "2Y"){ %>chart-range-active<%}%>" data-value="2Y" data-style="zoom-in">2Y</a></li>
+      </ul>
+      <% } else { %>
+        <h6 class="bottom"><%= data.polyglot.t("instrument_detail_chart_duration_long") %></h6>
+      <% } %>
+    </div>
+    <div class="small-12 columns">
+      <div id="instrument-chart"></div>
+    </div>
+	<div class="small-12 small-centered medium-10 columns" data-instrument-id="<%= data.instrumentID %>">
+		<div class="row">
+		    <div class="small-12 small-centered columns">
+	        <div class="tabs-content">
+            <% if ( !data.hasData ) { %>
+              <div class="content" id="market-order">
+                <div class="panel callout radius">
+                  <h4><strong><%= data.polyglot.t("no_market_pricing_market_header", {"name": data.name}) %></strong></h4>
+                  <p><%= data.polyglot.t("no_market_pricing_market_text", {"name": data.name}) %></p>
+                </div>
+              </div>
+            <% } else { %>
+              <div class="content <% if ( !data.showTab || data.showTab === "order" ) { %>active<% } %>" id="order"></div>
+              <div class="content <% if ( data.showTab === "research" ) { %>active<% } %>" id="research"></div>
+            <% } %>
+          </div>
+        </div>
+      </div>
+      <% if ( data.position ) { %>
+				<hr />
+        <div class="row" id="current-position">
+			    <%= data.renderPosition( { "data": data } ) %>
+        </div>
+      <% } %>
+		<hr />
+		<div class="small-12 columns">
+			<h6><%= data.polyglot.t("instrument_detail_tags", {"symbol": data.symbol}) %></h6>
+			<ul class="inline-list tags">
+			<% _.each( data.tags, function( tag ) { %>
+			    <li><a href="/tags/<%= tag %>" class="tag">#<%= tag %></a></li>
+			<% }); %>
+			</ul>
+		</div>
+		<hr />
+		<div class="small-12 columns" id="tags-container2"></div>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 small-centered columns">
+        <% if ( _.indexOf( data.tags, "inverse" ) !== -1 ) { %>
+        <p class="footer-disclaimer">
+            <%= data.polyglot.t("inverse_instrument_risk_disclaimer", {
+                "_": "Most inverse ETFs “reset” daily, meaning that these securities are designed to achieve their stated objectives on a daily basis. Their performance over longer periods of time longer than days can differ significantly from the inverse of the performance of their underlying index or benchmark during the same period of time. This effect can be magnified in volatile markets, making it possible that you could suffer significant losses even if the long-term performance of the index showed a gain. While there may strategies that justify holding these investments longer than a day, buy-and-hold investors with an intermediate or long-term time horizon should carefully consider whether these ETFs are appropriate for their portfolio."
+            }) %>
+        </p>
+        <% } %>
+		<p class="footer-disclaimer">
+            <%= data.polyglot.t("instrument_risk_disclaimer", {
+                "_": "All Investing carries risk. Past performance is not indicative of future returns, which may vary. Investments in stocks and ETFs may decline in value, potentially leading to a loss of investment return and principal value. An investor's shares, when redeemed, may be worth more or less than their original cost. Current performance may be lower or higher than the performance data quoted.  Online trading has inherent risk due to system response and access times that may be affected by various factors, including but not limited to market conditions and system performance.  An investor should understand such facts before trading."
+            }) %>
+        </p>
+		<p class="footer-disclaimer">
+            <%= data.polyglot.t("instrument_risk_disclaimer_2", {
+                "_": "The risks associated with investing in international securities, including US-listed ADRs and ETFs that contain non-US securities include, among others, country/political risk relating to the government in the home country; exchange rate risk if the country's currency is devalued; and inflationary/purchasing power risks if the currency of the home country becomes less valuable as the general level of prices for goods and services rises."
+            }) %>
+        </p>
+		<p><strong><a href="#" class="t-lg footer-disclaimer-modal nav-item nav-link"><%= data.polyglot.t("disclaimer_read_more") %></a></strong></p>
+	</div>
+</div>
+
+<% if ( !data.visited ) { %>
+<ol class="joyride-list" data-joyride>
+    <li data-text="Next" data-options="modal: true">
+        <p><strong><%= data.polyglot.t("joyride_market_order_header") %></strong></p>
+        <p><%= data.polyglot.t("joyride_market_order") %></p>
+    </li>
+	<% if ( data.limitOrders ) { %>
+    <li data-text="Next" data-options="modal: true">
+        <p><strong><%= data.polyglot.t("joyride_limit_order_header") %></strong></p>
+        <p><%= data.polyglot.t("joyride_limit_order_1") %></p>
+				<p>
+				<% if ( data.buildType === "phonegap" ) { %>
+					<a href="#" onclick="window.open('http://help.drivewealth.com/customer/portal/articles/1843915-what-is-a-limit-order-', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"><%= data.polyglot.t("joyride_limit_order_btn") %></a>
+				<% } else { %>
+					<a href="http://help.drivewealth.com/customer/portal/articles/1843915-what-is-a-limit-order-" target="_blank"><%= data.polyglot.t("joyride_limit_order_btn") %></a>
+				<% } %>
+                </p>
+    </li>
+	<% } %>
+    <li data-text="Start Investing!" data-options="modal: true">
+        <p><strong><%= data.polyglot.t("joyride_stop_order_header") %></strong></p>
+        <p><%= data.polyglot.t("joyride_stop_order_1") %></p>
+        <p><%= data.polyglot.t("joyride_stop_order_2") %></p>
+				<p>
+        <% if ( data.buildType === "phonegap" ) { %>
+					<a href="#" onclick="window.open('http://help.drivewealth.com/customer/portal/articles/1520047-what-is-a-stop-order-', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"><%= data.polyglot.t("joyride_stop_order_3") %></a>
+				<% } else { %>
+					<a href="http://help.drivewealth.com/customer/portal/articles/1520047-what-is-a-stop-order-" target="_blank"><%= data.polyglot.t("joyride_stop_order_3") %></a>
+				<% } %>
+				</p>
+
+    </li>
+</ol>
+<% } %>

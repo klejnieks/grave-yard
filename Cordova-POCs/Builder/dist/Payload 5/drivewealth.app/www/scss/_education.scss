@@ -1,0 +1,23 @@
+#post-byline-container {
+	background-position-x: center;
+	background-position-y: 65%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 15rem;
+	position: relative;
+	margin-bottom: 1.5rem;
+}
+#post-byline {
+	background: rgba(0,0,0,0.6);
+	padding:0.5rem;
+	position: absolute;
+	bottom:0;
+	left: 0.5rem;
+	@include radius($global-radius);
+}
+#post-content {
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="small-12 columns">
+        <h3><%= title %></h3>
+    </div>
+</div>
+<div class="row">
+	<div class="small-12 columns">
+        <ul class="inline-list">
+            <% _.each( tags, function( el ) { %>
+                <li><a href="#">#<%= el %></a></li>
+            <% }); %>
+        </ul>
+    </div>
+</div>
+<div class="row">
+	<div class="small-12 medium-10 columns end">
+        <form id="answer-add-form" data-abide>
+            <label>Your Answer</label>
+            <textarea placeholder="" name="answer-add-content" id="answer-add-content" required></textarea>
+            <small class="error">Answer is required.</small>
+            <button id="answer-add-submit" type="submit" class="ladda-button radius small submit" data-style="zoom-in">
+                <span class="ladda-label">Add Answer</span>
+            </button>
+        </form>
+    </div>
+</div>

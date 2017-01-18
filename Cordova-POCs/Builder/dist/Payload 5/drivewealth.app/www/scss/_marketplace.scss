@@ -1,0 +1,141 @@
+// marketplace page
+
+
+#marketplace-header {
+  margin: 0 0 1rem 0;
+  background-image: url("#{$CDN}/marketplace/marketplace-header.jpg");
+  background-position: center center;
+  background-size:cover;
+  @media #{$small-only} {
+    background-position: 70% 10%;
+  }
+  @include radius($global-radius);
+  padding:3rem 0;
+}
+#marketplace-header {
+  padding-left:0.5rem;
+}
+
+
+#marketplace-row2 {
+   background-image: url("#{$CDN}/marketplace/learningmarkets-graphic-bg.jpg");
+   padding:0;
+   margin: 0;
+   border-radius: $global-radius;
+   background-size: 100% 50%;
+   @media #{$medium-up} {
+     background-size: 50%;
+   }
+   .green-overlay {
+     padding:1em 0.5em;
+     margin:  5% 20%;
+     @media #{$medium-up} {
+       margin: 78px 15%;
+     }
+   }
+
+   .learningmarkets  {
+     background-color: $white;
+     @include side-radius(top, $radius:$global-radius);
+     @include side-radius(bottom, $radius:0);
+     padding: 10px 20px 10px;
+     & p {
+       color: #959595;
+       line-height: 1.3;
+       font-size: 0.85em;
+       margin-top: 10px;
+     }
+     & .learningcourseslogo {
+       width:80%;
+       margin: 5px 0 10px;
+     }
+     @media #{$medium-up} {
+        border-radius: $global-radius 0 0 $global-radius;
+     }
+   }
+
+}
+.bullet-points {
+  list-style: none;
+  > li {
+    margin-bottom:1.25rem;
+  }
+}
+
+.whitepannel {
+  background-color: $white;
+  border-radius:$global-radius;
+  padding: 20px;
+  & .icon-starred:before, .icon-unstarred:before  {
+    font-size: 1.5rem;
+  }
+  & button {
+    margin-top: 10px;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
+  & .bookquote {
+    font-style: italic;
+    color: #6f6f6f;
+    font-size: 0.9em;
+  }
+  & .bookcite {
+    color: #AAA;
+    font-size: 0.8em;
+    margin-bottom:11px;
+  }
+}
+
+.marginadd {
+  margin-bottom: 1em;
+}
+
+.green-overlay {
+  background-color:$success-color;
+  border-radius: $global-radius;
+  cursor: pointer;
+  & p {
+    font-size: 0.8em;
+    margin-bottom:0;
+    color: $white;
+  }
+  & h3 {
+    color: $white;
+  }
+}
+
+/*
+#marketplace-row4 {
+  margin-left:0;
+  margin-right:0;
+  background-image: url('/img/marketplace/williamoneil.jpg');
+  background-size: 100%;
+  border-radius:$global-radius;
+  height:140px;
+  .green-overlay {
+    position:absolute;
+    top:20%;
+    padding: 1em;
+    right:10%;
+  }
+  @media #{$medium-up} {
+    height:265px;
+  }
+
+}
+*/
+
+// learningmarkets page
+
+.subscribe-panel {
+  @include panel(
+      $bg:lighten($success-color,50%),
+      $padding:16px,
+      $adjust:true
+    );
+  @include radius($global-radius);
+}
+.mp-img-preview {
+    border:1px solid $body-bg;
+    box-shadow: 0 0 3px rgba(#333,0.1);
+  }

@@ -1,0 +1,68 @@
+<a class="close-reveal-modal">&#215;</a>
+<form data-abide id="protect-position-form">
+<div class="row">
+    <div class="small-12 small-centered medium-8 columns text-center">
+  		<h4 class="icon-invest-airbag-on airbag-icons"> <%= polyglot.t("investment_airbag_header", {
+              "_": "Investment Airbag"
+          }) %></h4>
+      <p class="t-med t-ltgr">
+          <%= polyglot.t("investment_airbag_desc", {
+              "_": "With investing, managing risk is a sure fire way to protect potential gains and minimize losses. With Investment Airbag we simplified the process of managing risk for each and every investment. You set how much of your investment you want defended and we automatically create a stop order for you. If your investment reaches your defense level, your stop order will be triggered and a sell order will be placed for you."
+          }) %>
+      </p>
+    </div>
+    <div class="small-12 small-centered medium-8 columns">
+        <div class="row collapse order-spinner">
+            <div class="small-2 medium-2 columns">
+                <label><h6 class="bottom">&nbsp;</h6></label>
+                <button class="button prefix bootstrap-touchspin-down" type="button">&mdash;</button>
+            </div>
+            <div class="small-8 medium-8 columns text-center">
+                <label for="market-order-qty"><h6 class="t-ltgr bottom"><%= polyglot.t("investment_airbag_defense_header") %></h6>
+                <input class="order-qty text-center touchspin-qty" type="text" name="protect-modal-percent" id="protect-modal-percent" value="<%= protectionPercent %>" required pattern="^[0-9]+$">
+                <small class="error"><%= polyglot.t("investment_airbag_defense_error") %></small>
+                </label>
+            </div>
+            <div class="small-2 medium-2 columns">
+                <label><h6 class="bottom">&nbsp;</h6></label>
+                <button class="button postfix bootstrap-touchspin-up" type="button">+</button>
+            </div>
+        </div>
+        <div class="panel radius text-center order-price-preview-panel" style="border: 1px solid #37BB9A;">
+            <h6 class="t-ltgr t-med"><%= polyglot.t("investment_airbag_defense_est") %></h6>
+            <h4 style="color:#37BB9A;"><strong id="protect-modal-protected"><%= helpers.formatDollars( newProtectedAmt, true ) %></strong></h4>
+            <h6>
+                <%= polyglot.t("investment_airbag_defense_est_position", {
+                    "_": "of your estimated %{value} position<sup>*</sup>",
+                    "value": helpers.formatMoney( newPositionEst, true )
+                }) %>
+            </h6>
+            <hr />
+            <p class="t-med t-ltgr"><sup>*</sup>
+                <% if ( side === "B" ) { %>
+                    <%= polyglot.t("protect_estimated_desc_buy", {
+                        "_": "To calculate your estimated position, we are using your current position value %{value} plus the amount you are going to purchase. You can see the Investment Protection in place in the <q>Pending Orders</q> section.",
+                        "value": helpers.formatMoney( positionMTM, true )
+                    }) %>
+                <% } else { %>
+                    <%= polyglot.t("protect_estimated_desc_sell", {
+                        "_": "To calculate your estimated position, we are using your current position value %{value} minus the amount you are going to sell. You can see the Investment Protection in place in the <q>Pending Orders</q> section.",
+                        "value": helpers.formatMoney( positionMTM, true )
+                    }) %>
+                <% } %>
+                <% if ( buildType === "phonegap" ) { %>
+                    <a href="#" onclick="window.open('http://help.drivewealth.com/customer/portal/articles/1520047-what-is-a-stop-order-', '_system');" class="nav-link"><%= polyglot.t("learn more about stop orders") %></a>.
+                <% } else { %>
+                    <a href="http://help.drivewealth.com/customer/portal/articles/1520047-what-is-a-stop-order-" target="_blank" class="nav-link"><%= polyglot.t("joyride_stop_order_3") %></a>.
+                <% } %>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="small-6 columns small-centered text-center">
+  		<button type="button" class="ladda-button radius success small" id="add-protect-position"><%= polyglot.t("Save and close") %></button>
+  		<button type="button" class="button radius tiny secondary" id="close-protect-position"><%= polyglot.t("Cancel") %></button>
+    </div>
+</div>
+</form>

@@ -1,0 +1,148 @@
+<div class="row card placard">
+<div class="small-12 columns">
+	<div class="row">
+		<div class="small-12 medium-8 medium-centered columns text-center">
+			<h2><%= polyglot.t("Congratulations") %></h2>
+			<h5>
+				<%
+				if ( ordType == 1 ) {
+					print( polyglot.t("order_confirm_filled" ) )
+					print( "&nbsp;" )
+					print( polyglot.t("order_confirm_email") )
+				} else {
+					print( polyglot.t("order_confirm_entered") )
+					print( "&nbsp;" )
+					print( polyglot.t("order_confirm_status_message") )
+				}
+				%>
+			</h5>
+		</div>
+	</div>
+	<% if ( ordType == 2 && orderExpires ) { %>
+		<div class="small-12 columns medium-8 medium-centered text-center">
+			<div class="panel callout radius bottom">
+				<h6 class="subheader"><%= polyglot.t("order_limit_expiration_msg") %></h6>
+				<h5><strong><%= orderExpires %></strong></h5>
+			</div>
+		</div>
+	<% } %>
+	<div class="row">
+	<div class="small-12 medium-10 medium-centered columns">
+		<hr />
+		<div class="row">
+			<div class="small-3 medium-2 columns text-center">
+				<h6 class="t-ltgr"><%= polyglot.t("Product") %></h6>
+				<img class="order-review-logo" src="<%= cdn %>/images/symbols/<%= symbol.toLowerCase() %>.png" />
+			</div>
+			<div class="small-3 medium-2 columns text-center">
+				<h6 class="t-ltgr"><%= polyglot.t("Action") %></h6>
+				<h5><%= formatOrderSideType( side, ordType ) %></h5>
+				<small class="t-ltgr">(<%= polyglot.t("Unsolicited") %>)</small>
+			</div>
+		    <div class="small-3 medium-2 columns text-center">
+		    	<h6 class="t-ltgr"><%= polyglot.t("Quantity") %></h6>
+		    	<h5><%= orderQty %></h5>
+		    </div>
+		    <div class="small-3 medium-3 columns text-center">
+		    	<h6 class="t-ltgr">
+                    <% if ( ordType == 1 ) {
+                        print( polyglot.t("Price") )
+                    } else {
+                        print( polyglot.t("Entered Price") )
+                    } %>
+                </h6>
+		    	<h5 id="order-estimated-price">
+                    <% if (ordType == 1 ) { %>
+                        <%= formatMoney( actualRate, true, actualScale ) %>
+                    <% } else { %>
+                        <%= formatMoney( rateRequest ) %>
+                    <% } %>
+                </h5>
+		    </div>
+		    <div class="small-12 medium-3 columns text-right show-for-medium-up">
+		    	<h6 class="t-ltgr"><%= polyglot.t("Subtotal") %></h6>
+		    	<h5 id="order-estimated-price">
+                    <strong>
+                    <% if (ordType == 1 ) { %>
+                        <%= formatMoney( actualPrice ) %>
+                    <% } else { %>
+                        <%= formatMoney( estimatedPrice ) %>
+                    <% } %>
+                    </strong>
+                </h5>
+		    </div>
+		</div>
+		<hr />
+		<div class="row">
+		    <div class="small-8 small-offset-4 medium-6 medium-offset-6 columns text-right">
+		    	<div class="row show-for-small-only">
+		    	    <div class="small-6 columns text-right">
+		    	    	<h6 class="t-ltgr">
+                            <% if (ordType == 1 ) {
+                                print( polyglot.t("Subtotal") )
+                            } else {
+                                print( polyglot.t("estimated_subtotal") )
+                            } %>
+                        </h6>
+		    	    </div>
+		    	    <div class="small-6 columns text-right">
+		    	    	<h6 class="t-ltgr">
+                            <% if (ordType == 1 ) { %>
+                                <%= formatMoney( actualPrice ) %>
+                            <% } else { %>
+                                <%= formatMoney( estimatedPrice ) %>
+                            <% } %>
+                        </h6>
+		    	    </div>
+		    	</div>
+				<div class="row">
+				    <div class="small-6 columns text-right">
+				    	<h6 class="t-ltgr">
+                            <%= polyglot.t("Commission") %>
+                            <% if ( ordType == 3 || ordType == 2 ) { %>
+                                <br /><small>(<%= polyglot.t("If executed") %>)</small>
+                            <% } %>
+                        </h6>
+				    </div>
+				    <div class="small-6 columns text-right">
+				    	<h6 class="t-ltgr">
+                            <% if ( ordType == 1 ) { %>
+                                <%= formatMoney( commission ) %>
+                            <% } else { %>
+                                <%= formatMoney( estimatedCommission ) %>
+                            <% } %>
+                        </h6>
+				    </div>
+				</div>
+				<hr class="show-for-small-only" />
+				<div class="row">
+					<div class="small-6 columns text-right">
+			    		<h4>
+                            <strong>
+                            <% if (ordType == 1 ) {
+                                print( polyglot.t("Total") )
+                            } else {
+                                print( polyglot.t("estimated_total") )
+                            } %>
+                            </strong>
+                        </h4>
+			    	</div>
+			    	<div class="small-6 columns text-right">
+			    		<h4 id="order-estimated-total">
+                            <strong>
+                                <% if (ordType == 1 ) { %>
+                                    <%= formatMoney( actualTotal ) %>
+                                <% } else { %>
+                                    <%= formatMoney( estimatedTotal ) %>
+                                <% } %>
+                            </strong>
+                        </h4>
+			    		<p>&nbsp;</p>
+			    	</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+</div>

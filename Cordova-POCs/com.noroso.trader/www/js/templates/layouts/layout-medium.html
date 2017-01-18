@@ -1,0 +1,158 @@
+<div class="contain-to-grid fixed">
+<nav class="top-bar" data-topbar style="background-image:url('<%= cdn %>/<%= WLPID %>/<%= WLP_Logo_InApp %>');">
+	<section class="top-bar-section">
+	<ul class="right">
+		<li class="divider"></li>
+		<li><div id="account-brief" class="row text-center"></div></li>
+		<li class="divider"></li>
+		<li class="has-dropdown"><a href="#"><img src="<%= avatarUrl %>?s=48&r=pg&d=mm" class="user-avatar" /></a>
+			<ul class="dropdown">
+              <li><a href="/profile" class="nav-topbar icon-settings acct-icon"> <%= polyglot.t("Profile") %></a></li>
+              <li><a href="/reports" class="nav-topbar icon-xls acct-icon"> <%= polyglot.t("Reports") %></a></li>
+						<% if ( !hasLiveAcct ) { %>
+						<% } else { %>
+							<li><a href="/profile/add-document" class="nav-topbar acct-icon icon-upload"><%= polyglot.t("Document Upload") %></a></li>
+						<% } %>
+            <% if ( buildType === "phonegap" ) { %>
+              <li><a href="#" class="nav-topbar icon-help acct-icon" onclick="window.open('http://help.drivewealth.com', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"> <%= polyglot.t("Help") %></a></li>.
+            <% } else { %>
+              <li><a href="http://help.drivewealth.com" class="nav-topbar icon-help acct-icon" target="_blank"> <%= polyglot.t("Help") %></a></li>
+            <% } %>
+              <li><a href="/logout" class="nav-topbar icon-logout acct-icon"> <%= polyglot.t("Logout") %></a></li>
+			</ul>
+		</li>
+	</ul>
+	</section>
+</nav>
+</div>
+<div class="row" id="med-container">
+	<nav class="small-3 columns" id="med-nav">
+		<button href="#" data-dropdown="acct-drop" class="dds" id="acct-drop-btn">
+			<h6 class="dds-item-name snip"> <%= polyglot.t(selAccName) %></h6>
+			<p class="t-med t-ltgr acct-drop-num"><%= polyglot.t("Account #:") + " " + selAcctNo %></p>
+			<p class="<%= selMarketState.className %> t-med bottom acct-drop-market-state"> <%= polyglot.t(selMarketState.desc) %></p>
+		</button><br>
+		<ul id="acct-drop" class="dds-items large f-dropdown" data-dropdown-content>
+			<li class="text-center dds-item-header"><%= polyglot.t("YOUR ACCOUNTS") %></li>
+			<%
+					var marketState = "",
+							accName = "";
+					accounts.each( function( account ) {
+							if ( marketStateConfig[ account.get("accountType") ] ) {
+									marketState = marketStateConfig[ account.get("accountType") ][ marketStateStatus ];
+							} else {
+									marketState = marketStateConfig["default"][ marketStateStatus];
+							}
+							accName = (account.get('accountType') == 1) ? "Your Practice Account" : "Your Live Account";
+
+
+			%>
+			<li class="dds-item" data-account-id="<%= account.get("accountID") %>">
+				<div class="row">
+					<div class="small-9 columns">
+						<h6 class="dds-item-name snip"> <%= polyglot.t(accName) %> </h6>
+						<p class="t-med t-ltgr acct-drop-num"><%= polyglot.t("Account #:") + " " + account.get("accountNo") %></p>
+					</div>
+					<div class="small-3 columns text-center">
+						<div class="icon-answered dds-item-select <% if ( selAcct == account.get('accountID') ) { %>active<% } %>"></div>
+					</div>
+					<div class="small-12 columns">
+						<p class="<%= marketState.className %> t-med bottom acct-drop-market-state"> <%= polyglot.t(marketState.desc) %></p>
+					</div>
+				</div>
+			</li>
+			<%  }); %>
+		</ul>
+
+		<ul class="nav-list pinned-nav">
+			<li><a href="/" class="nav-list-item icon-home"><%= polyglot.t("Home") %></a></li>
+			<!--<li><a href="/goals" class="nav-list-item icon-goals"><%= polyglot.t("Goals") %></a></li>-->
+			<li><a href="/portfolio" class="nav-list-item icon-positions"><%= polyglot.t("Portfolio") %></a></li>
+			<li><a href="/stocks-etfs" class="nav-list-item icon-products"><%= polyglot.t("Stocks / ETFs") %></a></li>
+			<li><a href="/education" class="nav-list-item icon-learn"><%= polyglot.t("Education") %></a></li>
+			<li><a href="/questions" class="nav-list-item icon-q-and-a"><%= polyglot.t("Community Q & A") %></a></li>
+			<li><a href="/marketplace" class="nav-list-item icon-marketplace"><%= polyglot.t("Marketplace") %></a></li>
+		</ul>
+
+        <% if ( selAcctType === 2 ) { %>
+			<div class="panel-funding text-center">
+            <p><img src="<%= cdn %>/images/funding/funding-icons.png" /></p>
+
+                <% if ( buildType === "phonegap" ) { %>
+                    <a href="#" class="button radius primary" onclick="window.open('<%= appsDomain %>/funding/?accountID=<%= selAcct %>&userID=<%= userID %>&sessionKey=<%= sessionKey %>&lang=<%= languageID %>&buildType=full', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("banner_funding_button") %></a>
+                <% } else { %>
+                    <p class="bottom"><button id="paymentsButton" class="button radius primary"><%= polyglot.t("banner_funding_button") %></button></p>
+                    <script
+                    src="<%= appsDomain %>/funding/modal/main.js"
+                    class="drivewealth-payments"
+                    data-base="<%= appsDomain %>"
+                    data-funding-path="<%= appsDomain %>/funding"
+                    data-userid="<%= userID %>"
+                    data-accountid="<%= selAcct %>"
+                    data-sessionkey="<%= sessionKey %>"
+                    data-languageid="<%= languageID %>"
+                    data-buildtype="embed"
+                    data-email="<%= email %>"
+                    data-username="<%= userName %>"
+                    ></script>
+                <% } %>
+
+			</div>
+
+        <% } %>
+
+        <% if ( !hasLiveAcct ) { %>
+            <div class="panel-live-account text-center">
+                <h5><%= polyglot.t("banner_open_live_acct_header") %></h5>
+                <p class="t-med t-ltgr"><%= polyglot.t("banner_open_live_acct_copy") %></p>
+                <% if ( buildType === "phonegap" ) { %>
+                    <a href="#" class="button tiny radius primary" onclick="window.open('<%= appsDomain %>/live-signup/?sessionKey=<%= sessionKey %>&lang=<%= languageID %>', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("Open a Live Account") %></a>.
+                <% } else { %>
+                    <p><a id="open-live-acct" href="<%= appsDomain %>/live-signup/?sessionKey=<%= sessionKey %>&lang=<%= languageID %>" class="button tiny radius primary" target="_blank"><%= polyglot.t("Open a Live Account") %></a></p>
+                <% } %>
+            </div>
+        <% } %>
+	</nav>
+
+    <section class="small-9 columns">
+        <div class="row" id="action-bar-container">
+            <div class="small-3 columns" id="main-action-menu">&nbsp;</div>
+            <div class="small-6 columns text-center">
+                <h3 id="main-action-title"></h3>
+            </div>
+            <div class="small-3 columns text-right" id="main-action-button">&nbsp;</div>
+        </div>
+        <div class="row">
+        	<div class="medium-12 columns" id="main"></div>
+        </div>
+        <div class="row">
+        	<div class="medium-12 columns text-center">
+            <div class="footer-links">
+							<p class="footer-disclaimer">
+									<%= polyglot.t("app_disclaimer_4", {
+											"_": "Investment Products: Not a Deposit • Not FDIC Insured • No Bank Guarantee • Not Insured by any Federal Government Agency • May Lose Value."
+									}) %>
+							</p>
+	        		<p>
+	              <%= polyglot.t("footer_security_disclaimer") %> DriveWealth, LLC &bull; Member
+	              <% if ( buildType === "phonegap" ) { %>
+									<a href="#" onclick="window.open('http://brokercheck.finra.org/Firm/Summary/165429', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">FINRA</a> /
+									<a href="#" onclick="window.open('http://sipc.org', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">SIPC</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="#" onclick="window.open('http://drivewealth.com/terms-of-use', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("Terms of Use") %></a>&nbsp;&nbsp;
+                  <a href="#" onclick="window.open('http://drivewealth.com/privacy-policy', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("Privacy Policy") %></a>&nbsp;&nbsp;
+	              <% } else { %>
+									<a href="http://brokercheck.finra.org/Firm/Summary/165429" target="_blank" class="t-ltgr nav-item">FINRA</a> /
+									<a href="http://sipc.org" class="t-ltgr nav-item" target="_blank">SIPC</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+                  <a href="http://drivewealth.com/terms-of-use" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Terms of Use") %></a>&nbsp;&nbsp;
+                  <a href="http://drivewealth.com/privacy-policy" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Privacy Policy") %></a>&nbsp;&nbsp;
+	              <% } %>
+									<a href="#" class="footer-disclaimer-modal t-ltgr nav-item"><%= polyglot.t("disclaimer_read_more") %></a>
+	            </p>
+							<p>
+								Version <%= version %>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<%= polyglot.t("Market Data by") %> BATS Exchange
+							</p>
+            </div>
+        	</div>
+        </div>
+    </section>
+</div>

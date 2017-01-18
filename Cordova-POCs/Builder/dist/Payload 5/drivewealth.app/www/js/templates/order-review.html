@@ -1,0 +1,88 @@
+<div class="row card placard">
+<div class="small-12 columns">
+	<div class="row">
+	<div class="small-12 medium-10 medium-centered columns">
+	<p class="show-for-medium-up">&nbsp;</p>
+	<div class="row">
+		<div class="small-3 medium-2 columns text-center">
+			<h6 class="t-ltgr"><%= data.polyglot.t("Product") %></h6>
+			<img class="order-review-logo" src="<%= data.cdn %>/images/symbols/<%= data.symbol.toLowerCase() %>.png" />
+		</div>
+		<div class="small-3 medium-2 columns text-center">
+			<h6 class="t-ltgr"><%= data.polyglot.t("Action") %></h6>
+			<h5><%= data.formatOrderSideType( data.side, data.ordType ) %></h5>
+			<small class="t-ltgr">(<%= data.polyglot.t("Unsolicited") %>)</small>
+		</div>
+	    <div class="small-3 medium-2 columns text-center">
+	    	<h6 class="t-ltgr"><%= data.polyglot.t("Quantity") %></h6>
+	    	<h5><%= data.orderQty %></h5>
+	    </div>
+	    <div class="small-3 medium-3 columns text-center">
+	    	<h6 class="t-ltgr">
+                <% if ( data.ordType == 1 ) {
+                    print( data.polyglot.t("Price") )
+                } else {
+                    print( data.polyglot.t("Entered Price") )
+                } %>
+            </h6>
+	    	<h5 id="order-estimated-rate"><%= data.formatMoney( data.rateRequest ) %></h5>
+	    </div>
+	    <div class="small-12 medium-3 columns text-right show-for-medium-up">
+	    	<h6 class="t-ltgr"><%= data.polyglot.t("estimated_subtotal") %></h6>
+	    	<h5 id="order-estimated-price"><strong><%= data.formatMoney( data.estimatedPrice ) %></strong></h5>
+	    </div>
+	</div>
+	<hr />
+	<div class="row">
+	    <div class="small-8 small-offset-4 medium-6 medium-offset-6 columns text-right">
+	    	<div class="row show-for-small-only">
+	    	    <div class="small-6 columns text-right">
+	    	    	<h6 class="t-ltgr"><%= data.polyglot.t("estimated_subtotal") %></h6>
+	    	    </div>
+	    	    <div class="small-6 columns text-right">
+	    	    	<h6 class="t-ltgr"><%= data.formatMoney( data.estimatedPrice ) %></h6>
+	    	    </div>
+	    	</div>
+    		<div class="row">
+    		    <div class="small-6 columns text-right">
+    		    	<h6 class="t-ltgr"><%= data.polyglot.t("Commission") %> <% if ( data.orderQty > 250 ) { %>*<% } %> <% if ( data.ordType == 3 || data.ordType == 2 ) { %><br /><small>(<%= data.polyglot.t("If executed") %>)</small><% } %></h6>
+    		    </div>
+    		    <div class="small-6 columns text-right">
+    		    	<h6 class="t-ltgr"><%= data.formatMoney( data.estimatedCommission ) %></h6>
+    		    </div>
+    		</div>
+    		<hr class="show-for-small-only" />
+    		<div class="row">
+    			<div class="small-6 columns text-right">
+		    		<h5><strong><%= data.polyglot.t("estimated_total") %></strong></h5>
+		    	</div>
+		    	<div class="small-6 columns text-right">
+		    		<h4 id="order-estimated-total"><strong><%= data.formatMoney( data.estimatedTotal ) %></strong></h4>
+		    	</div>
+    		</div>
+    	</div>
+    </div>
+
+    <% if ( data.featureTogglesAutoStop && data.showAutoStop ) { %>
+        <div class="row">
+            <div class="small-12 columns text-right" id="position-protect-container">
+                <%= data.renderProtectionState( { "data": data } ) %>
+            </div>
+        </div>
+    <% } %>
+
+	<br />
+	<div class="row">
+	    <div class="small-12 medium-6 columns right">
+	        <button id="submit-order" type="button" class="ladda-button radius expand primary" data-style="zoom-in">
+	            <span class="ladda-label"><%= data.polyglot.t("Submit Order") %></span>
+	        </button>
+	        <% if ( data.orderQty > 250 ) { %>
+	        <p class="t-ltgr"><small>* <%= data.polyglot.t("order_review_quantity_note") %></small></p>
+	        <% } %>
+	    </div>
+	</div>
+	</div>
+	</div>
+</div>
+</div>

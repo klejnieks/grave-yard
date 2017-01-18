@@ -1,0 +1,108 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+//
+// Global Variables
+//
+$CDN:	"https://d3an3cesqmrf1x.cloudfront.net/images";
+
+// import foundation settings
+@import "_settings";
+
+// Behold, here are all the Foundation components.
+//
+// Default
+/*
+  @import "foundation/components/grid";
+  @import "foundation/components/accordion";
+  @import "foundation/components/alert-boxes";
+  @import "foundation/components/block-grid";
+  @import "foundation/components/breadcrumbs";
+  @import "foundation/components/button-groups";
+  @import "foundation/components/buttons";
+  @import "foundation/components/clearing";
+  @import "foundation/components/dropdown";
+  @import "foundation/components/dropdown-buttons";
+  @import "foundation/components/flex-video";
+  @import "foundation/components/forms";
+  @import "foundation/components/icon-bar";
+  @import "foundation/components/inline-lists";
+  @import "foundation/components/joyride";
+  @import "foundation/components/keystrokes";
+  @import "foundation/components/labels";
+  @import "foundation/components/magellan";
+  @import "foundation/components/orbit";
+  @import "foundation/components/pagination";
+  @import "foundation/components/panels";
+  @import "foundation/components/pricing-tables";
+  @import "foundation/components/progress-bars";
+  @import "foundation/components/range-slider";
+  @import "foundation/components/reveal";
+  @import "foundation/components/side-nav";
+  @import "foundation/components/split-buttons";
+  @import "foundation/components/sub-nav";
+  @import "foundation/components/switches";
+  @import "foundation/components/tables";
+  @import "foundation/components/tabs";
+  @import "foundation/components/thumbs";
+  @import "foundation/components/tooltips";
+  @import "foundation/components/top-bar";
+  @import "foundation/components/type";
+  @import "foundation/components/offcanvas";
+  @import "foundation/components/visibility";
+
+*/
+  @import "../lib/foundation/scss/foundation/components/grid";
+  @import "../lib/foundation/scss/foundation/components/alert-boxes";
+  @import "../lib/foundation/scss/foundation/components/block-grid";
+  @import "../lib/foundation/scss/foundation/components/breadcrumbs";
+  @import "../lib/foundation/scss/foundation/components/button-groups";
+  @import "../lib/foundation/scss/foundation/components/buttons";
+  @import "../lib/foundation/scss/foundation/components/clearing";
+  @import "../lib/foundation/scss/foundation/components/dropdown";
+  @import "../lib/foundation/scss/foundation/components/dropdown-buttons";
+  @import "../lib/foundation/scss/foundation/components/forms";
+  @import "../lib/foundation/scss/foundation/components/inline-lists";
+  @import "../lib/foundation/scss/foundation/components/joyride";
+  @import "../lib/foundation/scss/foundation/components/labels";
+  @import "../lib/foundation/scss/foundation/components/orbit";
+  @import "../lib/foundation/scss/foundation/components/pagination";
+  @import "../lib/foundation/scss/foundation/components/panels";
+  @import "../lib/foundation/scss/foundation/components/pricing-tables";
+  @import "../lib/foundation/scss/foundation/components/progress-bars";
+  @import "../lib/foundation/scss/foundation/components/range-slider";
+  @import "../lib/foundation/scss/foundation/components/reveal";
+  @import "../lib/foundation/scss/foundation/components/split-buttons";
+  @import "../lib/foundation/scss/foundation/components/switches";
+  @import "../lib/foundation/scss/foundation/components/tables";
+  @import "../lib/foundation/scss/foundation/components/tabs";
+  @import "../lib/foundation/scss/foundation/components/thumbs";
+  @import "../lib/foundation/scss/foundation/components/tooltips";
+  @import "../lib/foundation/scss/foundation/components/top-bar";
+  @import "../lib/foundation/scss/foundation/components/type";
+  @import "../lib/foundation/scss/foundation/components/offcanvas";
+  @import "../lib/foundation/scss/foundation/components/visibility";
+
+// custom mixins
+@import "_mixins.scss";
+
+// Loader
+@import "_nprogress.scss";
+
+// custom application sass and partials go here
+@import "_custom.scss";
+
+// sections of the app
+@import "_goals.scss";
+@import "_education.scss";
+@import "_products.scss";
+@import "_positions.scss";
+@import "_questions.scss";
+@import "_datepicker.scss";
+@import "_datepicker-date.scss";
+@import "_report.scss";
+@import "_marketplace.scss";
+@import "_slide-down-menu.scss";
+
+// web font icons
+@import "_webfonts.scss";

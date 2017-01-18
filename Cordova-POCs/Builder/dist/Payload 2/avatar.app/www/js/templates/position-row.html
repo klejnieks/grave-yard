@@ -1,0 +1,24 @@
+<div class="row position card" id="<%= data.position.instrument.symbol %>" data-instrument-id="<%= data.position.instrumentID %>" data-target-path="/stocks-etfs/">
+	<div class="small-4 medium-2 columns">
+		<img class="" src="<%= data.cdn %>/images/symbols/<%= data.position.instrument.symbol.toLowerCase() %>.png" >
+	</div>
+	<div class="hide-for-small-only medium-4 columns text-left">
+		<h5 class="snip"><%= data.position.instrument.name %></h5>
+		<h6 class="t-ltgr"><%= data.position.instrument.symbol %></h6>
+		<ul class="inline-list tags">
+		    <% _.each( data.position.instrument.tags, function( el ) { %>
+		        <li><a href="/tags/<%= el %>" class="tag">#<%= data.helpers.escapeHtml( el ) %></a></li>
+		    <% }); %>
+		</ul>
+	</div>
+    <div class="small-8 medium-5 columns position-values">
+        <%= data.templatePosValues( { "data": data } ) %>
+    </div>
+    <div class="small-12 medium-1 columns text-right small-text-left">
+    	<% if ( _.findWhere( data.favorites, { "ID": data.position.instrumentID, "type": "position" } ) ) { %>
+    	    <a href="#" class="favorite icon-starred" data-favorite-type="position" data-favorite-id="<%= data.position.instrumentID %>"></a>
+    	<% } else { %>
+    	    <a href="#" class="favorite icon-unstarred" data-favorite-type="position" data-favorite-id="<%= data.position.instrumentID %>"></a>
+    	<% } %>
+    </div>
+</div>

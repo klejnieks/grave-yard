@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="small-6 columns">
+        Allocation lets you assign purchased shares of "" to your goals.  The more shares you allocate towards a goal, the more value it gets.
+    </div>
+    <div class="small-6 columns">
+        Shares Allocated
+    </div>
+</div>
+<div id="goals">
+<% _.each( data.goals, function( goal ) { %>
+    <%
+        data["goal"] = goal;
+        print( data.templateGoalRow( { "data": data } ) ); 
+    %>
+<% }); %>
+</div>

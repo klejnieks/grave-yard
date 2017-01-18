@@ -1,0 +1,18 @@
+<h5><%= data.polyglot.t("Related Articles") %></h5>
+<p class="t-med t-ltgr"><%= data.polyglot.t("Explore related content on DriveWealth") %></p>
+<div id="tags">
+    <% if ( !data.tags || data.tags.length == 0 ) { %>
+        <div class="alert-box secondary t-med"><%= data.polyglot.t("tags_sorry") %></div>
+    <% } else { %>
+        <% _.each( data.tags, function( tag ) { %>
+            <%
+                if ( !data.parent || data.parent.type !== tag.type || data.parent.id !== tag.ID ) {
+                    _.extend( data, {
+                        "tag": tag,
+                    }); 
+                    print( data.templateTagRow( { "data": data } ) ); 
+                }
+            %>
+        <% }); %>
+    <% } %>
+</div>

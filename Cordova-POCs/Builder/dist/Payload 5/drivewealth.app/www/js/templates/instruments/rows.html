@@ -1,0 +1,35 @@
+<%
+    if ( ( !data.instruments || data.instruments.length == 0 ) && !data.searchTerm ) {
+%>
+    <div class="row">
+        <div class="small-12 small-centered medium-10 columns">
+            <div class="alert-box warning"><%= data.polyglot.t("No Stocks / ETFs found") %></div>
+        </div>
+    </div>
+<%
+    } else {
+%>
+    <% if ( !data.showTags && !data.showSymbols && !data.showRecent && !data.showSearch ) { %>
+        <h6><%= data.polyglot.t("Our most popular Stocks / ETFs") %></h6>
+    <% } else if ( data.showRecent && !data.showSearch ) { %>
+        <h6><%= data.polyglot.t("products_most_viewed_personal") %></h6>
+    <% } %>
+
+    <ul class="small-block-grid-3 medium-block-grid-2">
+    <% _.each( data.instruments, function( instrument ) { %>
+        <%
+            _.extend( data, {
+                "instrument": instrument,
+            });
+            print( data.templateInstRow( { "data": data } ) );
+        %>
+    <% }); %>
+    </ul>
+<%
+    }
+%>
+<% if ( !data.showAll && !data.thinQuotes ) { %>
+<div class="text-center">
+    <a href="/stocks-etfs" id="" class="button primary radius text-center instrument-all"><%= data.polyglot.t("Show All Stocks / ETFs") %></a>
+</div>
+<% } %>

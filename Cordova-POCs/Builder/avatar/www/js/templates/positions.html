@@ -1,0 +1,48 @@
+<div id="positions">
+<div class="row">
+	<div class="small-12 medium-7 columns medium-text-left small-text-center">
+    <h4 class="bottom"><strong><%= data.polyglot.t("Current Investments") %></strong></h4>
+  </div>
+  <div class="small-12 medium-5 columns medium-text-right small-text-center">
+		<h4 class="bottom">
+			<small><%= data.polyglot.t("TOTAL VALUE") %></small>
+			<strong id="positionsMTM"><%= data.helpers.formatMoney(data.markToMarket) %> </strong>
+      <span class="label tiny radius <% if (data.helpers.extractSign( data.profitAndLoss) == "+") { print(' success') } else { print(' alert') } %>" id="positionsPNL">
+      <%= data.helpers.extractSign( data.profitAndLoss ) + data.helpers.formatMoney( data.helpers.removeSign( data.profitAndLoss ) ) %></span>
+		</h4>
+   </div>
+   <div class="small-12 columns">
+     <hr class="top" />
+   </div>
+</div>
+<% _.each( data.positions, function( position ) { %>
+    <%
+
+        if ( position.instrument ) {
+            _.extend( data, {
+                "position": position,
+            });
+            print( data.templatePosRow( { "data": data } ) );
+        }
+    %>
+<% }); %>
+</div>
+
+<div id="orders">
+<div class="row">
+	<div class="small-12 columns medium-text-left small-text-center">
+    <h4 class="bottom"><strong><%= data.polyglot.t("Pending Orders") %></strong> <div class="has-tip tip-top radius" data-tooltip title="<%= data.polyglot.t("tooltip_positions_pending") %>">?</div></h4>
+    <hr class="top" />
+  </div>
+</div>
+<% _.each( data.pending, function( order ) { %>
+    <%
+        if ( order.instrument && ( order.ordType === "2" || order.ordType === "3" ) && ( !order.ordStatus || order.ordStatus === "0" ) ) {
+            _.extend( data, {
+                "order": order,
+            });
+            print( data.templateOrdRow( { "data": data } ) );
+        }
+    %>
+<% }); %>
+</div>

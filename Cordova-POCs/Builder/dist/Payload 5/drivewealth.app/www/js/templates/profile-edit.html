@@ -1,0 +1,135 @@
+<div class="card row placard">
+<div class="small-12 columns">
+	<p>&nbsp;</p>
+	<form id="profile-edit-form" data-abide>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Avatar") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <img src="<%= avatarUrl %>" alt="" class="user-avatar" />
+	            <p>
+                <% if ( buildType === "phonegap" ) { %>
+                    <a href="#" class="button tiny radius primary" onclick="window.open('<%= avatarUrl.replace("/avatar", "") %>', '_system');" class="t-ltgr"><%= polyglot.t("Edit your avatar") %></a>.
+                <% } else { %>
+                    <a href="<%= avatarUrl.replace("/avatar", "") %>" class="nav-link t-med" target="_blank"><%= polyglot.t("Edit your avatar") %></a>
+                <% } %>
+                </p>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("First Name") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <h6><%= firstName %></h6>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Last Name") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <h6><%= lastName %></h6>
+	        </div>
+	    </div>
+
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Address") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <input type="text" name="addressLine1" id="addressLine1" required  value="<%= addressLine1 %>" />
+	            <small class="error"><%= polyglot.t("Address is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader">&nbsp;</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <input type="text" name="addressLine2" id="addressLine2" value="<%= addressLine2 %>" />
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("City") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <input type="text" name="city" id="city" required  value="<%= city %>" />
+	            <small class="error"><%= polyglot.t("City is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("State / Province / Region") %>:</h6>
+	        </div>
+	        <div class="small-2 columns end">
+	            <input type="text" name="stateProvince" id="stateProvince" required  value="<%= stateProvince %>" />
+	            <small class="error"><%= polyglot.t("State / Province / Region is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("ZIP / Postal Code") %>:</h6>
+	        </div>
+	        <div class="small-3 columns end">
+	            <input type="text" name="zipPostalCode" id="zipPostalCode" required  value="<%= zipPostalCode %>" />
+	            <small class="error"><%= polyglot.t("ZIP / Postal Code is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Country") %>:</h6>
+	        </div>
+	        <div class="small-4 columns end">
+                <select name="countryID" id="countryID" required>
+                    <option value=""><%= polyglot.t("Select Country") %></option>
+                    <% _.each( countries, function( country ) { %>
+	                    <option value="<%= country.ID %>" <% if ( country.ID == countryID ) { print("SELECTED") } %>><%= country.name %></option>
+                    <% }); %>
+                </select>
+	            <small class="error"><%= polyglot.t("Country is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Email") %>:</h6>
+	        </div>
+	        <div class="small-8 columns">
+	            <input type="email" name="emailAddress1" id="emailAddress1" required  value="<%= emailAddress1 %>" />
+	            <small class="error"><%= polyglot.t("Email is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Language") %>:</h6>
+	        </div>
+	        <div class="small-4 columns end">
+	            <select name="language" id="language">
+	                <option value=""><%= polyglot.t("Select Language") %></option>
+	                <% _.each( languages, function( language ) { %>
+	                    <option value="<%= language.languageID %>" <% if ( language.languageID == languageID ) { print("SELECTED") } %>><%= language.nameEnglish %></option>
+	                <% }); %>
+	            </select>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-4 columns text-right">
+	            <h6 class="subheader"><%= polyglot.t("Phone") %>:</h6>
+	        </div>
+	        <div class="small-5 columns end">
+	            <input type="number" name="phoneHome" id="phoneHome" required  value="<%= phoneHome %>" />
+	            <small class="error"><%= polyglot.t("Phone is required") %>.</small>
+	        </div>
+	    </div>
+	    <div class="row">
+	        <div class="small-12 small-centered medium-8 columns">
+	            <button id="profile-edit-submit" type="submit" class="ladda-button radius small submit expand" data-style="zoom-in">
+	                <%= polyglot.t("Save Profile") %>
+	            </button>
+	        </div>
+	    </div>
+	</form>
+</div>
+</div>

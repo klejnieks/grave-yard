@@ -1,0 +1,11 @@
+<ul class="inline-list right">
+	<li class="text-center">
+		<h5><small><%= data.polyglot.t("SHARES OWNED") %></small><br /> <% if ( data.position.side == "S" ) { %>-<% } %><%= data.position.openQty %></h5>
+		<span class="label tiny radius tertiary"><%= data.polyglot.t("Current Price") %>:<br class="show-for-small-only" /> <%= data.helpers.formatFlashRate( data.position.instrument.rateAsk, data.position.instrument.prevRateAsk, data.position.instrument.rateChangeAskFlash, true ) %></span>
+	</li>
+	<li class="text-center">
+		<h5><small><%= data.polyglot.t("VALUE") %></small><br /><strong><%= data.helpers.formatFlashRate( data.position.markToMarket, data.position.prevMarkToMarket, data.position.markToMarketChange ) %></strong></h5>
+		<span class="label tiny radius <% if (data.helpers.extractSign( data.position.profitAndLoss ) == "+") { print(' success') } else { print(' alert') } %>" id="positionsMTM">
+		<%= data.helpers.extractSign( data.position.profitAndLoss ) %> <%= data.helpers.formatMoney( data.helpers.removeSign( data.position.profitAndLoss ) ) %></span>
+	</li>
+</ul>

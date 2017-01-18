@@ -1,0 +1,23 @@
+<div class="small-12 columns text-center">
+    <h5 class="icon-positions current-position-icon"> <%= data.polyglot.t("instrument_detail_position", {"symbol": data.name}) %></h5>
+</div>
+<div class="small-4 columns text-center">
+    <h4>
+        <small><%= data.polyglot.t("SHARES") %></small><br />
+        <strong><% if ( data.position.side == "S" ) { %>-<% } %><%= data.position.openQty %></strong>
+    </h4>
+</div>
+<div class="small-4 columns text-center">
+    <h4>
+        <small><%= data.polyglot.t("avg_price") %></small>
+        <div class="has-tip tip-top radius" data-tooltip title="<%= data.polyglot.t("tooltip_instrument_position_avg_price", {"name": data.name}) %>">?</div><br />
+        <strong><%= data.helpers.formatMoney( data.position.volumeWeightedAvg ) %></strong>
+    </h4>
+</div>
+<div class="small-4 columns text-center">
+    <h4>
+        <small>+ / -</small>
+        <div class="has-tip tip-top radius" data-tooltip title="<%= data.polyglot.t("tooltip_instrument_position_pnl", {"name": data.name}) %>">?</div><br />
+        <strong id="position-pnl"><%= data.renderPNL( { "data": data } ) %></strong>
+    </h4>
+</div>

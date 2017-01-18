@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="small-6 columns">
+        <div class="" style="background-image: url('<%= data.goal.imageUrl %>');background-size:cover;height:150px;">&nbsp;</div>
+    </div>
+    <div class="small-6 columns">
+
+        <div class="row">
+            <div class="small-12 columns">
+                <%= data.goal.description %>
+            </div>
+        </div>
+
+        <div class="row collapse order-spinner">
+            <div class="small-2 medium-2 columns">
+                <label><h6 class="bottom">&nbsp;</h6></label>
+                <button class="button prefix bootstrap-touchspin-down" type="button">&mdash;</button>
+            </div>
+            <div class="small-8 medium-8 columns text-center">
+                <label for="allocation-qty">
+                    <h6 class="t-ltgr bottom"><%= data.polyglot.t("Shares Allocated") %></h6>
+                    <input class="allocation-qty text-center touchspin-qty" type="text" name="allocation-qty-" id="allocation-qty-" data-goal-id="<%= data.goal.goalID %>" value="<% if ( data.goal.allocatedQty ) { print( data.goal.allocatedQty ) } %>" required pattern="^[0-9]+$">
+                </label>
+            </div>
+            <div class="small-2 medium-2 end columns">
+                <label><h6 class="bottom">&nbsp;</h6></label>
+                <button class="button postfix bootstrap-touchspin-up" type="button">+</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="small-12 columns">
+                Value
+            </div>
+        </div>
+
+    </div>
+</div>

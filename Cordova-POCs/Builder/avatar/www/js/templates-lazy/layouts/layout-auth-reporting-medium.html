@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="medium-6 columns">
+    <p style="margin:0.5rem 0"><img src="<%= cdn %>/<%= WLPID %>/<%= WLP_Logo %>" class="logo med" /></p>
+  </div>
+  <div class="medium-4 end columns text-right">
+    <p style="margin:1rem 0 0 0"><a href="/logout" class="nav-link"> <%= polyglot.t("Logout") %></a></p>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="small-12 medium-10 columns">
+    <ul class="tabs button-group even-2 radius" data-tab id="">
+      <li class="tab-title active text-center"><a href="#reporting"><%= polyglot.t("Reports") %></a></li>
+      <li class="tab-title text-center"><a href="#funding"><%= polyglot.t("cc-funding-input-submit") %></a></li>
+    </ul>
+    <div class="tabs-content">
+      <div class="content active" id="reporting">
+        <div id="main" class="small-12 columns"></div>
+      </div>
+      <div class="content" id="funding">
+        <div class="small-12 columns">
+          <div class="placard row">
+            <div class="medium-6 columns text-center">
+              <hr />
+              <h3><%= polyglot.t("cc-funding-header") %></h3>
+              <p><a target="_blank" href="<%= appsDomain %>/funding/?accountID=<%= selAcct %>&userID=<%= userID %>&sessionKey=<%= sessionKey %>&lang=<%= languageID %>&buildType=full" class="button radius success"><%= polyglot.t("cc-funding-input-submit") %></a></p>
+              <hr />
+            </div>
+            <div class="medium-6 columns text-center">
+              <img src="<%= cdn %>/images/funding/funding-icons-banner.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="medium-12 columns text-center">
+    <div class="footer-links">
+      <p class="footer-disclaimer">
+          <%= polyglot.t("app_disclaimer_4", {
+              "_": "Investment Products: Not a Deposit • Not FDIC Insured • No Bank Guarantee • Not Insured by any Federal Government Agency • May Lose Value."
+          }) %>
+      </p>
+      <p>
+        <%= polyglot.t("footer_security_disclaimer") %> DriveWealth, LLC &bull; Member
+          <a href="http://brokercheck.finra.org/Firm/Summary/165429" target="_blank" class="t-ltgr nav-item">FINRA</a> /
+          <a href="http://sipc.org" class="t-ltgr nav-item" target="_blank">SIPC</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+          <a href="http://drivewealth.com/terms-of-use" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Terms of Use") %></a>&nbsp;&nbsp;
+          <a href="http://drivewealth.com/privacy-policy" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Privacy Policy") %></a>&nbsp;&nbsp;
+          <a href="#" class="footer-disclaimer-modal t-ltgr nav-item"><%= polyglot.t("disclaimer_read_more") %></a>
+      </p>
+      <p>
+        Version <%= version %>&nbsp;&nbsp;&bull;&nbsp;&nbsp;<%= polyglot.t("Market Data by") %> BATS Exchange
+      </p>
+    </div>
+  </div>
+</div>

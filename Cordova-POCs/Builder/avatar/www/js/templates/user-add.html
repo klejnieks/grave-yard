@@ -1,0 +1,81 @@
+<a class="close-reveal-modal">&#215;</a>
+<div class="row">
+	<div class="small-12 medium-6 columns">
+		<form id="signup-form" data-abide autocomplete="off">
+		<p class="text-center bottom"><img src="<%= cdn %>/<%= WLPID %>/<%= WLP_Logo %>" class="logo med" /></p>
+		<div class="row">
+		    <div class="small-6 columns">
+		    	<label><%= polyglot.t("First Name") %>
+		        <input type="text" id="firstName" name="firstName" required />
+		        </label>
+		        <small class="error"><%= polyglot.t("First name is required") %></small>
+		    </div>
+		    <div class="small-6 columns">
+		    	<label><%= polyglot.t("Last Name") %>
+		        <input type="text" id="lastName" name="lastName" required />
+		        </label>
+		        <small class="error"><%= polyglot.t("Last name is required") %></small>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="small-12 small-centered columns">
+		    	<label><%= polyglot.t("Email") %>
+		        <input type="email" id="emailAddress1" name="emailAddress1" required />
+		        </label>
+		        <small class="error"><%= polyglot.t("Valid email is required") %></small>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="small-12 small-centered columns">
+		    	<label><%= polyglot.t("Pick a Username") %> <p class="t-med label-desc"><%= polyglot.t("You will log into DriveWealth with this username", {WLP_COMPANY_NAME: WLP_CompanyName}) %></p>
+		        <input type="text" id="username" name="username" required pattern="^\S*$" />
+		        </label>
+             <small id="check-result" class="username">Test</small>
+		        <small class="error"><%= polyglot.t("Valid username is required") %></small>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="small-12 small-centered columns">
+		    	<label><%= polyglot.t("Your password") %> <p class="t-med label-desc"><%= polyglot.t("sign_up_password_requirements") %> </p>
+		        <input type="password" id="password-new" name="password-new" required pattern="^.*$" data-abide-validator="dwpassword" />
+		        </label>
+		        <small class="error"><%= polyglot.t("Valid password is required") %></small>
+		    </div>
+		</div>
+		<button type="submit" id="signup-button" class="ladda-button radius expand primary" data-style="zoom-in">
+		    <span class="ladda-label"><%= polyglot.t("Sign Up") %></span>
+		</button>
+		</form>
+		<p class="t-ltgr text-center"><small><%= polyglot.t("sign_up_agreement") %></small></p>
+		<hr />
+		<h6 class="text-center"><%= polyglot.t("Already a user?") %> <a href="/login" class="nav-link"><%= polyglot.t("Sign in") %></a></h6>
+	</div>
+    <div class="small-12 medium-6 columns text-center">
+    	<hr class="show-for-small-only" />
+    	<p class="show-for-medium-up">&nbsp;</p>
+    	<h3><%= polyglot.t("sign_up_practice") %></h3>
+    	<p class="t-med t-ltgr"><%= polyglot.t("The DriveWealth practice account offers:") %></p>
+    	<ul class="small-block-grid-2 tour-feature-list">
+    		<li class="text-center">
+    			<img src="<%= appRoot %>img/signup/icon-cash.png" />
+    			<h4><%= polyglot.t("sign_up_feature_1") %></h4>
+    			<span class="t-ltgr t-med"><%= polyglot.t("sign_up_feature_1_description") %></span>
+    		</li>
+    		<li class="text-center">
+    			<img src="<%= appRoot %>img/signup/icon-learn.png" />
+    			<h4><%= polyglot.t("sign_up_feature_2") %></h4>
+    			<span class="t-ltgr t-med"><%= polyglot.t("sign_up_feature_2_description") %></span>
+    		</li>
+    		<li class="text-center">
+    			<img src="<%= appRoot %>img/signup/icon-question.png" />
+    			<h4><%= polyglot.t("sign_up_feature_3") %></h4>
+    			<span class="t-ltgr t-med"><%= polyglot.t("sign_up_feature_3_description") %></span>
+    		</li>
+    		<li class="text-center">
+    			<img src="<%= appRoot %>img/signup/icon-realtime.png" />
+    			<h4><%= polyglot.t("sign_up_feature_4") %></h4>
+    			<span class="t-ltgr t-med"><%= polyglot.t("sign_up_feature_4_description") %></span>
+    		</li>
+    	</ul>
+    </div>
+</div>

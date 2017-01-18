@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="small-12 columns text-center">
+    <hr class="top" />
+    <h2 style="color:#37bb9a;"><%= polyglot.t("marketplace_learningmarkets_dw_offer") %></h2>
+    <hr />
+  </div>
+</div>
+
+<div class="row card placard">
+  <div class="small-12 medium-8 columns small-text-center">
+    <br />
+    <img alt="Learning Markets" src="<%= cdn %>/images/marketplace/learningmarkets-logo.png" />
+    <hr />
+    <h4><%= polyglot.t("marketplace_learningmarkets_header") %></h4>
+    <p class="t-ltgr"><%= polyglot.t("marketplace_learningmarkets_header_desc") %></p>
+  </div>
+  <div class="small-12 medium-4 columns small-text-center">
+    <br />
+    <div class="subscribe-panel">
+    <div class="row">
+      <div class="small-12 columns">
+      <h3><strong><%= polyglot.t("marketplace_learningmarkets_cta_header") %></strong></h3>
+      <p><%= polyglot.t("marketplace_learningmarkets_cta_desc") %></p>
+      <% if ( buildType === "phonegap" ) { %>
+          <p class="bottom"><a  href="#" class="cta-affiliate button large radius success" onclick="window.open('http://courses.learningmarkets.com/account/aff/go/drivewealth/?i=18', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"><%= polyglot.t("marketplace_subscribe_cta") %></a><p>
+        <% } else { %>
+          <p class="bottom"><a class="cta-affiliate button large radius success" href="http://courses.learningmarkets.com/account/aff/go/drivewealth/?i=18" target="_blank"><%= polyglot.t("marketplace_subscribe_cta") %></a></p>
+        <% } %>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <hr />
+	<div class="small-12 medium-6 columns text-center">
+		<h3><%= polyglot.t("marketplace_learningmarkets_videos_header") %></h3>
+		<p class="t-ltgr"><%= polyglot.t("marketplace_learningmarkets_videos_desc") %></p>
+	</div>
+  <div class="small-12 medium-6 columns text-center">
+    <p><img src="<%= cdn %>/images/marketplace/learningmarkets-video-sample.jpg" class="mp-img-preview" /></p>
+  </div>
+  <hr />
+  <div class="small-12 medium-6 columns text-center">
+    <p><img src="<%= cdn %>/images/marketplace/learningmarkets-trackprogress.jpg" class="mp-img-preview" /></p>
+  </div>
+  <div class="small-12 medium-6 columns text-center">
+    <h3><%= polyglot.t("marketplace_learningmarkets_track_header") %></h3>
+    <p class="t-ltgr"><%= polyglot.t("marketplace_learningmarkets_track_desc") %></p>
+  </div>
+  <hr />
+  <div class="small-12 medium-6 columns text-center">
+    <h3 class="text-center"><%= polyglot.t("marketplace_learningmarkets_quiz_header") %></h3>
+    <p class="t-ltgr"><%= polyglot.t("marketplace_learningmarkets_quiz_desc") %></p>
+  </div>
+  <div class="small-12 medium-6 columns text-center">
+    <p class="bottom"><img src="<%= cdn %>/images/marketplace/learningmarkets-sampleassignment.jpg" class="mp-img-preview" /></p>
+  </div>
+  <hr />
+  <div class="small-12 medium-4 columns text-center">
+    <h3 class="text-center"><strong><%= polyglot.t("marketplace_learningmarkets_package_header") %></strong></h3>
+    <ul class="bullet-points">
+    <li><%= polyglot.t("marketplace_learningmarkets_package_1") %></li>
+    <li><%= polyglot.t("marketplace_learningmarkets_package_2") %></li>
+    <li><%= polyglot.t("marketplace_learningmarkets_package_3") %></li>
+    <li><%= polyglot.t("marketplace_learningmarkets_package_4") %></li>
+    <li><%= polyglot.t("marketplace_learningmarkets_package_5") %></li>
+    </ul>
+  </div>
+  <div class="small-12 medium-4 columns text-center">
+   <h3 class="text-center"><strong><%= polyglot.t("marketplace_learningmarkets_learn_header") %></strong></h3>
+   <ul class="bullet-points">
+   <li><%= polyglot.t("marketplace_learningmarkets_learn_1") %></li>
+   <li><%= polyglot.t("marketplace_learningmarkets_learn_2") %></li>
+   <li><%= polyglot.t("marketplace_learningmarkets_learn_3") %></li>
+   <li><%= polyglot.t("marketplace_learningmarkets_learn_4") %></li>
+   </ul>
+  </div>
+  <div class="small-12 medium-4 columns text-center">
+    <div class="subscribe-panel">
+      <hr />
+      <h5 style="color:#37bb9a;"><%= polyglot.t("marketplace_learningmarkets_dw_offer") %></h5>
+      <hr />
+      <h3><strong><%= polyglot.t("marketplace_learningmarkets_cta_header") %></strong></h3>
+      <p><%= polyglot.t("marketplace_learningmarkets_cta_desc") %></p>
+      <% if ( buildType === "phonegap" ) { %>
+        <p><a href="#" class="cta-affiliate button large radius success" onclick="window.open('http://courses.learningmarkets.com/account/aff/go/drivewealth/?i=18', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"><%= polyglot.t("marketplace_subscribe_cta") %></a><p>
+      <% } else { %>
+        <p><a class="cta-affiliate button large radius success" href="http://courses.learningmarkets.com/account/aff/go/drivewealth/?i=18" target="_blank"><%= polyglot.t("marketplace_subscribe_cta") %></a></p>
+      <% } %>
+    </div>
+  </div>
+</div>

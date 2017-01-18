@@ -1,0 +1,70 @@
+<%
+// Load instruments first
+if ( data.favsByType["instrument"] ) {
+%>
+<ul class="inline-list home-starred-header">
+<li><span class="icon-starred"></span></li>
+<li><h5><%= data.polyglot.t("home_header_1") %></h5></li>
+<li><div class="has-tip tip-top" data-tooltip title="<%= data.polyglot.t("home_header_1_tooltip") %>">?</div></li>
+</ul>
+<ul class="small-block-grid-2">
+<%
+    _.each( data.favsByType.instrument, function( favorite ) {
+        if ( favorite.model ) {
+            data.instrument = favorite.model.toJSON();
+            print( data.templateRow.instrument( { "data": data } ) );
+        }
+
+    });
+%>
+</ul>
+<p><a href="/stocks-etfs" class="nav-link t-med"><%= data.polyglot.t("home_header_1_cta") %> >></a></p>
+
+<ul class="inline-list home-starred-header">
+<li><div class="icon-starred"></div></li>
+<li><h5><%= data.polyglot.t("home_header_2") %></h5></li>
+<li><div class="has-tip tip-top" data-tooltip title="<%= data.polyglot.t("home_header_2_tooltip") %>">?</div></li>
+</ul>
+<%
+}
+%>
+<% _.each( data.favorites, function( favorite ) { %>
+    <%
+    if ( favorite.type == "tag" ) {
+        data[ favorite.type ] = favorite;
+        print( data.templateRow[ favorite.type ]( { "data": data } ) );
+    } else if ( favorite.model ) {
+        data[ favorite.type ] = favorite.model.toJSON();
+        if ( favorite.type == "goal" ) {
+            print( data.templateRow[ favorite.type ]( { "data": data } ) );
+        } else if ( ( favorite.type == "position" || favorite.type == "order" ) && favorite.model.get("instrument") ) {
+            print( data.templateRow[ favorite.type ]( { "data": data } ) );
+        } else if ( favorite.type !== "instrument" ) {
+            print( data.templateRow[ favorite.type ]( data ) );
+        }
+    } else if ( favorite.loaded !== null ) {
+    %>
+        <div class="row">
+            <div class="small-4 small-centered columns">
+                <h6>Loading...</h6>
+            </div>
+        </div>
+    <%
+    }
+    %>
+<% }); %>
+<% if ( !data.visited ) { %>
+<ol class="joyride-list" data-joyride>
+    <li data-id="" data-text="<%= data.polyglot.t("home_joyride_1_btn") %>" data-options="modal: true">
+    	<p><strong><%= data.polyglot.t("home_joyride_1_header") %></strong></p>
+        <p><%= data.polyglot.t("home_joyride_1_copy_1") %></p>
+        <p>
+          <%= data.polyglot.t("home_joyride_1_copy_2") %> help.drivewealth.com.
+        </p>
+    </li>
+    <li data-id="" data-text="<%= data.polyglot.t("home_joyride_2_btn") %>" data-options="modal: true">
+    	<p><strong><%= data.polyglot.t("home_joyride_2_header") %></strong></p>
+    	<p><%= data.polyglot.t("home_joyride_2_copy_1") %></p>
+    </li>
+</ol>
+<% } %>

@@ -1,0 +1,61 @@
+<div class="row card placard">
+<div class="small-12 medium-8 medium-centered columns">
+<br />
+<form id="question-add-form" data-abide>
+    <div class="row">
+        <div class="small-12 columns">
+            <label><%= polyglot.t("Summarize your question in a sentence") %> <div class="has-tip tip-top radius" data-tooltip title="<%= polyglot.t("E.g. What are your thoughts on investing in bonds?") %>">?</div>
+            <input type="text" placeholder="" name="question-title" id="question-title" required data-abide-validator="nonEmptyString">
+            <small class="error"><%= polyglot.t("A summary is required") %></small>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <label><%= polyglot.t("Specific details of your question") %> <div class="has-tip tip-top radius" data-tooltip title="<%= polyglot.t("Feel free to be very detailed in your question. The more specific the better.") %>">?</div>
+            <textarea placeholder="" name="question-content" id="question-content" required data-abide-validator="nonEmptyString"></textarea>
+            <small class="error"><%= polyglot.t("Details are required") %></small>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+        	<label for="question-category"><%= polyglot.t("How would categorize this question?") %>
+            <select name="question-category" id="question-category" required>
+                <option value=""><%= polyglot.t("Select a tag") %></option>
+                <%
+                var desc = "", sel = "";
+                _.each( categories, function( cat ) {
+                    sel = "";
+                    if ( cat.tag === category.tag ) {
+                        sel = "selected";
+                        desc = cat.desc;
+                    }
+                %>
+                <option value="<%= cat.tag %>" <%= sel %>><%= cat.tag %></option>
+                <% }) %>
+            </select>
+            <small class="error"><%= polyglot.t("Valid tag is required") %></small>
+            <p class="t-med t-ltgr"><em id="question-category-desc"><%= desc %></em></p>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <label><%= polyglot.t("Tag your question") %> <small>(<%= polyglot.t("hit enter to add a tag") %>)</small> <div class="has-tip tip-top radius" data-tooltip title="<%= polyglot.t("Feel free to be very detailed in your question. The more specific the better.") %>">?</div>
+            <input type="text" placeholder="" name="question-tags" id="question-tags" value="">
+            <small class="error"><%= polyglot.t("At least one tag is required") %></small>
+            </label>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="small-12 columns">
+            <button id="question-add-submit" type="submit" class="ladda-button radius small primary expand submit" data-style="zoom-in">
+                <span class="ladda-label"><%= polyglot.t("Add Question") %></span>
+            </button>
+        </div>
+    </div>
+</form>
+</div>
+</div>

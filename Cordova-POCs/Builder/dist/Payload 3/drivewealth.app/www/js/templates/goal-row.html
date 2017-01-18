@@ -1,0 +1,6 @@
+<div class="row goal card" id="<%= data.goal.goalID %>" data-target-path="/goals/">
+	<div style="background-image: url('<%= data.goal.imageUrl %>');" class="goal-image">&nbsp;</div>
+    <div class="goal-detail">
+        <%= data.templateGoalDetail( { "data": data } ) %> 
+    </div>
+</div>

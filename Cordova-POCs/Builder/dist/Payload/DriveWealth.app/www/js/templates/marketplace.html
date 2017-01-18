@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="small-12 columns text-center">
+    <div id="marketplace-header">
+    <div class="row">
+    <div class="small-7 medium-6 columns text-center">
+    <h1 class="t-wh t-ds"><%= polyglot.t("marketplace_landing_header") %></h1>
+    <p class="t-wh t-ds" id="marketplace-header-copy"><%= polyglot.t("marketplace_landing_header_copy") %></p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="small-12 columns marginadd">
+  <div class="row" id="marketplace-row2">
+    <div class="small-12 medium-6 columns learningmarkets">
+      <img src="<%= cdn %>/images/marketplace/learningmarkets-logo.png" class="learningcourseslogo">
+      <h5 class="subheader"><%= polyglot.t("marketplace_landing_learningmarkets_header") %></h5>
+      <p><%= polyglot.t("marketplace_landing_learningmarkets_header_copy") %></p>
+    </div>
+    <div class="small-12 medium-6 columns text-center">
+      <br />
+      <p class="show-for-medium-up">&nbsp;</p>
+      <a class="primary large radius cta-affiliate button" data-target-path="/marketplace/learningmarkets">
+        <h4 class="t-wh"><strong><%= polyglot.t("marketplace_landing_learningmarkets_price") %></strong></h4>
+        <p class="bottom t-med"><%= polyglot.t("marketplace_landing_learningmarkets_price_desc") %></p>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+<div class="small-12 columns">
+  <div class="row">
+    <div class="small-12 medium-4  columns">
+      <div class="whitepannel text-center marginadd">
+
+        <div class="row">
+          <div class="small-12 medium-7 medium-centered columns">
+            <img src="<%= cdn %>/images/marketplace/investtowin.jpg">
+          </div>
+          <div class="small-12 medium-12 columns">
+            <h6 class="subheader t-ltgr"><%= polyglot.t("marketplace_landing_gordonscott_header") %></h6>
+            <h4 class="subheader"><q><%= polyglot.t("marketplace_landing_gordonscott_booktitle") %></q></h4>
+            <div class="row">
+            <div class="small-12 columns">
+              <p>
+              <span href="#" class="icon-starred"></span>
+              <span href="#" class="icon-starred"></span>
+              <span href="#" class="icon-starred"></span>
+              <span href="#" class="icon-starred"></span>
+              <span href="#" class="icon-unstarred"></span>
+              </p>
+           </div>
+           <div class="small-12 columns">
+             <% if ( buildType === "phonegap" ) { %>
+               <a href="#" class="cta-affiliate button small radius success" onclick="window.open('http://www.amazon.com/Invest-Win-Profits-GainsMaster-Approach/dp/0071798382', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" data-title="Invest To Win" data-affiliate="Gordon Scott"><%= polyglot.t("marketplace_landing_buynow_cta") %></a>
+             <% } else { %>
+               <a class="cta-affiliate button small radius success" href="http://www.amazon.com/Invest-Win-Profits-GainsMaster-Approach/dp/0071798382" target="_blank" data-title="Invest To Win" data-affiliate="Gordon Scott"><%= polyglot.t("marketplace_landing_buynow_cta") %></a>
+             <% } %>
+          </div>
+          </div>
+        </div>
+       </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-8 columns">
+      <div class="whitepannel marginadd">
+        <div class="row">
+          <div class="small-12 medium-7 columns text-center">
+            <h4 class="subheader"><q><%= polyglot.t("marketplace_landing_bci_booktitle") %></q></h4>
+            <p class="t-ltgr bottom"><q><em><%= polyglot.t("marketplace_landing_bci_book_quote") %></em></q></p>
+            <p class="t-ltgr t-med">&mdash;  <%= polyglot.t("marketplace_landing_bci_book_cite") %></p>
+            <% if ( buildType === "phonegap" ) { %>
+               <a href="#" class="cta-affiliate button small radius success" onclick="window.open('http://www.mcssl.com/app/?af=1596758', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" data-title="Stock Investing For Students" data-affiliate="Blue Collar Investor"><%= polyglot.t("marketplace_landing_buynow_cta") %></a>
+            <% } else { %>
+               <a class="cta-affiliate button small radius success" href="http://www.mcssl.com/app/?af=1596758" target="_blank" data-title="Stock Investing For Students" data-affiliate="Blue Collar Investor"><%= polyglot.t("marketplace_landing_buynow_cta") %></a>
+            <% } %>
+          </div>
+          <div class="small-12 medium-5 columns text-center">
+          <img src="<%= cdn %>/images/marketplace/stockinvestingforstudents.jpg" class="">
+        </div>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>

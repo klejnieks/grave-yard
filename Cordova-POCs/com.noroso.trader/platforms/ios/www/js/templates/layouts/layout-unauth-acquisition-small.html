@@ -1,0 +1,43 @@
+<div style="background:#FFF;padding-top:0.5em;margin-bottom:1.25em;">
+<div class="row text-center">
+	<div class="small-12 columns">
+		    <p class="bottom"><img src="<%= cdn %>/<%= WLPID %>/<%= WLP_Logo %>" class="logo med" /></p>
+		<p class="t-ltgr"><%= polyglot.t("slogan_two_ninety_nine") %></p>
+	</div>
+	<div class="small-12 columns">
+        <a href="/" class="button radius primary small" style="margin-top:0.5em;"><%= polyglot.t("Register for your free, unlimited practice account") %></a>
+	</div>
+</div>
+</div>
+<section>
+    <div id="main"></div>
+    <div class="row">
+        <div class="small-12 columns text-center">
+            <div class="footer-links" id="footer-small">
+								<p class="footer-disclaimer">
+										<%= polyglot.t("app_disclaimer_4", {
+												"_": "Investment Products: Not a Deposit • Not FDIC Insured • No Bank Guarantee • Not Insured by any Federal Government Agency • May Lose Value."
+										}) %>
+								</p>
+                <p>&copy; 2014 DriveWealth, LLC &bull; Member FINRA/SIPC</p>
+                <p>
+		              <%= polyglot.t("footer_security_disclaimer") %> DriveWealth, LLC &bull; Member
+		              <% if ( buildType === "phonegap" ) { %>
+										<a href="#" onclick="window.open('http://brokercheck.finra.org/Firm/Summary/165429', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">FINRA</a> /
+										<a href="#" onclick="window.open('http://sipc.org', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr">SIPC</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+	                  <a href="#" onclick="window.open('http://drivewealth.com/terms-of-use', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("Terms of Use") %></a>&nbsp;&nbsp;
+	                  <a href="#" onclick="window.open('http://drivewealth.com/privacy-policy', '_blank', 'location=yes,closebuttoncaption=&#x2715;');" class="t-ltgr"><%= polyglot.t("Privacy Policy") %></a>&nbsp;&nbsp;
+		              <% } else { %>
+										<a href="http://brokercheck.finra.org/Firm/Summary/165429" target="_blank" class="t-ltgr nav-item">FINRA</a> /
+										<a href="http://sipc.org" class="t-ltgr nav-item" target="_blank">SIPC</a>&nbsp;&nbsp;&bull;&nbsp;&nbsp;
+	                  <a href="http://drivewealth.com/terms-of-use" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Terms of Use") %></a>&nbsp;&nbsp;
+	                  <a href="http://drivewealth.com/privacy-policy" target="_blank" class="t-ltgr nav-item"><%= polyglot.t("Privacy Policy") %></a>&nbsp;&nbsp;
+		              <% } %>
+										<a href="#" class="footer-disclaimer-modal t-ltgr nav-item"><%= polyglot.t("disclaimer_read_more") %></a>
+		            </p>
+                <p>Version <%= version %></p>
+            </div>
+        </div>
+    </div>
+
+</section>

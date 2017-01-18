@@ -1,0 +1,95 @@
+.report-wrap {
+	margin-top:2rem;
+	min-height: 750px;
+ }
+  #request-report-submit {
+    width: 100%;
+    margin: 30px auto 60px;
+    border-radius: 5px;
+  }
+  .form-menu {
+    height:75px;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+.report-buttons {
+	margin-bottom: 1rem;
+
+	@media #{$small-only} {
+		&.button-group.even-4 li {
+			width: 100% !important;
+
+			&:first-child,
+			&:first-child > a,
+			&:first-child > .button {
+			  @include side-radius(top, $radius:$global-radius);
+				@include side-radius(bottom, $radius:0);
+			}
+			&:last-child,
+			&:last-child > a,
+			&:last-child > .button {
+				@include side-radius(bottom, $radius:$global-radius);
+				@include side-radius(top, $radius:0);
+			}
+		}
+		.button {
+			margin-bottom: 0 !important;
+		}
+	}
+
+
+	.button {
+		background-color: darken($body-bg,2%);
+		color: darken($body-bg,20%);
+		transition: all 0.5s ease;
+
+		&:hover {
+			background: $primary-links;
+			color: #FFF;
+		}
+	}
+}
+
+.format-group {
+
+	&:before {
+		font-size:1.75rem;
+		display: block;
+		margin-bottom:0.25rem;
+	}
+}
+.custom-date-inputs {
+	display: none;
+	margin-top:1rem;
+}
+
+a.time-group {
+	padding-left: 18%;
+}
+
+
+.report-hidden-btn-time, .report-hidden-btn-format {
+	position: absolute;
+	opacity: 0;
+	z-index: 9;
+	padding:0;
+	width: inherit;
+	margin:0;
+
+	&:checked + a {
+		background: $primary-links;
+		color: #FFF;
+	}
+}
+
+.report-hidden-btn-time {
+	height:50px;
+	@media #{$medium-only} {
+		height:65px;
+	}
+}
+
+.report-hidden-btn-format {
+  height:85px;
+}

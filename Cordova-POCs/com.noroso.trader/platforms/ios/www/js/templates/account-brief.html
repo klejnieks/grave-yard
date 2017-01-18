@@ -1,0 +1,17 @@
+<ul class="inline-list">
+	<li id="acct-cash">
+	<h6 class="subheader acct-head"><%= polyglot.t("CASH TO INVEST") %> </h6>
+	<h5 class="acct-val" id="acct-cash-amt"><%= formatMoney( cash ) %></h5>
+	</li>
+	<li id="acct-investments">
+	<h6 class="subheader acct-head"><%= polyglot.t("INVESTMENTS") %> <div class="has-tip tip-bottom" data-tooltip title="<%= polyglot.t("tooltip_account_brief_investments") %>">?</div></h6>
+	<h5 class="acct-val" id="acct-investments-amt"><%= formatMoney( markToMarket ) %></h5>
+	</li>
+	<li id="acct-total">
+	<h6 class="subheader acct-head"><%= polyglot.t("TOTAL") %> <div class="has-tip tip-bottom" data-tooltip title="<%= polyglot.t("tooltip_account_brief_total") %>">?</div></h6>
+	<h5 class="acct-val" id="acct-total-amt"><strong><%= formatMoney( accountTotal ) %></strong></h5>
+	</li>
+	<li id="acct-ProfitAndLoss">
+		<div id="acct-profitAndLossacct-amt"></div>
+	</li>
+</ul>

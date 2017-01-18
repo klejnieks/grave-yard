@@ -1,0 +1,22 @@
+<table width="100%">
+    <thead>
+    <tr>
+      <th><%= data.reportName %> <%= data.polyglot.t("date", {"_":"Date"}) %></th>
+      <th></th>
+    </tr>
+</thead>
+<tbody>
+<% if ( !data.reports || data.reports.length == 0 ) { %>
+  <tr>
+    <td> <%= data.polyglot.t("report_nodata", {"_":"There are no reports for this time frame."}) %></td>
+  </tr>
+ <% } else {
+    _.each( data.reports, function( report ) {  %>
+      <tr>
+        <td><strong><%= report.displayName %></strong></td>
+        <td class="text-center"><a href="" data-filekey="<%= report.fileKey %>" class="button tiny radius primary bottom icon-pdf"> <%= data.polyglot.t("report_button_pdf", {"_":"Download PDF"}) %></a></td>
+      </tr>
+      <% }, this );
+  } %>
+</tbody>
+</table>

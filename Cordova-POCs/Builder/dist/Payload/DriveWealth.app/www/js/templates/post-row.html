@@ -1,0 +1,33 @@
+<div class="row card">
+<div class="small-12 post columns" id="<%= post.eduContentID %>" data-target-path="/education/<%= helpers.createSlug( post.title ) %>/">
+	<div class="row">
+		<div class="small-12 columns" style="background: url('<%= post.urlImage %>') center center no-repeat;background-size: cover;">
+			<h2>&nbsp;</h2>
+		</div>
+	</div>
+	<div class="row">
+	    <div class="small-10 columns">
+			<h5 class="bottom"><%= post.title %></h5>
+			<p class="t-med t-ltgr"><%= polyglot.t("By:") %> <%= post.byline %></p>
+		</div>
+		<div class="small-2 columns text-right">
+		<% if ( !loggedIn ) { %>
+		    <a href="#" title="<%= polyglot.t("Log in to add favorite") %>" class="favorite icon-unstarred"></a>
+		<% } else if ( _.findWhere( favorites, { "ID": post.eduContentID, "type": "post" } ) ) { %>
+		    <a href="#" class="favorite icon-starred" data-favorite-type="post" data-favorite-id="<%= post.eduContentID %>"></a>
+		<% } else { %>
+		    <a href="#" class="favorite icon-unstarred" data-favorite-type="post" data-favorite-id="<%= post.eduContentID %>"></a>
+		<% } %>
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<ul class="inline-list tags">
+			<% _.each( post.tags, function( el ) { %>
+			<li><a href="/tags/<%= el %>" class="tag">#<%= el %></a></li>
+			<% }); %>
+			</ul>
+		</div>
+	</div>
+</div>
+</div>

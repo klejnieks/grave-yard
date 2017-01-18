@@ -1,0 +1,14 @@
+<div class="row card" id="<%= data.tag.ID %>" data-target-path="/tags/">
+	<div class="small-10 medium-11 columns">
+    	<h4>Tag search for <a class="tag" href="/tags/<%= data.tag.ID %>" style="font-size:1.25rem;">#<%= data.tag.ID %></a></h4>
+	</div>
+	<div class="small-2 medium-1 text-right columns">
+    <% if ( !data.loggedIn ) { %>
+        <a href="#" title="Log in to add favorite" class="favorite icon-unstarred"></a> 
+    <% } else if ( _.findWhere( data.favorites, { "ID": data.tag.ID, "type":"tag" } ) ) { %>
+        <a href="#" class="favorite icon-starred" data-favorite-type="tag" data-favorite-id="<%= data.tag.ID %>"></a> 
+    <% } else { %>
+        <a href="#" class="favorite icon-unstarred" data-favorite-type="tag" data-favorite-id="<%= data.tag.ID %>"></a>
+    <% } %>
+    </div>
+</div>    

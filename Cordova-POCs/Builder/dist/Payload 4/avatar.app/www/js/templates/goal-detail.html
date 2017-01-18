@@ -1,0 +1,50 @@
+<div class="row goal card placard">
+	<div style="background-image: url('<%= data.imageUrl %>');" class="goal-image <% if (data.imageUrl == "/img/photo-default-goal.jpg") { print(' default') } else { print(' custom') } %>">&nbsp;</div>
+	<div class="progress success goal-meter">
+        <%= data.renderGoalMeter( { "data": data } ) %>
+	</div>
+	<div class="small-10 columns">
+	    <h3 class="goal-pnl">
+            <%= data.renderGoalPnl( { "data": data } ) %>
+        </h3>
+	    <ul class="inline-list tags">
+	        <% _.each( data.tags, function( el ) { %>
+	            <li><a href="/tags/<%= el %>" class="tag">#<%= data.helpers.escapeHtml( el ) %></a></li>
+	        <% }); %>
+	    </ul>
+	</div>
+	<div class="small-2 columns">
+	    <% if ( _.findWhere( data.favorites.goal, { "ID": data.goalID } ) ) { %>
+	        <a href="#" class="icon-starred right favorite" data-favorite-type="goal" data-favorite-id="<%= data.goalID %>"></a> 
+	    <% } else { %>
+	        <a href="#" class="icon-unstarred right favorite" data-favorite-type="goal" data-favorite-id="<%= data.goalID %>"></a>
+	    <% } %> 
+	</div>
+	<hr class="hide" />
+	<div class="small-12 columns hide">
+	    <h4><%= data.polyglot.t("Allocation") %></h4>
+	    
+	    <% _.each( data.positions, function( position ) { %>
+	    <div class="row">
+	        <div class="small-7 columns">
+	            <h3><%= position.instrument.symbol %> <%= data.helpers.formatWholePercent( position.ratioOfGoal ) %></h3>
+	            <h5><%= position.instrument.name %></h5>
+	            <ul class="inline-list">
+	                <% _.each( position.instrument.tags, function( el ) { %>
+	                    <li><a href="#">#<%= el %></a></li>
+	                <% }); %>
+	            </ul>
+	        </div>
+	        <div class="small-5 columns">
+	            <h3><%= data.helpers.formatMoney( position.markToMarket ) %></h3>
+	            <h5><%= data.helpers.extractSign( position.profitAndLoss )%><%= data.helpers.formatMoney( data.helpers.removeSign( position.profitAndLoss ) ) %> OVERALL</h5>
+	        </div>
+	    </div>
+	    <% }); %>
+	    
+	</div>
+	<hr />
+	<div class="small-12 columns">
+	<div id="tags-container"></div>
+	</div>
+</div>

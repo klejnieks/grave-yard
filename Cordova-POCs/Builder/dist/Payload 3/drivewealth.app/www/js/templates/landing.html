@@ -1,0 +1,46 @@
+<div id="landing-container" class="clearfix" style="background:#FFF url('<%= cdn %>/images/landing-man-looking.jpg') center center;background-size:cover;">
+  <div id="landing-copy">
+
+    <div class="row">
+      <div class="small-12 columns text-center">
+        <img src="<%= cdn %>/<%= WLPID %>/<%= WLP_Logo %>" class="logo med" id="landing-brand" />
+        <h1><strong><%= polyglot.t("landing_slogan_pitch") %></strong></h1>
+        <h5 class="t-gr"><%= polyglot.t("landing_slogan_pitch_copy") %></h5>
+        <hr />
+        <div class="row">
+          <div class="small-6 medium-6 columns">
+            <h5><strong><%= polyglot.t("landing_practice_account_cta_header") %></strong></h5>
+            <p class="t-med t-gr"><%= polyglot.t("landing_practice_account_cta_copy") %></p>
+          </div>
+          <div class="small-6 medium-6 columns">
+            <h5><strong><%= polyglot.t("landing_live_account_cta_header") %></strong></h5>
+            <p class="t-gr t-med"><%= polyglot.t("landing_live_account_cta_copy") %></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="small-6 medium-6 columns">
+            <a href="/signup" id="sign-up" class="button radius expand primary"><%= polyglot.t("Open a Free Practice Account") %></a>
+          </div>
+          <div class="small-6 medium-6 columns">
+            <% if ( buildType === "phonegap" ) { %>
+              <a href="#" class="button radius expand primary" id="sign-up-live" onclick="window.open('<%= appsDomain %>/live-signup/?lang=<%= languageID %>', '_blank', 'location=yes,closebuttoncaption=&#x2715;');"><%= polyglot.t("Open a Live Account") %></a>
+            <% } else { %>
+              <a href="<%= appsDomain %>/live-signup/?lang=<%= languageID %>" id="sign-up-live" class="button radius expand primary"><%= polyglot.t("Open a Live Account") %></a>
+            <% } %>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="small-12 medium-6 columns">
+            <h5><a href="/tour" class="nav-item"><%= polyglot.t("New Here? Take The Tour") %></a></h5>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <h5><%= polyglot.t("Already a user?") %> <a href="/login" class="nav-item"><%= polyglot.t("Sign In") %></a></h5>
+          </div>
+        </div>
+       </br>
+      </div>
+    </div>
+
+  </div>
+</div>

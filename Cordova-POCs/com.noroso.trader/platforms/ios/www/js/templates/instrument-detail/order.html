@@ -1,0 +1,18 @@
+<form data-abide id="order-form">
+    <div class="row">
+      <div class="small-12 columns" id="order-type">
+        <ul class="button-group radius <% if ( data.limitOrders ) { %>even-4 <% } else { %>even-3<% } %>" id="btn-group-orders">
+          <li><a href="#" class="button small btn-order-type <% if ( data.order.ordType == 1 ) {%>button-active<% } %>" data-order-type="1"><%= data.polyglot.t("Market Order") %></a></li>
+          <% if ( data.limitOrders ) { %>
+          <li><a href="#" class="button small btn-order-type <% if ( data.order.ordType == 2 ) {%>button-active<% } %>" data-order-type="2"><%= data.polyglot.t("Limit Order") %></a></li>
+          <% } %>
+          <li><a href="#" class="button small btn-order-type <% if ( data.order.ordType == 3 ) {%>button-active<% } %>" data-order-type="3"><%= data.polyglot.t("Stop Order") %></a></li>
+          <li><a href="#" class="button small btn-order-type" data-order-type="research"><%= data.polyglot.t("Research") %></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="order-details" class="row">
+      <%= data.renderDetails( { "data": data } ) %>
+    </div>
+</form>

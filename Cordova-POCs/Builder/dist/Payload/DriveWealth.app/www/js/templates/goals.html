@@ -1,0 +1,21 @@
+<div id="goals">
+<% _.each( data.goals, function( goal ) { %>
+    <%
+        data["goal"] = goal;
+        print( data.templateGoalRow( { "data": data } ) ); 
+    %>
+<% }); %>
+</div>
+<% if ( !data.visited ) { %>
+<ol class="joyride-list" data-joyride>
+	<li data-id="" data-text="<%= data.polyglot.t("View Real Welcome Message") %>" data-options="modal: true">
+		<p><strong><%= data.polyglot.t("tooltip_goals_wip_1") %></strong></p>
+	    <p><%= data.polyglot.t("tooltip_goals_wip_2") %></p>
+	</li>
+    <li data-id="" data-text="<%= data.polyglot.t("Start Exploring Goals") %>" data-options="modal: true">
+    	<p><strong><%= data.polyglot.t("Invest Towards Goals, Not Just Numbers") %></strong></p>
+        <p><%= data.polyglot.t("tooltip_goals_overview_1") %></p>
+        <p><%= data.polyglot.t("tooltip_goals_overview_2") %></p>
+    </li>
+</ol>
+<% } %>

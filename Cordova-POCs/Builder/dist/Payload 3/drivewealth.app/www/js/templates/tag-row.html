@@ -1,0 +1,24 @@
+<div class="row card" id="<%= data.tag.ID %>" data-target-path="<%= data.tag.path %>">
+    <div class="small-12 columns" style="background: url('<%= data.tag.urlImage %>') center center no-repeat;background-size: cover;">
+        <h2>&nbsp;</h2>
+    </div>
+    <div class="small-10 columns">
+		<h5><%= data.tag.title %></h5>
+	</div>
+	<div class="small-2 columns text-right">
+	<% if ( !data.loggedIn ) { %>
+	    <a href="#" title="<%= data.polyglot.t("Log in to add favorite") %>" class="favorite icon-unstarred"></a>
+	<% } else if ( _.findWhere( data.favorites, { "ID": data.tag.ID, "type": data.tag.type } ) ) { %>
+	    <a href="#" class="favorite icon-starred" data-favorite-type="<%= data.tag.type %>" data-favorite-id="<%= data.tag.ID %>"></a>
+	<% } else { %>
+	    <a href="#" class="favorite icon-unstarred" data-favorite-type="<%= data.tag.type %>" data-favorite-id="<%= data.tag.ID %>"></a>
+	<% } %>
+	</div>
+	<div class="small-12 columns">
+		<ul class="inline-list tags">
+		<% _.each( data.tag.tags, function( el ) { %>
+		<li><a href="/tags/<%= el %>" class="tag">#<%= el %></a></li>
+		<% }); %>
+		</ul>
+	</div>
+</div>

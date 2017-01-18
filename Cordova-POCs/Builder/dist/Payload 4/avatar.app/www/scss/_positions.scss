@@ -1,0 +1,41 @@
+#positionsPNL {
+	vertical-align:middle;
+}
+#current-positions-val {
+	margin: 0;
+
+	> li {
+		margin: 0 0.25rem 0 0;
+
+		> .label {
+			margin-top:0.5rem;
+		}
+	}
+}
+.pl-label {
+	display: inline-block !important;
+}
+.pending-order-amt {
+	padding: 0 0.5rem 0.25rem 0.5rem;
+	margin: 0.5rem 0 0 0;
+	@include radius;
+
+	> * {
+		font-weight: bold;
+	}
+
+	&.buy {
+		border: 1px solid $success-color;
+
+		> * {
+			color: $success-color;
+		}
+	}
+	&.sell {
+		border: 1px solid $alert-color;
+
+		> * {
+			color: $alert-color;
+		}
+	}
+}

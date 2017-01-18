@@ -1,0 +1,281 @@
+//
+// Products
+//
+.product-list {
+	padding-bottom: 0.5rem !important;
+}
+.pop-search {
+	margin:0 0.5rem 0.5rem 0.5rem;
+	text-decoration: underline;
+	font-size:1.1rem;
+	border-bottom:none;
+	display:inline-block;
+}
+#instrument-search {
+	height:3rem !important;
+	font-size:1.5rem !important;
+	@include radius($global-radius);
+	border:1px solid $primary-links;
+	@include placeholder(darken($body-bg,10%),1.33rem)
+}
+@media #{$small-only} {
+	.product-logo {
+		width: rem-calc(125);
+	}
+}
+#order-types {
+	margin-bottom:1.25rem !important;
+}
+#btn-group-orders {
+	margin-bottom:1rem;
+	@media #{$small-only} {
+		margin-bottom:0 !important;
+	}
+
+	.btn-order-type {
+
+		@media #{$small-only} {
+			padding-right:0 !important;
+			padding-left:0 !important;
+		}
+	}
+}
+.instrument-detail-logo {
+	border: 1px solid darken($body-bg,15%);
+	box-shadow: 0px 0px 2px darken($body-bg,10%);
+}
+.instrument-detail-logo-review {
+	//border: 2px solid darken($body-bg,20%);
+	//border-radius:50%;
+	margin:1em 0;
+	//max-width:125px;
+}
+.instrument-rates {
+	font-weight: 900;
+}
+.market-price {
+	line-height: 1;
+	margin: 0 0 0.5rem 0;
+}
+.order-spinner {
+	//margin: 0 0 2rem 0 !important;
+}
+.bootstrap-touchspin-up, .bootstrap-touchspin-down {
+	background: #FFF;
+	border: 2px solid #e2e2e2 !important;
+	font-size: 1.25rem;
+	line-height:1 !important;
+}
+.bootstrap-touchspin-up {
+	color: $success-color;
+	font-size:1.5rem;
+
+	&:hover, &:active, &:focus {
+		background:$success-color !important;
+		color: #FFF;
+	}
+}
+.bootstrap-touchspin-down {
+	color: $alert-color;
+
+	&:hover,&:active,&:focus {
+		background:$alert-color;
+		color: #FFF;
+	}
+}
+input.touchspin-qty {
+	background-color: #e2e2e2;
+	box-shadow: none;
+	border: none;
+	font-size: 1.5rem;
+	@include radius(0);
+}
+.review-order-btn {
+	margin: 1.5rem 0 1rem 0;
+}
+@media #{$small-only} {
+	.review-order-btn {
+		margin-top: 0 !important;
+	}
+}
+#market-order-form {
+	.order-radio {
+		margin-top: 1rem;
+		margin-right: 1rem;
+	}
+}
+#stop-order-form {
+
+	input[type="text"] {
+		margin-bottom: 0.5rem;
+	}
+
+	.order-radio {
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		margin-right: 1rem;
+	}
+
+	.order-spinner {
+		margin-top: 0.5rem !important;
+	}
+}
+.order-review-logo {
+	//border: 2px solid #999;
+	//@include radius(1000px);
+	margin: 0;
+}
+
+.airbag-callout {
+	@include panel(
+	    $bg:lighten($success-color,50%),
+	    $padding:0.5rem
+  	);
+  	@include radius($global-radius);
+
+  	&.off {
+  		@include panel(
+	    $bg:lighten($body-bg,5%),
+	    $padding:0.5rem
+  	);
+  	}
+  	.btn-protection {
+  		padding:rem-calc(5px);
+  		@include radius($global-radius);
+  		border:1px solid lighten($success-color,10%);
+  	}
+}
+
+.airbag-icons {
+
+	&:before {
+		font-size:2.25rem;
+		vertical-align: middle;
+	}
+
+	&.icon-invest-airbag-on {
+		color: $success-color;
+	}
+	&.icon-invest-airbag-off {
+		color: lighten($alert-color,15%) !important;
+	}
+}
+
+
+//
+// Charting
+//
+$chart-base-color: #DDD;
+#instrument-chart {
+	> svg {
+		overflow:hidden;
+	}
+}
+.axis {
+
+	path {
+		fill: none;
+		stroke: none;
+		shape-rendering: auto;
+	}
+	line {
+		fill: none;
+		shape-rendering: auto;
+	}
+	text {
+		fill: darken($chart-base-color,25%);
+		font-size:0.75rem;
+	}
+	// Y coordinate specific
+	&.y {
+		line {
+			stroke: $chart-base-color;
+			stroke-dasharray: 3 2;
+		}
+	}
+	// X coordinate specific
+	&.x {
+
+		text {
+			//fill: darken($success-color,15%);
+			stroke: none;
+		}
+		line {
+			stroke: $chart-base-color;
+		}
+		path {
+			fill: none;
+			stroke:$chart-base-color;
+		}
+	}
+
+
+}
+
+.area {
+	fill: none;
+	stroke: $primary-color;
+	stroke-width: 3px;
+	stroke-linejoin: bevel;
+	stroke-linecap: round;
+}
+/*
+.price-line {
+    stroke: rgba(#666, 1);
+    stroke-width: 1px;
+}
+.price-tag {
+    //stroke: rgba(darken($body-bg,30%), 0.6);
+    fill: rgba(#333, 1);
+}
+.price-tag-label {
+    fill: rgba(#FFF, 1);
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+*/
+//
+// Charting Controls
+//
+.bar-range-group {
+	//border-top:1px solid darken($body-bg,20%);
+	margin-bottom:0.5rem;
+
+	.bar-range {
+		background:none;
+		border-top:none !important;
+		border-right:none !important;
+		border-left:none !important;
+		border-bottom:2px solid darken($body-bg,5%) !important;
+		color:darken($body-bg,20%);
+		margin: 0 0.35rem 0 0;
+		overflow:inherit !important;
+		line-height:1.25 !important;
+
+		@media #{$small-only} {
+			padding-right: 0.75rem;
+			padding-left: 0.75rem;
+			margin-right: 0.75rem;
+		}
+
+		&.chart-range-active {
+			border-bottom:4px solid $primary-color !important;
+			color:#000;
+			font-weight:bold;
+
+			&:after {
+				border-left: solid transparent 5px;
+				border-right: solid transparent 5px;
+				border-top: solid $primary-color 5px;
+				bottom: -9px;
+				content: " ";
+				height: 0;
+				left: 50%;
+				margin-left: -5px;
+				position: absolute;
+				width: 0;
+			}
+
+		}
+	}
+}

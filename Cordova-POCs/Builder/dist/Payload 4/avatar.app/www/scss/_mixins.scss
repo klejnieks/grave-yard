@@ -1,0 +1,50 @@
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+	position: absolute;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+	-moz-box-shadow:$top $left $blur $color #{$inset};
+	box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin transition($property, $duration, $ms: false) {
+	-webkit-transition: $property $duration ease-in-out;
+	-moz-transition: $property $duration ease-in-out;
+	-o-transition: $property $duration ease-in-out;
+	@if ($ms) {
+		-ms-transition: $property $duration ease-in-out;
+	}
+	transition: $property $duration ease-in-out;
+}
+
+@mixin placeholder($color,$size){
+	&::-webkit-input-placeholder {
+		color: $color;
+		font-size: $size;
+	}
+	&:-moz-placeholder {
+		color: $color;
+		font-size: $size;
+	}
+	&::-moz-placeholder {
+		color: $color;
+		font-size: $size;
+	}
+	&:-ms-input-placeholder {
+		color: $color;
+		font-size: $size;
+	}
+}

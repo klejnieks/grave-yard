@@ -1,0 +1,47 @@
+<div class="row order card" id="<%= data.order.instrument.symbol %>" data-order-id="<%= data.order.orderID %>" data-target-path="/stocks-etfs/">
+	<div class="small-4 medium-2 columns">
+		<img class="" src="<%= data.cdn %>/images/symbols/<%= data.order.instrument.symbol.toLowerCase() %>.png" />
+	</div>
+	<div class="hide-for-small-only medium-4 columns text-left">
+		<h5 class="snip"><%= data.order.instrument.name %></h5>
+		<ul class="inline-list tags">
+		    <% _.each( data.order.instrument.tags, function( el ) { %>
+		        <li><a href="/tags/<%= el %>" class="tag">#<%= data.helpers.escapeHtml( el ) %></a></li>
+		    <% }); %>
+		</ul>
+        <% if ( data.order.ordType == 2 && data.order.isoTimeRestingOrderExpires ) { %>
+            <h6><%= data.polyglot.t("order_limit_expiration_msg") %></h6>
+						<p><strong><%= data.moment( data.order.isoTimeRestingOrderExpires ).format("LLLL") %></strong></p>
+        <% } %>
+	</div>
+    <div class="small-8 medium-5 columns">
+    	<ul class="inline-list right">
+    		<li class="text-center">
+    			<div class="pending-order-amt <%= data.helpers.formatOrderSide( data.order.side ).toLowerCase() %>">
+    			<h5 class="bottom">
+    				<%= data.polyglot.t( data.helpers.formatOrderSide( data.order.side ) ) %><br />
+    				<%= data.order.orderQty %><br />
+    				@ <%= data.helpers.formatMoney( data.order.ordType === "2" ? data.order.limitPrice : data.order.price ) %>
+    			</h5>
+    			</div>
+    		</li>
+    		<li class="text-center">
+    			<h5><small><%= data.polyglot.t("CURRENT PRICE") %></small><br /><%= data.templateOrdRates( { "data": data } ) %></h5>
+    		</li>
+    	</ul>
+    </div>
+    <div class="small-12 medium-1 columns">
+        <div class="row">
+        <div class="small-2 medium-12 columns">
+    	<% if ( _.findWhere( data.favorites, { "ID": data.order.orderID, "type": "order" } ) ) { %>
+    	    <p class="bottom medium-text-center small-text-left"><a href="#" class="favorite icon-starred" data-favorite-type="order" data-favorite-id="<%= data.order.orderID %>"></a></p>
+    	<% } else { %>
+    	    <p class="bottom medium-text-center small-text-left"><a href="#" class="favorite icon-unstarred" data-favorite-type="order" data-favorite-id="<%= data.order.orderID %>"></a></p>
+    	<% } %>
+        </div>
+        <div class="small-2 medium-12 end columns">
+    	   <p class="bottom medium-text-center small-text-left"> <a class="icon-delete" id="delete-order">&nbsp;</a></p>
+        </div>
+        </div>
+    </div>
+</div>

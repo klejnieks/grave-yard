@@ -1,0 +1,42 @@
+<div class="tour">
+<div class="row">
+	<div class="small-12 medium-6 small-centered columns text-center">
+	<form id="login-form" data-abide>
+	<fieldset>
+		<p><img src="<%= cdn %>/<%= WLPID %>/<%= WLP_Logo %>" class="logo med" /></p>
+		<div class="row">
+			<div class="small-12 small-centered columns">
+			<input type="text" id="username" name="username" placeholder="<%= polyglot.t("Username") %>" autocorrect="off" autocapitalize="off" required />
+			<small class="error"><%= polyglot.t("Username is required") %></small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 small-centered columns clearfix">
+			<input type="password" id="password" name="password" placeholder="<%= polyglot.t("Password") %>" required pattern="" />
+			<small class="error"><%= polyglot.t("Password is required") %></small>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns text-right">
+				<p class="t-med"><a href="/password/reset/" class="nav-item"><%= polyglot.t("Forgot Password?") %></a></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 small-centered columns">
+			<select id="language">
+			<option value=""><%= polyglot.t("Select Language") %></option>
+			<% _.each( languages, function( language ) { %>
+        <option value="<%= language.languageID %>" <% if ( language.languageID === languageID ) { %>selected<% } %>><%= language.nameNative %></option>
+			<% }); %>
+			</select>
+			<button type="submit" id="login-button" class="ladda-button radius expand primary" data-style="zoom-in">
+			<span class="ladda-label"><%= polyglot.t("Sign In") %></span>
+			</button>
+			<p class="t-ltgr t-med"><%= polyglot.t("login_terms") %></p>
+			</div>
+		</div>
+	</fieldset>
+	</form>
+	</div>
+</div>
+</div>

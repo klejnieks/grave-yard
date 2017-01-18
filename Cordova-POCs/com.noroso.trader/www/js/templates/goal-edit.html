@@ -1,0 +1,113 @@
+<div class="row goal card placard">
+<div class="small-12 medium-8 small-centered columns">
+<form id="goal-edit-form" data-abide>
+    <div class="row">
+        <div class="small-12 columns text-center">
+        	<fieldset id="goal-image-fieldset">
+                <legend><%= polyglot.t("Goal Photo") %></legend>
+                <div style="background-image: url('<%= imageUrl %>');" class="goal-image" id="goal-image">&nbsp;</div>
+                <small class="error"><%= polyglot.t("You must save the goal below to complete the image upload") %></small>
+                <a id="goal-image-upload" class="radius small primary button"><%= polyglot.t("Upload a photo for this goal") %> <br /><small><%= polyglot.t("JPG, GIF or PNG") %></small></a>
+                <button type="submit" id="image-edit-submit" class="ladda-button radius primary submit hide" data-style="zoom-in"><%= polyglot.t("Save Goal") %></button>
+                <input type="file" id="goal-image-input" name="images" class="hide" />
+        	</fieldset>
+        </div>
+    </div>
+    <div class="row" id="goal-image-container">
+        <div class="small-12 small-centered columns">
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="small-12 columns">
+        	<label for="goal-description"><%= polyglot.t("Goal Name") %>
+            <input type="text" placeholder="<%= polyglot.t("goal_edit_example") %>" name="goal-description" id="goal-description" required pattern="" value="<%= escapeHtml( description ) %>" />
+            <small class="error"><%= polyglot.t("Valid goal name is required") %></small>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+        	<label for="goal-amount"><%= polyglot.t("Goal Amount") %></label>
+            <div class="row collapse">
+            	<div class="small-1 columns">
+            	    <span class="prefix">$</span>
+            	</div>
+                <div class="small-11 columns">
+
+                    <input type="text" placeholder="<%= polyglot.t("Enter a dollar amount") %>" name="goal-amount" id="goal-amount" required pattern="^\d+(,\d{3})*(\.\d{2})?$" value="<%= amount %>" />
+                    <small class="error"><%= polyglot.t("Valid goal amount is required") %></small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+        	<label for="goal-category"><%= polyglot.t("How would categorize this goal?") %>
+            <select name="goal-category" id="goal-category" required>
+                <option value=""><%= polyglot.t("Select a tag") %></option>
+                <%
+                var desc = "", sel = "";
+                _.each( categories, function( cat ) {
+                    sel = "";
+                    if ( cat.tag === category.tag ) {
+                        sel = "selected";
+                        desc = cat.desc;
+                    }
+                %>
+                <option value="<%= cat.tag %>" <%= sel %>><%= cat.tag %></option>
+                <% }) %>
+            </select>
+            <small class="error"><%= polyglot.t("Valid goal tag is required") %></small>
+            <p class="t-med t-ltgr"><em id="goal-category-desc"><%= desc %></em></p>
+            </label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <a id="goal-tags-toggle" class="button tertiary tiny radius">
+            <%
+            if ( tags.length == 0 ) {
+                print( polyglot.t("Add Custom Tags?") )
+            } else {
+                print( polyglot.t("Custom Tags") )
+            }
+            %>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+    	<div class="small-12 columns">
+    	    <div id="goal-tags-container" class="<% if ( tags.length == 0 ) { %>hide<% } %>">
+    	        <label for="goal-tags"><%= polyglot.t("Type in your custom tags") %> <small>(<%= polyglot.t("hit enter to add tag") %>)</small>
+    	        <input type="text" placeholder="" name="goal-tags" id="goal-tags" value="<%= ( $.isArray(tags) ? tags.join() : '' ) %>" />
+    	        </label>
+    	    </div>
+    	</div>
+    </div>
+    <div class="row">
+        <div class="small-12 columns">
+            <button id="goal-edit-submit" type="submit" class="ladda-button radius primary submit expand" data-style="zoom-in">
+                <%= polyglot.t("Save Goal") %>
+            </button>
+        </div>
+    </div>
+</form>
+<% if (defaultGoal) { %>
+<div class="small-12 columns">
+	<h5><%= polyglot.t("Note: The default goal cannot be deleted") %></h5>
+</div>
+<% } %>
+<% if ( !defaultGoal && type !== "add" ) { %>
+<hr>
+<div class="small-12 columns">
+	<h5 class="subheader"><%= polyglot.t("Want to permanently delete this goal?") %></h5>
+	<p class="t-ltgr t-med"><%= polyglot.t("goal_edit_delete_warning") %></p>
+    <button type="button" id="goal-edit-delete" class="ladda-button radius small submit expand alert" data-style="zoom-in">
+        <%= polyglot.t("Delete Goal") %>
+    </button>
+</div>
+<% } %>
+</div>
+</div>

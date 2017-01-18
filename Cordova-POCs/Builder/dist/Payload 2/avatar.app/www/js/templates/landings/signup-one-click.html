@@ -1,0 +1,53 @@
+<section class="row" style="margin-top:1em;">	
+    <div class="small-12 medium-8 small-centered columns text-center">
+    <div class="panel radius" style="background: #FFF;">
+		<p><object type="image/svg+xml" data="<%= cdn %>/logo-dark.svg" class="logo med" /></p>
+    <% if ( status === "complete" ) { %>
+    	<h3><%= polyglot.t("signup-one-click-confirm-header", {"_": "Congratulations and welcome to DriveWealth!"}) %></h3>
+    	<p class="t-ltgr"><%= polyglot.t("signup-one-click-confirm-subheader", {"_": "Below is your free, non-expiring DriveWealth practice account. We put $10,000 (of virtual money) in your account to get you started. We've emailed you a confirmation minus your password, so please make note of the password below."}) %></p>
+    	
+    	<div class="row panel callout radius">
+    		<div class="small-12 small-centered columns">
+    			<h5 class=""><%= polyglot.t("Your DriveWealth Account Information", {"_": "Your DriveWealth Account Information"}) %></h5>
+    			<hr />
+    		</div>
+    		<div class="small-12 medium-6 columns">
+    			<p class="t-ltgr t-med bottom"><%= polyglot.t("signup-one-click-username", { "_": "USERNAME:" }) %></p>
+    			<h4 class="wrap"><strong><%= username %></strong></h4>
+    		</div>
+    		<div class="small-12 medium-6 columns">
+    			<p class="t-ltgr t-med bottom"><%= polyglot.t("signup-one-click-password", { "_": "PASSWORD:" }) %></p>
+    			<h4><strong><%= password %></strong></h4>
+    		</div>
+    		<div class="row">
+    		<div class="small-12 text-center columns">
+    			<p>&nbsp;</p>
+    			<a href="/login/" class="button radius nav-item"><%= polyglot.t("signup-one-click-login-link", { "_": "Sign into your DriveWealth account" }) %></a>
+    		</div>
+    		</div>
+    	</div>
+    	<h5><%= polyglot.t("Spread the word about DriveWealth", {"_": "Spread the word about DriveWealth"}) %></h5>
+    	<div class="addthis_sharing_toolbox" data-url="https://you.drivewealth.com/?utm_source=000000&utm_medium=email&utm_campaign=1-click" data-title="Invest for $2.99 per trade with DriveWealth"></div>
+    	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53c0520d6868b175"></script>
+    	
+   	<% } else if ( status === "pending" ) { %>
+  		<div class="spinner"></div>
+  		<br />
+  		<h3><%= polyglot.t("signup-one-click-pending-header", {"_": "Please hold..."}) %></h3>
+  		<h6><%= polyglot.t("signup-one-click-pending-subheader", {"_": "We are in the process of creating your free practice account"}) %></h6>      
+    <% } else { %>
+        <% if ( code === 400 ) { %>	
+            <h3><%= polyglot.t("signup-one-click-existing-acct-header", {"_": "You already have a DriveWealth account"}) %></h3>
+            <br />
+            <p><a href="/login/" class="button radius nav-item"><%= polyglot.t("signup-one-click-login-link", { "_": "Sign into your DriveWealth account" }) %></a></p>
+            <hr />
+            <p><%= polyglot.t("signup-one-click-existing-acct-subheader", {"_": "If you don't have an account, <a href=\"\/signup\" class=\"nav-item\">please register for a free one</a>"}) %></p>
+        <% } else { %>
+            <h3><%= polyglot.t("signup-one-click-error-header", {"_": "Sorry, an error has occurred while creating your account."}) %></h3>
+            <br /><br />
+            <p><a href="/signup/" class="button radius nav-item"><%= polyglot.t("signup-one-click-error-signup-link", { "_": "Sign up for a free DriveWealth practice account" }) %></a></p>
+        <% } %>
+    <% } %>
+    </div>
+	</div>
+</section>

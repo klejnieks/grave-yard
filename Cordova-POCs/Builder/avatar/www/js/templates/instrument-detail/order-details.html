@@ -1,0 +1,49 @@
+
+<div class="small-12 medium-6 columns">
+  <div class="row">
+    <div id="order-side">
+      <%= data.renderSide( { "data": data } ) %>
+    </div>
+    <div class="small-12 columns" id="order-rate">
+      <%= data.renderRate( { "data": data } ) %>
+    </div>
+  </div>
+</div>
+<div class="small-12 medium-offset-1 medium-5 columns">
+
+  <div class="row collapse order-spinner">
+    <div class="small-2 medium-2 columns">
+      <label><h6 class="bottom">&nbsp;</h6></label>
+      <button class="button prefix bootstrap-touchspin-down" type="button">&mdash;</button>
+    </div>
+    <div class="small-8 medium-8 columns text-center">
+      <label for="order-qty"><h6 class="t-ltgr bottom"><%= data.polyglot.t("Quantity") %></h6>
+        <input class="order-qty text-center touchspin-qty" type="text" name="order-qty" id="order-qty" value="<% if ( data.order.orderQty ) { print( data.order.orderQty ) } %>" required pattern="^[0-9]+$">
+        <small class="error"><%= data.polyglot.t("Whole number required") %></small>
+      </label>
+    </div>
+    <div class="small-2 medium-2 end columns">
+      <label><h6 class="bottom">&nbsp;</h6></label>
+      <button class="button postfix bootstrap-touchspin-up" type="button">&plus;</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 columns">
+    <div class="panel radius text-center order-price-preview-panel">
+      <h6 class="t-ltgr t-med"><%= data.polyglot.t("ESTIMATED ORDER TOTAL") %></h6>
+      <h5 style="font-weight: bold;" id="order-calc">
+        <% if ( data.order.estimatedPrice ) { %>
+          <% print( data.helpers.formatMoney( data.order.estimatedPrice, true ) ) %>
+        <% } else { %>
+          <span class="t-med">Enter a quantity above</span>
+        <% } %>
+      </h5>
+    </div>
+  </div>
+  </div>
+
+</div>
+<div class="small-12 columns">
+  <button type="submit" id="review-order" class="ladda-button button radius primary small submit expand disabled review-order-btn" data-style="zoom-in"><%= data.polyglot.t("REVIEW ORDER") %></button>
+</div>

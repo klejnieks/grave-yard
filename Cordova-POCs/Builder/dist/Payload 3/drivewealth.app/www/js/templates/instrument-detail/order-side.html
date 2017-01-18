@@ -1,0 +1,20 @@
+<div class="small-6 columns small-text-center">
+    <div class="radio-button" data-value="<% if ( data.order.side === "B" ) { %>true<% }else{ %>false<% } %>" data-order-side="B">
+        <div class="radio-off"></div>
+        <div class="radio-on"></div>
+    </div>
+    <%
+       var sideLabel = "Buy" + ( data.order.ordType === "1" ? "" : " " + data.helpers.formatOrderType( data.order.ordType ) ); 
+    %>
+    <h5 class="t-ltgr"><%= data.polyglot.t( sideLabel ) %></h5>
+</div>
+<div class="small-6 columns small-text-center">
+    <div class="radio-button" data-value="<% if ( data.order.side === "S" ) { %>true<% }else{ %>false<% } %>" data-order-side="S">
+        <div class="radio-off"></div>
+        <div class="radio-on"></div>
+    </div>
+    <%
+       sideLabel = "Sell" + ( data.order.ordType === "1" ? "" : " " + data.helpers.formatOrderType( data.order.ordType ) ); 
+    %>
+    <h5 class="t-ltgr"><%= data.polyglot.t( sideLabel ) %></h5>
+</div>
